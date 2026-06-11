@@ -1,0 +1,108 @@
+/** @format */
+@import url("./fonts.css");
+
+:root {
+  --font-display: "BlackSansaPro", sans-serif; /* decorative / headers */
+  --font-brand: "GCMOXDemo", sans-serif; /* brand / accent text */
+  --font-body: "Inter", sans-serif; /* body / UI text */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-display);
+}
+
+main {
+  background-color: #5c2839;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .container .splash-gate .splash-heading {
+  margin-bottom: 24px;
+  text-align: center;
+}
+main .container .splash-gate .splash-heading h1 {
+  color: #efece4;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 12px;
+}
+main .container .splash-gate .splash-heading h3 {
+  color: #efece4;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+main .container .splash-gate .splash-paths {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+main .container .splash-gate .vendor-path,
+main .container .splash-gate .customer-path {
+  width: 390px;
+  height: 210px;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  cursor: pointer;
+}
+main .container .splash-gate .vendor-path {
+  border: 1px solid #c5e866;
+}
+main .container .splash-gate .customer-path {
+  background-color: #efece4;
+}
+main .container .splash-gate .vendor-path h5,
+main .container .splash-gate .customer-path h5 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+}
+main .container .splash-gate .customer-path h5 {
+  color: #a84065;
+}
+main .container .splash-gate .vendor-path h5 {
+  color: #c5e866;
+}
+main .container .splash-gate .vendor-path svg,
+main .container .splash-gate .customer-path svg {
+  margin: 0 auto;
+  width: 100%;
+}
+main .container .splash-gate .vendor-path h3,
+main .container .splash-gate .customer-path h3 {
+  text-align: center;
+  color: #efece4;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+main .container .splash-gate .customer-path h3 {
+  color: #1f1f1f;
+}
+main .container .splash-gate .vendor-path h6,
+main .container .splash-gate .customer-path h6 {
+  text-align: center;
+  color: #efece4;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+main .container .splash-gate .customer-path h6 {
+  color: #878282;
+}

@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "tag": "WHY CATERY",
+    "title": "Because Chasing Caterers Across Instagram Shouldn't Be Your Job.",
+    "subtitle": "There's a reason thousands of event planners have stopped searching Instagram and started using Catery. Here's what changed.",
+    "vendor_cta": "Are you a catering business? Join as a vendor →"
+  },
+  "problem": {
+    "tag": "THE PROBLEM",
+    "title": "Booking Catering Shouldn't Be This Hard",
+    "items": [
+      { "icon": "📱", "title": "Scattered Information",     "description": "Menus on Instagram. Prices on WhatsApp. Reviews somewhere. Finding a caterer means juggling five apps and hoping for the best." },
+      { "icon": "🚫", "title": "Zero Transparency",         "description": "No upfront pricing. No verified reviews. No way to compare. You're making a decision worth thousands of pounds — blindfolded." },
+      { "icon": "♾",  "title": "Endless Back-and-Forth",   "description": "Every inquiry starts from scratch. Call, wait, follow up, repeat. By the time you confirm the old way, you've lost hours you'll never get back." }
+    ],
+    "bottom_note": "There's a better way. And thousands of event planners across Egypt have already found it."
+  },
+  "comparison": {
+    "title": "The Old Way vs Catery",
+    "old": {
+      "label": "THE OLD WAY",
+      "items": [
+        "Search across multiple platforms",
+        "Message vendors one by one",
+        "Message vendors one by one",
+        "Compare everything manually"
+      ]
+    },
+    "new": {
+      "label": "WITH CATERY",
+      "items": [
+        "Compare everything manually",
+        "View menus and pricing easily",
+        "Compare options faster",
+        "Book with less effort"
+      ]
+    }
+  },
+  "cta": {
+    "title": "Make the Switch Today.",
+    "subtitle": "Join the event planners who've already stopped searching the old way. Catery is free on iOS & Android.",
+    "button": "Download the App"
+  }
+}

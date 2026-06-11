@@ -1,0 +1,49 @@
+{
+  "hero": {
+    "tag": "FREE DOWNLOAD",
+    "title_1": "Stop Chasing",
+    "title_highlight": "Caterers.",
+    "subtitle": "Find, compare, and book catering services for any event. The simplest way to plan. No more endless messages, No calls.",
+    "app_cta": "Download the App"
+  },
+  "steps": {
+    "tag": "HOW IT WORKS",
+    "title": "From Search to Booking in 3 Steps",
+    "items": [
+      { "number": "1", "title": "Search for the Date", "description": "Browse verified caterers available on your event date." },
+      { "number": "2", "title": "Compare Packages",    "description": "View menus, photos and prices side by side." },
+      { "number": "3", "title": "Order Confirmed!",    "description": "Book directly through the app — simple and fast." }
+    ]
+  },
+  "features": {
+    "tag": "JUST BETTER",
+    "title": "Everything You Need, All in One Place",
+    "items": [
+      { "icon": "🔍", "title": "Discover Caterers",     "description": "Browse local catering businesses with photos and menus." },
+      { "icon": "📋", "title": "Compare Options",       "description": "Compare packages, pricing, and services easily." },
+      { "icon": "⏱",  "title": "Save Time",             "description": "Stop chasing vendors — everything in one place." },
+      { "icon": "💬", "title": "Easy Communication",    "description": "Message caterers directly through the app." },
+      { "icon": "✅", "title": "Fast Booking",           "description": "Confirm your catering in minutes, not days." },
+      { "icon": "🗺",  "title": "Explore Menus",         "description": "Full menu details before you ever make a call." }
+    ]
+  },
+  "faq": {
+    "tag": "FAQ",
+    "title": "Questions? We've got answers.",
+    "subtitle": "Booking catering shouldn't take three days, five WhatsApps, and ten Instagram DMs. We built Catery to give event planners the clarity they need — and caterers the visibility they deserve.",
+    "items": [
+      { "q": "Is it free to join Catery?",          "a": "Yes, downloading and using the Catery app is completely free for customers." },
+      { "q": "How long does setup take?",           "a": "You can set up your event search and start browsing in under 2 minutes." },
+      { "q": "What types of businesses can join?",  "a": "All types of catering businesses — from small home kitchens to large catering companies." },
+      { "q": "Which cities do you serve?",          "a": "We currently operate across major Egyptian cities and are expanding rapidly." },
+      { "q": "How do customers find me?",           "a": "Customers search by date, location, and cuisine type. Your profile appears in results." },
+      { "q": "How do I get started?",               "a": "Download the app from the App Store or Google Play and create your free account." }
+    ]
+  },
+  "cta": {
+    "tag": "GET STARTED",
+    "title": "Ready to Find Your Perfect Caterer?",
+    "subtitle": "Browse, compare, and book — all from one free app.",
+    "button": "Download the App"
+  }
+}

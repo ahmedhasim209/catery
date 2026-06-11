@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catery — Find & Book Catering for Any Event</title>
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/tailwind.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script>window.CONTENT_SRC = "/content/customer-home.json";</script>
+  </head>
+  <body style="background:var(--color-maroon);color:var(--color-cream);">
+
+    <!-- Navbar -->
+    <div data-include="/partials/navbar-customer.html"></div>
+
+    <!-- ═══════════════════════════════════════════
+         HERO — "Stop Chasing Caterers"
+    ═══════════════════════════════════════════ -->
+    <section class="section-maroon" style="text-align:center;padding-top:64px;padding-bottom:0;">
+      <div class="container-site">
+        <span class="tag-pill tag-lime" data-bind="hero.tag" style="margin-bottom:24px;display:inline-block;">FREE DOWNLOAD</span>
+
+        <h1 style="font-family:var(--font-display);font-size:clamp(2.4rem,5vw,3.8rem);font-weight:800;line-height:1.1;margin-bottom:20px;">
+          <span data-bind="hero.title_1">Stop Chasing </span>
+          <span data-bind="hero.title_highlight" style="color:var(--color-lime);">Caterers.</span>
+        </h1>
+
+        <p data-bind="hero.subtitle" style="max-width:520px;margin:0 auto 32px;font-size:1rem;line-height:1.6;opacity:0.8;">
+          Find, compare, and book catering services for any event. The simplest way to plan.
+        </p>
+
+        <!-- App badges -->
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:16px;">
+          <a href="#" class="app-badge">
+            <i class="fa-brands fa-apple" style="font-size:1.3rem;"></i>
+            <span><span style="font-size:0.65rem;display:block;opacity:0.7;">Download on the</span>App Store</span>
+          </a>
+          <a href="#" class="app-badge">
+            <i class="fa-brands fa-google-play" style="font-size:1.1rem;color:#34a853;"></i>
+            <span><span style="font-size:0.65rem;display:block;opacity:0.7;">GET IT ON</span>Google Play</span>
+          </a>
+        </div>
+
+        <p style="font-size:0.78rem;opacity:0.45;margin-bottom:48px;">Free · iOS & Android</p>
+
+        <!-- Phone mockups -->
+        <div style="display:flex;justify-content:center;gap:16px;align-items:flex-end;padding-bottom:0;overflow:hidden;">
+          <div style="width:200px;height:380px;background:var(--color-maroon-dark);border-radius:28px;border:2px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;transform:rotate(-6deg) translateY(20px);opacity:0.85;flex-shrink:0;">
+            <span style="font-size:0.7rem;opacity:0.4;text-align:center;padding:12px;">App Screenshot</span>
+          </div>
+          <div style="width:220px;height:420px;background:var(--color-maroon-dark);border-radius:30px;border:2px solid rgba(255,255,255,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;z-index:1;">
+            <span style="font-size:0.7rem;opacity:0.4;text-align:center;padding:12px;">App Screenshot</span>
+          </div>
+          <div style="width:200px;height:380px;background:var(--color-maroon-dark);border-radius:28px;border:2px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;transform:rotate(6deg) translateY(20px);opacity:0.85;flex-shrink:0;">
+            <span style="font-size:0.7rem;opacity:0.4;text-align:center;padding:12px;">App Screenshot</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         3-STEP — "From Search to Booking"
+    ═══════════════════════════════════════════ -->
+    <section class="section-cream">
+      <div class="container-site">
+        <span class="tag-pill tag-maroon" style="margin-bottom:20px;display:inline-block;" data-bind="steps.tag">HOW IT WORKS</span>
+        <h2 data-bind="steps.title" style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:var(--color-ink);margin-bottom:64px;">From Search to Booking in 3 Steps</h2>
+
+        <!-- Step 1 — left phone -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:80px;">
+          <div style="display:flex;justify-content:center;">
+            <div style="width:220px;height:420px;background:var(--color-maroon-dark);border-radius:30px;border:2px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;">
+              <span style="font-size:0.7rem;opacity:0.4;">App Screenshot</span>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+              <div class="step-badge-lime">1</div>
+              <h3 style="font-size:1.3rem;font-weight:700;color:var(--color-ink);">Search for the Date</h3>
+            </div>
+            <p style="color:var(--color-muted);line-height:1.6;">Browse verified caterers available on your event date.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 — right phone -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:80px;">
+          <div>
+            <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+              <div class="step-badge-lime">2</div>
+              <h3 style="font-size:1.3rem;font-weight:700;color:var(--color-ink);">Compare Packages</h3>
+            </div>
+            <p style="color:var(--color-muted);line-height:1.6;">View menus, photos and prices side by side.</p>
+          </div>
+          <div style="display:flex;justify-content:center;">
+            <div style="width:220px;height:420px;background:var(--color-maroon-dark);border-radius:30px;border:2px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;">
+              <span style="font-size:0.7rem;opacity:0.4;">App Screenshot</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 — left phone -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
+          <div style="display:flex;justify-content:center;">
+            <div style="width:220px;height:420px;background:var(--color-maroon-dark);border-radius:30px;border:2px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;">
+              <span style="font-size:0.7rem;opacity:0.4;">App Screenshot</span>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+              <div class="step-badge-lime">3</div>
+              <h3 style="font-size:1.3rem;font-weight:700;color:var(--color-ink);">Order Confirmed!</h3>
+            </div>
+            <p style="color:var(--color-muted);line-height:1.6;">Book directly through the app — simple and fast.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FEATURES — "Everything You Need"
+    ═══════════════════════════════════════════ -->
+    <section class="section-maroon">
+      <div class="container-site">
+        <span class="tag-pill tag-lime" style="margin-bottom:20px;display:inline-block;" data-bind="features.tag">JUST BETTER</span>
+        <h2 data-bind="features.title" style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;margin-bottom:48px;">Everything You Need, All in One Place</h2>
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+          <!-- Feature cards — static for pixel fidelity, content.js fills text -->
+          <div class="card-dark" style="border:1px solid rgba(255,255,255,0.08);">
+            <div style="font-size:1.5rem;margin-bottom:12px;">🔍</div>
+            <h4 style="font-weight:700;margin-bottom:8px;font-size:0.95rem;">Discover Caterers</h4>
+            <p style="font-size:0.85rem;opacity:0.6;line-height:1.5;">Browse local catering businesses with photos and menus.</p>
+          </div>
+          <div class="card-dark" style="border:1px solid rgba(255,255,255,0.08);">
+            <div style="font-size:1.5rem;margin-bottom:12px;">📋</div>
+            <h4 style="font-weight:700;margin-bottom:8px;font-size:0.95rem;">Compare Options</h4>
+            <p style="font-size:0.85rem;opacity:0.6;line-height:1.5;">Compare packages, pricing, and services easily.</p>
+          </div>
+          <div class="card-dark" style="border:1px solid rgba(255,255,255,0.08);">
+            <div style="font-size:1.5rem;margin-bottom:12px;">⏱</div>
+            <h4 style="font-weight:700;margin-bottom:8px;font-size:0.95rem;">Save Time</h4>
+            <p style="font-size:0.85rem;opacity:0.6;line-height:1.5;">Stop chasing vendors — everything in one place.</p>
+          </div>
+          <div class="card-dark" style="border:1px solid rgba(255,255,255,0.08);">
+            <div style="font-size:1.5rem;margin-bottom:12px;">💬</div>
+            <h4 style="font-weight:700;margin-bottom:8px;font-size:0.95rem;">Easy Communication</h4>
+            <p style="font-size:0.85rem;opacity:0.6;line-height:1.5;">Message caterers directly through the app.</p>
+          </div>
+          <div class="card-dark" style="border:1px solid rgba(255,255,255,0.08);">
+            <div style="font-size:1.5rem;margin-bottom:12px;">✅</div>
+            <h4 style="font-weight:700;margin-bottom:8px;font-size:0.95rem;">Fast Booking</h4>
+            <p style="font-size:0.85rem;opacity:0.6;line-height:1.5;">Confirm your catering in minutes, not days.</p>
+          </div>
+          <div class="card-dark" style="border:1px solid rgba(255,255,255,0.08);">
+            <div style="font-size:1.5rem;margin-bottom:12px;">🗺</div>
+            <h4 style="font-weight:700;margin-bottom:8px;font-size:0.95rem;">Explore Menus</h4>
+            <p style="font-size:0.85rem;opacity:0.6;line-height:1.5;">Full menu details before you ever make a call.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FAQ
+    ═══════════════════════════════════════════ -->
+    <section class="section-maroon" style="padding-top:0;">
+      <div class="container-site">
+        <span class="tag-pill tag-lime" style="margin-bottom:20px;display:inline-block;" data-bind="faq.tag">FAQ</span>
+        <h2 data-bind="faq.title" style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;margin-bottom:12px;">Questions? We've got answers.</h2>
+        <p data-bind="faq.subtitle" style="opacity:0.65;font-size:0.9rem;line-height:1.6;max-width:500px;margin-bottom:40px;">Booking catering shouldn't take three days, five WhatsApps, and ten Instagram DMs.</p>
+
+        <!-- FAQ grid — 2 columns -->
+        <div class="faq-group" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <div class="faq-item" style="background:var(--color-maroon-dark);border-radius:var(--radius-xl);">
+            <div class="faq-question" style="color:var(--color-cream);">
+              <span>Is it free to join Catery?</span>
+              <div class="faq-icon"><i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></div>
+            </div>
+            <div class="faq-answer" style="color:var(--color-cream);opacity:0.7;">Yes, downloading and using the Catery app is completely free for customers.</div>
+          </div>
+          <div class="faq-item" style="background:var(--color-maroon-dark);border-radius:var(--radius-xl);">
+            <div class="faq-question" style="color:var(--color-cream);">
+              <span>How long does setup take?</span>
+              <div class="faq-icon"><i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></div>
+            </div>
+            <div class="faq-answer" style="color:var(--color-cream);opacity:0.7;">You can set up your event search and start browsing in under 2 minutes.</div>
+          </div>
+          <div class="faq-item" style="background:var(--color-maroon-dark);border-radius:var(--radius-xl);">
+            <div class="faq-question" style="color:var(--color-cream);">
+              <span>What types of businesses can join?</span>
+              <div class="faq-icon"><i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></div>
+            </div>
+            <div class="faq-answer" style="color:var(--color-cream);opacity:0.7;">All types of catering businesses — from small home kitchens to large catering companies.</div>
+          </div>
+          <div class="faq-item" style="background:var(--color-maroon-dark);border-radius:var(--radius-xl);">
+            <div class="faq-question" style="color:var(--color-cream);">
+              <span>Which cities do you serve?</span>
+              <div class="faq-icon"><i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></div>
+            </div>
+            <div class="faq-answer" style="color:var(--color-cream);opacity:0.7;">We currently operate across major Egyptian cities and are expanding rapidly.</div>
+          </div>
+          <div class="faq-item" style="background:var(--color-maroon-dark);border-radius:var(--radius-xl);">
+            <div class="faq-question" style="color:var(--color-cream);">
+              <span>How do customers find me?</span>
+              <div class="faq-icon"><i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></div>
+            </div>
+            <div class="faq-answer" style="color:var(--color-cream);opacity:0.7;">Customers search by date, location, and cuisine type. Your profile appears in results.</div>
+          </div>
+          <div class="faq-item" style="background:var(--color-maroon-dark);border-radius:var(--radius-xl);">
+            <div class="faq-question" style="color:var(--color-cream);">
+              <span>How do I get started?</span>
+              <div class="faq-icon"><i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></div>
+            </div>
+            <div class="faq-answer" style="color:var(--color-cream);opacity:0.7;">Download the app from the App Store or Google Play and create your free account.</div>
+          </div>
+        </div>
+
+        <!-- Can't find your answer -->
+        <div style="margin-top:16px;background:var(--color-lime);border-radius:var(--radius-xl);padding:32px 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;">
+          <div>
+            <span class="tag-pill tag-maroon" style="margin-bottom:12px;display:inline-block;font-size:0.65rem;">STILL CURIOUS?</span>
+            <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:800;color:var(--color-maroon);margin-bottom:4px;">Can't find your answer?</h3>
+            <p style="color:var(--color-maroon);opacity:0.7;font-size:0.85rem;">Our team is happy to help.</p>
+          </div>
+          <a href="/customer/contact.html" class="btn btn-dark">Contact us →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CTA — "Ready to Find Your Perfect Caterer?"
+    ═══════════════════════════════════════════ -->
+    <section class="section-maroon" style="padding-top:0;">
+      <div class="container-site" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
+        <div>
+          <span class="tag-pill tag-lime" style="margin-bottom:20px;display:inline-block;" data-bind="cta.tag">GET STARTED</span>
+          <h2 data-bind="cta.title" style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:800;margin-bottom:12px;">Ready to Find Your Perfect Caterer?</h2>
+          <p data-bind="cta.subtitle" style="opacity:0.7;font-size:0.95rem;line-height:1.6;margin-bottom:28px;">Browse, compare, and book — all from one free app.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="#" class="app-badge">
+              <i class="fa-brands fa-apple" style="font-size:1.3rem;"></i>
+              <span><span style="font-size:0.65rem;display:block;opacity:0.7;">Download on the</span>App Store</span>
+            </a>
+            <a href="#" class="app-badge">
+              <i class="fa-brands fa-google-play" style="font-size:1.1rem;color:#34a853;"></i>
+              <span><span style="font-size:0.65rem;display:block;opacity:0.7;">GET IT ON</span>Google Play</span>
+            </a>
+          </div>
+        </div>
+        <!-- Decorative blob -->
+        <div style="display:flex;justify-content:flex-end;position:relative;">
+          <div style="width:200px;height:200px;background:var(--color-cream);border-radius:50%;opacity:0.06;position:absolute;right:-40px;bottom:-40px;"></div>
+          <div style="width:80px;height:80px;background:var(--color-cream);border-radius:50%;opacity:0.08;position:absolute;right:100px;top:0;"></div>
+          <div style="width:40px;height:40px;background:var(--color-cream);border-radius:50%;opacity:0.06;position:absolute;right:60px;top:20px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div data-include="/partials/footer.html"></div>
+
+    <!-- Scripts -->
+    <script src="/js/includes.js"></script>
+    <script src="/js/content.js"></script>
+    <script src="/js/faq.js"></script>
+
+    <!-- Responsive overrides -->
+    <style>
+      @media (max-width: 768px) {
+        .steps-grid { grid-template-columns: 1fr !important; }
+        .features-grid { grid-template-columns: repeat(2,1fr) !important; }
+        .faq-group { grid-template-columns: 1fr !important; }
+        .cta-grid { grid-template-columns: 1fr !important; }
+        .hero-phones { display: none !important; }
+      }
+    </style>
+  </body>
+</html>

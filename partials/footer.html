@@ -1,0 +1,87 @@
+<footer style="background:var(--color-maroon-footer,#2e1620);padding:60px 24px 32px;">
+  <div class="container-site">
+    <!-- Top row -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-bottom:48px;">
+      <!-- Brand -->
+      <div>
+        <div style="font-family:var(--font-brand);font-size:2rem;color:var(--color-cream);letter-spacing:0.05em;margin-bottom:8px;">CATERY</div>
+        <p data-bind="site.tagline" style="color:var(--color-lime);font-size:0.8rem;font-weight:600;">Egypt's catering marketplace. Find. Compare. Book.</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div style="text-align:right;">
+        <p style="color:var(--color-lime);font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:4px;">STAY IN THE LOOP</p>
+        <p style="color:var(--color-cream);font-size:0.8rem;opacity:0.7;margin-bottom:12px;">Get tips, updates and early access offers.</p>
+        <form style="display:flex;gap:8px;" onsubmit="return false;">
+          <input type="email" placeholder="Type your E-mail" style="flex:1;padding:10px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:8px;color:var(--color-cream);font-size:0.85rem;outline:none;min-width:0;" />
+          <button type="submit" class="btn btn-dark" style="padding:10px 18px;font-size:0.85rem;white-space:nowrap;">Subscribe →</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Links row -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:40px;">
+      <div>
+        <p style="color:var(--color-lime);font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">EXPLORE</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li><a href="/customer/how-it-works.html" style="color:var(--color-cream);opacity:0.75;font-size:0.85rem;text-decoration:none;">How It Works</a></li>
+          <li><a href="/customer/why-catery.html"   style="color:var(--color-cream);opacity:0.75;font-size:0.85rem;text-decoration:none;">Why join us</a></li>
+        </ul>
+      </div>
+      <div>
+        <p style="color:var(--color-lime);font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">COMPANY</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li><a href="/customer/about.html" style="color:var(--color-cream);opacity:0.75;font-size:0.85rem;text-decoration:none;">About Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <p style="color:var(--color-lime);font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">SUPPORT</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li><a href="/customer/contact.html" style="color:var(--color-cream);opacity:0.75;font-size:0.85rem;text-decoration:none;">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <p style="color:var(--color-lime);font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">APP</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li><a href="#" data-bind="app.appstore_url" data-bind-attr="href" style="color:var(--color-cream);opacity:0.75;font-size:0.85rem;text-decoration:none;">App Store</a></li>
+          <li><a href="#" data-bind="app.playstore_url" data-bind-attr="href" style="color:var(--color-cream);opacity:0.75;font-size:0.85rem;text-decoration:none;">Google Play</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Socials -->
+    <div style="display:flex;gap:16px;margin-bottom:32px;">
+      <a href="#" data-bind="socials.facebook" data-bind-attr="href" style="color:var(--color-cream);opacity:0.6;font-size:1.1rem;text-decoration:none;" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="#" data-bind="socials.tiktok" data-bind-attr="href" style="color:var(--color-cream);opacity:0.6;font-size:1.1rem;text-decoration:none;" aria-label="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+      <a href="#" data-bind="socials.instagram" data-bind-attr="href" style="color:var(--color-cream);opacity:0.6;font-size:1.1rem;text-decoration:none;" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="#" data-bind="socials.whatsapp" data-bind-attr="href" style="color:var(--color-cream);opacity:0.6;font-size:1.1rem;text-decoration:none;" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <!-- Bottom bar -->
+    <div style="border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+      <p data-bind="site.copyright" style="color:var(--color-cream);opacity:0.4;font-size:0.78rem;">© 2026 Catery. Made with ♥ in Egypt.</p>
+      <div style="display:flex;gap:20px;">
+        <a href="#" style="color:var(--color-cream);opacity:0.4;font-size:0.78rem;text-decoration:none;">Privacy</a>
+        <a href="#" style="color:var(--color-cream);opacity:0.4;font-size:0.78rem;text-decoration:none;">Terms</a>
+        <a href="#" style="color:var(--color-cream);opacity:0.4;font-size:0.78rem;text-decoration:none;">Cookies</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Responsive -->
+  <style>
+    @media (max-width: 768px) {
+      footer > .container-site > div:first-child { grid-template-columns: 1fr !important; text-align: left !important; }
+      footer > .container-site > div:first-child > div:last-child { text-align: left !important; }
+      footer > .container-site > div:nth-child(2) { grid-template-columns: repeat(2,1fr) !important; }
+    }
+  </style>
+</footer>

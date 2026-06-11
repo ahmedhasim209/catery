@@ -1,0 +1,49 @@
+{
+  "site": {
+    "tagline": "Egypt's catering marketplace. Find. Compare. Book.",
+    "copyright": "© 2026 Catery. Made with ♥ in Egypt."
+  },
+  "contact": {
+    "email": "hello@catery.eg",
+    "email_note": "Replies within 24 Hours",
+    "phone": "+201500292910",
+    "phone_note": "Sun-Thu, 9 AM – 6 PM",
+    "whatsapp_number": "201500292910",
+    "whatsapp_note": "Tap to open WhatsApp"
+  },
+  "app": {
+    "appstore_url": "#",
+    "playstore_url": "#",
+    "qr_url": "/assets/images/qr-code.png"
+  },
+  "socials": {
+    "facebook": "#",
+    "tiktok": "#",
+    "instagram": "#",
+    "whatsapp": "#"
+  },
+  "stats": {
+    "vendors": "200+",
+    "vendors_label": "Active Vendors",
+    "rating": "4.8★",
+    "rating_label": "Avg Rating",
+    "response": "48h",
+    "response_label": "Fast Response"
+  },
+  "footer": {
+    "explore": [
+      { "label": "How It Works", "href": "/customer/how-it-works.html" },
+      { "label": "Why Catery",   "href": "/customer/why-catery.html" }
+    ],
+    "company": [
+      { "label": "About Us", "href": "/customer/about.html" }
+    ],
+    "support": [
+      { "label": "Contact us", "href": "/customer/contact.html" }
+    ],
+    "app_links": [
+      { "label": "App Store",   "href": "#" },
+      { "label": "Google Play", "href": "#" }
+    ]
+  }
+}

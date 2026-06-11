@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Catery</title>
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/tailwind.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  </head>
+  <body style="background:var(--color-maroon);color:var(--color-cream);">
+
+    <div data-include="/partials/navbar-customer.html"></div>
+
+    <!-- HERO -->
+    <section class="section-maroon" style="padding-bottom:48px;">
+      <div class="container-site">
+        <span class="tag-pill tag-lime" style="margin-bottom:24px;display:inline-block;">CONTACT US</span>
+        <h1 style="font-family:var(--font-display);font-size:clamp(2rem,5vw,3.5rem);font-weight:800;line-height:1.1;margin-bottom:12px;">Let's talk.</h1>
+        <p style="opacity:0.65;font-size:0.95rem;line-height:1.6;">Questions, feedback, partnerships — we want to hear from you.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT METHOD CARDS -->
+    <section class="section-maroon" style="padding-top:0;padding-bottom:64px;">
+      <div class="container-site">
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+          <a href="mailto:hello@catery.eg" class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-envelope" style="color:var(--color-maroon);font-size:1rem;"></i></div>
+            <div style="flex:1;">
+              <p style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);margin-bottom:4px;">EMAIL</p>
+              <p data-bind="contact.email" style="color:var(--color-cream);font-weight:600;font-size:0.9rem;margin-bottom:2px;">hello@catery.eg</p>
+              <p data-bind="contact.email_note" style="color:var(--color-muted);font-size:0.78rem;">Replies within 24 Hours</p>
+            </div>
+            <i class="fa-solid fa-arrow-right" style="color:var(--color-cream);opacity:0.5;"></i>
+          </a>
+          <a href="tel:+201500292910" class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-phone" style="color:var(--color-maroon);font-size:1rem;"></i></div>
+            <div style="flex:1;">
+              <p style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);margin-bottom:4px;">PHONE</p>
+              <p data-bind="contact.phone" style="color:var(--color-cream);font-weight:600;font-size:0.9rem;margin-bottom:2px;">+201500292910</p>
+              <p data-bind="contact.phone_note" style="color:var(--color-muted);font-size:0.78rem;">Sun-Thu, 9 AM – 6 PM</p>
+            </div>
+            <i class="fa-solid fa-arrow-right" style="color:var(--color-cream);opacity:0.5;"></i>
+          </a>
+          <a href="https://wa.me/201500292910" target="_blank" class="contact-card">
+            <div class="contact-icon"><i class="fa-brands fa-whatsapp" style="color:var(--color-maroon);font-size:1.1rem;"></i></div>
+            <div style="flex:1;">
+              <p style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);margin-bottom:4px;">WHATSAPP</p>
+              <p style="color:var(--color-cream);font-weight:600;font-size:0.9rem;margin-bottom:2px;">Chat with us</p>
+              <p data-bind="contact.whatsapp_note" style="color:var(--color-muted);font-size:0.78rem;">Tap to open WhatsApp</p>
+            </div>
+            <i class="fa-solid fa-arrow-right" style="color:var(--color-cream);opacity:0.5;"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLY FORM SECTION -->
+    <section class="section-maroon" style="padding-top:0;padding-bottom:80px;">
+      <div class="container-site" style="display:grid;grid-template-columns:auto 1fr;gap:80px;align-items:center;">
+        <!-- Decorative C -->
+        <div style="width:200px;height:240px;border:3px solid var(--color-cream);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0;">
+          <span style="font-family:var(--font-brand);font-size:7rem;color:var(--color-cream);font-weight:900;line-height:1;">C</span>
+          <div style="position:absolute;top:-8px;right:-8px;width:20px;height:20px;background:var(--color-cream);border-radius:50%;opacity:0.4;"></div>
+        </div>
+
+        <!-- Form -->
+        <div>
+          <p style="color:var(--color-lime);font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">READY TO START?</p>
+          <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;margin-bottom:8px;">Apply in 2 minutes.</h2>
+          <p style="opacity:0.6;font-size:0.88rem;margin-bottom:28px;">Drop your details — we'll call you back within 48 hours.</p>
+
+          <form style="display:flex;flex-direction:column;gap:16px;max-width:360px;" onsubmit="return false;">
+            <div class="form-field">
+              <label class="form-label">YOUR NAME</label>
+              <input type="text" class="form-input" placeholder="Khaled Ahmed" />
+            </div>
+            <div class="form-field">
+              <label class="form-label">WHATSAPP NUMBER</label>
+              <input type="tel" class="form-input" placeholder="+20 100 000 0000" />
+            </div>
+            <div class="form-field">
+              <label class="form-label">CITY</label>
+              <input type="text" class="form-input" placeholder="Alexandria" />
+            </div>
+            <button type="submit" class="btn btn-lime" style="width:100%;">Contact me →</button>
+          </form>
+
+          <div style="display:flex;align-items:center;gap:12px;margin:20px 0;">
+            <div style="height:1px;flex:1;background:rgba(255,255,255,0.15);"></div>
+            <span style="opacity:0.4;font-size:0.8rem;">OR</span>
+            <div style="height:1px;flex:1;background:rgba(255,255,255,0.15);"></div>
+          </div>
+
+          <a href="https://wa.me/201500292910" target="_blank" style="color:var(--color-cream);font-weight:600;font-size:0.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;">Chat with us on WhatsApp →</a>
+          <br>
+          <p style="font-size:0.75rem;opacity:0.4;margin-bottom:28px;">🔒 We won't share your details. No spam. Just one call.</p>
+
+          <p style="color:var(--color-lime);font-weight:700;font-size:0.95rem;margin-bottom:12px;">Download the App</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="#" class="app-badge"><i class="fa-brands fa-apple" style="font-size:1.3rem;"></i><span><span style="font-size:0.65rem;display:block;opacity:0.7;">Download on the</span>App Store</span></a>
+            <a href="#" class="app-badge"><i class="fa-brands fa-google-play" style="font-size:1.1rem;color:#34a853;"></i><span><span style="font-size:0.65rem;display:block;opacity:0.7;">GET IT ON</span>Google Play</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div data-include="/partials/footer.html"></div>
+    <script src="/js/includes.js"></script>
+    <script src="/js/content.js"></script>
+  </body>
+</html>

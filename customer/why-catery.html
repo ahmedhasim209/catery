@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why Catery — Catery</title>
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/tailwind.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script>window.CONTENT_SRC = "/content/customer-why-catery.json";</script>
+  </head>
+  <body style="background:var(--color-maroon);color:var(--color-cream);">
+
+    <div data-include="/partials/navbar-customer.html"></div>
+
+    <!-- HERO -->
+    <section class="section-maroon" style="padding-bottom:80px;">
+      <div class="container-site" style="display:grid;grid-template-columns:1fr auto;gap:48px;align-items:start;">
+        <div>
+          <span class="tag-pill tag-lime" style="margin-bottom:24px;display:inline-block;" data-bind="hero.tag">WHY CATERY</span>
+          <h1 data-bind="hero.title" style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;margin-bottom:20px;max-width:580px;">Because Chasing Caterers Across Instagram Shouldn't Be Your Job.</h1>
+          <p data-bind="hero.subtitle" style="opacity:0.7;font-size:0.95rem;line-height:1.7;max-width:480px;margin-bottom:20px;">There's a reason thousands of event planners have stopped searching Instagram and started using Catery.</p>
+          <a href="/vendors/contact.html" style="color:var(--color-lime);font-size:0.85rem;text-decoration:none;" data-bind="hero.vendor_cta">Are you a catering business? Join as a vendor →</a>
+        </div>
+        <!-- Decorative C blob -->
+        <div style="width:160px;height:200px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <div style="width:150px;height:180px;border-radius:50%;background:var(--color-cream);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+            <span style="font-family:var(--font-brand);font-size:5rem;color:var(--color-maroon);font-weight:900;line-height:1;">C</span>
+            <div style="position:absolute;top:-10px;right:-10px;width:40px;height:40px;background:var(--color-maroon);border-radius:50%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM SECTION -->
+    <section class="section-cream">
+      <div class="container-site">
+        <span class="tag-pill tag-maroon" style="margin-bottom:20px;display:inline-block;" data-bind="problem.tag">THE PROBLEM</span>
+        <h2 data-bind="problem.title" style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:var(--color-ink);margin-bottom:40px;">Booking Catering Shouldn't Be This Hard</h2>
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:32px;">
+          <div class="card-white">
+            <div style="width:40px;height:40px;background:#fee2e2;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.1rem;">📱</div>
+            <h4 style="font-weight:700;color:var(--color-ink);margin-bottom:8px;font-size:0.95rem;">Scattered Information</h4>
+            <p style="font-size:0.83rem;color:var(--color-muted);line-height:1.6;">Menus on Instagram. Prices on WhatsApp. Reviews somewhere. Finding a caterer means juggling five apps and hoping for the best.</p>
+          </div>
+          <div class="card-white">
+            <div style="width:40px;height:40px;background:#fee2e2;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.1rem;">🚫</div>
+            <h4 style="font-weight:700;color:var(--color-ink);margin-bottom:8px;font-size:0.95rem;">Zero Transparency</h4>
+            <p style="font-size:0.83rem;color:var(--color-muted);line-height:1.6;">No upfront pricing. No verified reviews. No way to compare. You're making a decision worth thousands — blindfolded.</p>
+          </div>
+          <div class="card-white">
+            <div style="width:40px;height:40px;background:#fee2e2;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.1rem;">♾</div>
+            <h4 style="font-weight:700;color:var(--color-ink);margin-bottom:8px;font-size:0.95rem;">Endless Back-and-Forth</h4>
+            <p style="font-size:0.83rem;color:var(--color-muted);line-height:1.6;">Every inquiry starts from scratch. Call, wait, follow up, repeat. By the time you confirm, you've lost hours you'll never get back.</p>
+          </div>
+        </div>
+
+        <p data-bind="problem.bottom_note" style="text-align:center;color:var(--color-muted);font-size:0.9rem;">There's a better way. And thousands of event planners across Egypt have already found it.</p>
+      </div>
+    </section>
+
+    <!-- COMPARISON -->
+    <section class="section-cream" style="padding-top:0;">
+      <div class="container-site">
+        <h2 data-bind="comparison.title" style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2rem);font-weight:800;color:var(--color-ink);margin-bottom:28px;">The Old Way vs Catery</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;position:relative;">
+          <!-- Old way -->
+          <div style="background:var(--color-maroon);border-radius:var(--radius-xl);padding:28px 32px;">
+            <p style="color:var(--color-cream);font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:20px;" data-bind="comparison.old.label">THE OLD WAY</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;">
+              <li style="display:flex;align-items:center;gap:10px;color:var(--color-cream);opacity:0.7;font-size:0.9rem;"><i class="fa-solid fa-xmark" style="color:#f87171;width:16px;"></i> Search across multiple platforms</li>
+              <li style="display:flex;align-items:center;gap:10px;color:var(--color-cream);opacity:0.7;font-size:0.9rem;"><i class="fa-solid fa-xmark" style="color:#f87171;width:16px;"></i> Message vendors one by one</li>
+              <li style="display:flex;align-items:center;gap:10px;color:var(--color-cream);opacity:0.7;font-size:0.9rem;"><i class="fa-solid fa-xmark" style="color:#f87171;width:16px;"></i> No way to compare prices</li>
+              <li style="display:flex;align-items:center;gap:10px;color:var(--color-cream);opacity:0.7;font-size:0.9rem;"><i class="fa-solid fa-xmark" style="color:#f87171;width:16px;"></i> Compare everything manually</li>
+            </ul>
+          </div>
+          <!-- With Catery -->
+          <div style="background:var(--color-lime);border-radius:var(--radius-xl);padding:28px 32px;">
+            <p style="color:var(--color-maroon);font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:20px;" data-bind="comparison.new.label">WITH CATERY</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;">
+              <li style="display:flex;align-items:center;gap:10px;color:var(--color-maroon);font-size:0.9rem;font-weight:500;"><i class="fa-solid fa-check" style="color:var(--color-maroon);width:16px;"></i> Compare everything in one place</li>
+              <li style="display:flex;align-items:center;gap:10px;color:var(--color-maroon);font-size:0.9rem;font-weight:500;"><i class="fa-solid fa-check" style="color:var(--color-maroon);width:16px;"></i> View menus and pricing easily</li>
+              <li style="display:flex;align-items:center;gap:10px;color:var(--color-maroon);font-size:0.9rem;font-weight:500;"><i class="fa-solid fa-check" style="color:var(--color-maroon);width:16px;"></i> Compare options faster</li>
+              <li style="display:flex;align-items:center;gap:10px;color:var(--color-maroon);font-size:0.9rem;font-weight:500;"><i class="fa-solid fa-check" style="color:var(--color-maroon);width:16px;"></i> Book with less effort</li>
+            </ul>
+          </div>
+          <!-- Heart accent -->
+          <div style="position:absolute;right:-20px;bottom:-30px;width:60px;height:60px;background:var(--color-lavender);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+            <span style="font-size:1.4rem;">🤍</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA + Image gallery -->
+    <section class="section-cream" style="padding-top:48px;">
+      <div class="container-site">
+        <h2 data-bind="cta.title" style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:var(--color-ink);margin-bottom:8px;">Make the Switch Today.</h2>
+        <p data-bind="cta.subtitle" style="color:var(--color-muted);font-size:0.9rem;margin-bottom:24px;">Join the event planners who've already stopped searching the old way. Catery is free on iOS & Android.</p>
+        <p style="color:var(--color-maroon);font-weight:700;font-size:1rem;margin-bottom:12px;">Download the App</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:48px;">
+          <a href="#" class="app-badge"><i class="fa-brands fa-apple" style="font-size:1.3rem;"></i><span><span style="font-size:0.65rem;display:block;opacity:0.7;">Download on the</span>App Store</span></a>
+          <a href="#" class="app-badge"><i class="fa-brands fa-google-play" style="font-size:1.1rem;color:#34a853;"></i><span><span style="font-size:0.65rem;display:block;opacity:0.7;">GET IT ON</span>Google Play</span></a>
+        </div>
+        <!-- Image gallery placeholders -->
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;border-radius:var(--radius-xl);overflow:hidden;">
+          <div style="height:220px;background:var(--color-maroon-dark);border-radius:var(--radius-xl);display:flex;align-items:center;justify-content:center;"><span style="opacity:0.3;font-size:0.8rem;">Photo</span></div>
+          <div style="height:220px;background:var(--color-maroon-dark);border-radius:var(--radius-xl);display:flex;align-items:center;justify-content:center;"><span style="opacity:0.3;font-size:0.8rem;">Photo</span></div>
+          <div style="height:220px;background:var(--color-maroon-dark);border-radius:var(--radius-xl);display:flex;align-items:center;justify-content:center;"><span style="opacity:0.3;font-size:0.8rem;">Photo</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div data-include="/partials/footer.html"></div>
+    <script src="/js/includes.js"></script>
+    <script src="/js/content.js"></script>
+  </body>
+</html>
