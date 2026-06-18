@@ -156,7 +156,6 @@
                 How It Works ?
               </a>
             </div>
-
             <!-- OR divider — same width as buttons row above -->
             <div style="display: flex; align-items: center; gap: 12px">
               <div
@@ -184,7 +183,6 @@
             </div>
           </div>
           <!-- end buttons+OR wrapper -->
-
           <!-- Download the App heading -->
           <p
             style="
@@ -196,7 +194,6 @@
             ">
             Download the App
           </p>
-
           <!-- Official app badges -->
           <div style="display: flex; gap: 12px; flex-wrap: wrap">
             <!-- App Store -->
@@ -255,20 +252,23 @@
                 min-width: 180px;
               ">
               <svg
-                width="28"
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
                 height="28"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
+                viewBox="0 0 256 283">
+                <path d="M0 0h256v283H0z" fill="none" />
                 <path
-                  d="M1.22 0a1 1 0 0 0-.55.93v22.14a1 1 0 0 0 .55.93L13.06 12z"
-                  fill="#4285F4" />
-                <path d="M17.28 7.72 1.22 0 13.06 12z" fill="#EA4335" />
+                  fill="#ea4335"
+                  d="M119.553 134.916L1.06 259.061a32.14 32.14 0 0 0 47.062 19.071l133.327-75.934z" />
                 <path
-                  d="M17.28 16.28 13.06 12 1.22 24c.47.26 1.06.2 1.52-.08z"
-                  fill="#34A853" />
+                  fill="#fbbc04"
+                  d="M239.37 113.814L181.715 80.79l-64.898 56.95l65.162 64.28l57.216-32.67a31.345 31.345 0 0 0 0-55.537z" />
                 <path
-                  d="M22.78 10.18 17.28 7.72 13.06 12l4.22 4.28 5.5-2.46a1 1 0 0 0 0-1.64z"
-                  fill="#FBBC04" />
+                  fill="#4285f4"
+                  d="M1.06 23.487A30.6 30.6 0 0 0 0 31.61v219.327a32.3 32.3 0 0 0 1.06 8.124l122.555-120.966z" />
+                <path
+                  fill="#34a853"
+                  d="m120.436 141.274l61.278-60.483L48.564 4.503A32.85 32.85 0 0 0 32.051 0C17.644-.028 4.978 9.534 1.06 23.399z" />
               </svg>
               <span style="display: flex; flex-direction: column">
                 <span
@@ -307,22 +307,33 @@
         </div>
       </div>
     </section>
-
     <!-- FEATURES GRID -->
     <section class="section-cream">
       <div class="container-site">
         <span
-          class="tag-pill tag-maroon"
-          style="margin-bottom: 20px; display: inline-block"
+          style="
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 7px 16px;
+            background: var(--color-lime);
+            color: var(--color-ink);
+            border: 2px solid #a84065;
+            border-radius: var(--radius-pill);
+            font-size: var(--text-caption);
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+          "
           >WHAT YOU GET</span
         >
         <h2
           style="
-            font-family: var(--font-display);
-            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            font-family: var(--font-body);
+            font-size: 28px;
             font-weight: 800;
             color: var(--color-ink);
             margin-bottom: 40px;
+            max-width: 380px;
           ">
           Everything you need to run your catering business
         </h2>
@@ -333,12 +344,17 @@
             gap: 20px;
             margin-bottom: 32px;
           ">
-          <div class="card-white">
+          <div
+            class="card-white"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 width: 40px;
                 height: 40px;
-                background: var(--color-lime);
+                background: var(--color-lime-soft);
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
@@ -346,7 +362,11 @@
                 margin-bottom: 14px;
                 font-size: 1rem;
               ">
-              👤
+              <img
+                src="/assets/images/home-vendor/person-icon.svg"
+                width="22"
+                height="22"
+                alt="" />
             </div>
             <h4
               style="
@@ -360,19 +380,24 @@
             <p
               style="
                 font-size: 0.83rem;
-                color: var(--color-muted);
+                color: var(--color-grey);
                 line-height: 1.5;
               ">
               Create your catering profile with your logo, photos, services, and
               more information.
             </p>
           </div>
-          <div class="card-white">
+          <div
+            class="card-white"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 width: 40px;
                 height: 40px;
-                background: var(--color-lime);
+                background: var(--color-lime-soft);
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
@@ -380,7 +405,11 @@
                 margin-bottom: 14px;
                 font-size: 1rem;
               ">
-              📦
+              <img
+                src="/assets/images/home-vendor/box-icon.svg"
+                width="22"
+                height="22"
+                alt="" />
             </div>
             <h4
               style="
@@ -394,18 +423,23 @@
             <p
               style="
                 font-size: 0.83rem;
-                color: var(--color-muted);
+                color: var(--color-grey);
                 line-height: 1.5;
               ">
               Create catering packages with pricing and details.
             </p>
           </div>
-          <div class="card-white">
+          <div
+            class="card-white"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 width: 40px;
                 height: 40px;
-                background: var(--color-lime);
+                background: var(--color-lime-soft);
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
@@ -413,7 +447,11 @@
                 margin-bottom: 14px;
                 font-size: 1rem;
               ">
-              📅
+              <img
+                src="/assets/images/home-vendor/calender-icon.svg"
+                width="22"
+                height="22"
+                alt="" />
             </div>
             <h4
               style="
@@ -427,18 +465,23 @@
             <p
               style="
                 font-size: 0.83rem;
-                color: var(--color-muted);
+                color: var(--color-grey);
                 line-height: 1.5;
               ">
               Set your availability dates and manage booking requests.
             </p>
           </div>
-          <div class="card-white">
+          <div
+            class="card-white"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 width: 40px;
                 height: 40px;
-                background: var(--color-lime);
+                background: var(--color-lime-soft);
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
@@ -446,7 +489,11 @@
                 margin-bottom: 14px;
                 font-size: 1rem;
               ">
-              📬
+              <img
+                src="/assets/images/home-vendor/booking-icon.svg"
+                width="22"
+                height="22"
+                alt="" />
             </div>
             <h4
               style="
@@ -460,18 +507,23 @@
             <p
               style="
                 font-size: 0.83rem;
-                color: var(--color-muted);
+                color: var(--color-grey);
                 line-height: 1.5;
               ">
               Receive and manage customer requests in real time.
             </p>
           </div>
-          <div class="card-white">
+          <div
+            class="card-white"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 width: 40px;
                 height: 40px;
-                background: var(--color-lime);
+                background: var(--color-lime-soft);
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
@@ -479,7 +531,11 @@
                 margin-bottom: 14px;
                 font-size: 1rem;
               ">
-              🌐
+              <img
+                src="/assets/images/home-vendor/eye-icon.svg"
+                width="22"
+                height="22"
+                alt="" />
             </div>
             <h4
               style="
@@ -493,18 +549,23 @@
             <p
               style="
                 font-size: 0.83rem;
-                color: var(--color-muted);
+                color: var(--color-grey);
                 line-height: 1.5;
               ">
               Help customers discover your business more easily.
             </p>
           </div>
-          <div class="card-white">
+          <div
+            class="card-white"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 width: 40px;
                 height: 40px;
-                background: var(--color-lime);
+                background: var(--color-lime-soft);
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
@@ -512,7 +573,11 @@
                 margin-bottom: 14px;
                 font-size: 1rem;
               ">
-              ⚡
+              <img
+                src="/assets/images/home-vendor/setup-icon.svg"
+                width="22"
+                height="22"
+                alt="" />
             </div>
             <h4
               style="
@@ -526,7 +591,7 @@
             <p
               style="
                 font-size: 0.83rem;
-                color: var(--color-muted);
+                color: var(--color-grey);
                 line-height: 1.5;
               ">
               Create your profile and get started in minutes.
@@ -542,84 +607,437 @@
               color: var(--color-cream);
               border: none;
             "
-            >See How It Works →</a
+            >See How It Works
+            <span style="color: var(--color-lime-soft)">→</span></a
           >
         </div>
       </div>
     </section>
 
+    <!-- Floating heart divider -->
+    <div
+      style="
+        position: relative;
+        height: 0;
+        display: flex;
+        justify-content: right;
+        margin-right: 150px;
+      ">
+      <img
+        src="/assets/images/home-vendor/float-heart.svg"
+        alt=""
+        style="
+          position: absolute;
+          top: -85px;
+          width: 170px;
+          height: 170px;
+          z-index: 10;
+          pointer-events: none;
+        " />
+    </div>
+
     <!-- 3 STEPS -->
     <section class="section-maroon">
       <div class="container-site">
+        <!-- Label -->
         <span
-          class="tag-pill tag-lime"
-          style="margin-bottom: 20px; display: inline-block"
+          style="
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 7px 16px;
+            background: #3f1b2c;
+            color: #c5e866;
+            border: 1.5px solid #c5e866;
+            border-radius: var(--radius-pill);
+            font-size: var(--text-caption);
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+          "
           >SIMPLE ONBOARDING</span
         >
+
+        <!-- Heading -->
         <h2
           style="
-            font-family: var(--font-display);
-            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            font-family: var(--font-body);
+            font-size: 28px;
             font-weight: 800;
+            color: var(--color-cream);
+            line-height: 1.25;
             margin-bottom: 48px;
+            max-width: 420px;
           ">
           Start receiving bookings<br />in 3 simple steps
         </h2>
+
+        <!-- Steps: single 3-col grid, badges + content in same cell, lines absolutely positioned -->
         <div
+          id="steps-container"
           style="
+            position: relative;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            margin-bottom: 40px;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 56px;
           ">
-          <div>
-            <div class="step-badge-lime" style="margin-bottom: 16px">1</div>
-            <h4 style="font-weight: 700; margin-bottom: 8px">
+          <!-- Line 1: right edge of badge-1 → left edge of badge-2 (8px gap each side) -->
+          <div
+            style="
+              position: absolute;
+              top: 24px;
+              left: 60px;
+              right: calc(66.666% + 12px);
+              height: 2px;
+              background: #3f1b2c;
+              overflow: hidden;
+              z-index: 0;
+            ">
+            <div
+              id="step-line-1"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 0;
+                background: var(--color-lime);
+                transition: width 0.7s ease;
+              "></div>
+          </div>
+          <!-- Line 2: right edge of badge-2 → left edge of badge-3 (8px gap each side) -->
+          <div
+            style="
+              position: absolute;
+              top: 24px;
+              left: calc(33.333% + 60px);
+              right: calc(33.333% + 12px);
+              height: 2px;
+              background: #3f1b2c;
+              overflow: hidden;
+              z-index: 0;
+            ">
+            <div
+              id="step-line-2"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 0;
+                background: var(--color-lime);
+                transition: width 0.7s ease;
+              "></div>
+          </div>
+
+          <!-- Step 1: circle starts lime (no animation) -->
+          <div style="position: relative; z-index: 1; padding-right: 32px">
+            <div
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: var(--color-lime);
+                color: var(--color-ink);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: var(--font-body);
+                font-weight: 800;
+                font-size: 1.1rem;
+                margin-bottom: 20px;
+                flex-shrink: 0;
+              ">
+              1
+            </div>
+            <h4
+              style="
+                font-family: var(--font-body);
+                font-size: 16px;
+                font-weight: 700;
+                color: var(--color-cream);
+                margin-bottom: 8px;
+                line-height: 1.3;
+                max-width: 130px;
+              ">
               Create your profile
             </h4>
-            <p style="font-size: 0.85rem; opacity: 0.65; line-height: 1.6">
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 13px;
+                color: var(--color-cream);
+                opacity: 0.6;
+                line-height: 1.6;
+                max-width: 175px;
+              ">
               Add your business information, photos, and services.
             </p>
           </div>
-          <div>
-            <div class="step-badge-lime" style="margin-bottom: 16px">2</div>
-            <h4 style="font-weight: 700; margin-bottom: 8px">
+
+          <!-- Step 2: circle starts dark, turns lime when line 1 finishes -->
+          <div style="position: relative; z-index: 1; padding-right: 32px">
+            <div
+              id="step-circle-2"
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: #3f1b2c;
+                color: rgba(255, 255, 255, 0.5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: var(--font-body);
+                font-weight: 800;
+                font-size: 1.1rem;
+                margin-bottom: 20px;
+                flex-shrink: 0;
+                transition:
+                  background-color 0.35s ease,
+                  color 0.35s ease;
+              ">
+              2
+            </div>
+            <h4
+              style="
+                font-family: var(--font-body);
+                font-size: 16px;
+                font-weight: 700;
+                color: var(--color-cream);
+                margin-bottom: 8px;
+                line-height: 1.3;
+              ">
               Add Your Packages
             </h4>
-            <p style="font-size: 0.85rem; opacity: 0.65; line-height: 1.6">
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 13px;
+                color: var(--color-cream);
+                opacity: 0.6;
+                line-height: 1.6;
+                max-width: 175px;
+              ">
               Show customers what you offer and how you price your services.
             </p>
           </div>
-          <div>
-            <div class="step-badge-lime" style="margin-bottom: 16px">3</div>
-            <h4 style="font-weight: 700; margin-bottom: 8px">
+
+          <!-- Step 3: circle starts dark, turns lime when line 2 finishes -->
+          <div style="position: relative; z-index: 1">
+            <div
+              id="step-circle-3"
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: #3f1b2c;
+                color: rgba(255, 255, 255, 0.5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: var(--font-body);
+                font-weight: 800;
+                font-size: 1.1rem;
+                margin-bottom: 20px;
+                flex-shrink: 0;
+                transition:
+                  background-color 0.35s ease,
+                  color 0.35s ease;
+              ">
+              3
+            </div>
+            <h4
+              style="
+                font-family: var(--font-body);
+                font-size: 16px;
+                font-weight: 700;
+                color: var(--color-cream);
+                margin-bottom: 8px;
+                line-height: 1.3;
+              ">
               Receive Requests
             </h4>
-            <p style="font-size: 0.85rem; opacity: 0.65; line-height: 1.6">
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 13px;
+                color: var(--color-cream);
+                opacity: 0.6;
+                line-height: 1.6;
+                max-width: 175px;
+              ">
               Start connecting with customers looking for catering services.
             </p>
           </div>
         </div>
+
+        <script>
+          (function () {
+            var LINE_MS = 700; // matches transition:width 0.7s
+            var CIRCLE_MS = 350; // matches transition:background-color 0.35s
+            var container = document.getElementById("steps-container");
+            var line1 = document.getElementById("step-line-1");
+            var line2 = document.getElementById("step-line-2");
+            var circle2 = document.getElementById("step-circle-2");
+            var circle3 = document.getElementById("step-circle-3");
+
+            var observer = new IntersectionObserver(
+              function (entries) {
+                entries.forEach(function (entry) {
+                  if (entry.isIntersecting) {
+                    // circle 1 already lime — no change needed
+
+                    // 1. fill line 1
+                    setTimeout(function () {
+                      line1.style.width = "100%";
+                    }, 100);
+
+                    // 2. after line 1 finishes → light up circle 2
+                    setTimeout(function () {
+                      circle2.style.background = "#C5E866";
+                      circle2.style.color = "#1F1F1F";
+                    }, 100 + LINE_MS);
+
+                    // 3. after circle 2 transition finishes → fill line 2
+                    setTimeout(
+                      function () {
+                        line2.style.width = "100%";
+                      },
+                      100 + LINE_MS + CIRCLE_MS,
+                    );
+
+                    // 4. after line 2 finishes → light up circle 3
+                    setTimeout(
+                      function () {
+                        circle3.style.background = "#C5E866";
+                        circle3.style.color = "#1F1F1F";
+                      },
+                      100 + LINE_MS + CIRCLE_MS + LINE_MS,
+                    );
+
+                    observer.unobserve(entry.target);
+                  }
+                });
+              },
+              { threshold: 0.4 },
+            );
+
+            observer.observe(container);
+          })();
+        </script>
+
+        <!-- Download the App -->
         <p
           style="
+            font-family: var(--font-body);
+            font-size: 22px;
+            font-weight: 800;
             color: var(--color-lime);
-            font-weight: 700;
-            font-size: 0.9rem;
-            margin-bottom: 10px;
+            margin-bottom: 16px;
           ">
           Download the App
         </p>
-        <div style="display: flex; gap: 10px; flex-wrap: wrap">
-          <a href="#" class="app-badge" style="padding: 8px 14px"
-            ><i class="fa-brands fa-apple" style="font-size: 1.1rem"></i
-            ><span>App Store</span></a
-          >
-          <a href="#" class="app-badge" style="padding: 8px 14px"
-            ><i
-              class="fa-brands fa-google-play"
-              style="font-size: 0.9rem; color: #34a853"></i
-            ><span>Google Play</span></a
-          >
+        <div style="display: flex; gap: 12px; flex-wrap: wrap">
+          <!-- App Store -->
+          <a
+            href="#"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 10px;
+              padding: 10px 20px;
+              background: #fff;
+              border: 1.5px solid #1a1a1a;
+              border-radius: 10px;
+              text-decoration: none;
+              min-width: 160px;
+            ">
+            <i
+              class="fa-brands fa-apple"
+              style="font-size: 1.8rem; color: #000"></i>
+            <span style="display: flex; flex-direction: column">
+              <span
+                style="
+                  font-family: var(--font-body);
+                  font-size: 0.6rem;
+                  font-weight: 400;
+                  color: rgba(0, 0, 0, 0.6);
+                  letter-spacing: 0.04em;
+                  line-height: 1.3;
+                "
+                >Download on the</span
+              >
+              <span
+                style="
+                  font-family: var(--font-body);
+                  font-size: 1rem;
+                  font-weight: 700;
+                  color: #000;
+                  letter-spacing: 0.01em;
+                  line-height: 1.2;
+                "
+                >App Store</span
+              >
+            </span>
+          </a>
+          <!-- Google Play -->
+          <a
+            href="#"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 10px;
+              padding: 10px 20px;
+              background: #fff;
+              border: 1.5px solid #1a1a1a;
+              border-radius: 10px;
+              text-decoration: none;
+              min-width: 160px;
+            ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21px"
+              height="24px"
+              viewBox="0 0 256 283">
+              <path d="M0 0h256v283H0z" fill="none" />
+              <path
+                fill="#ea4335"
+                d="M119.553 134.916L1.06 259.061a32.14 32.14 0 0 0 47.062 19.071l133.327-75.934z" />
+              <path
+                fill="#fbbc04"
+                d="M239.37 113.814L181.715 80.79l-64.898 56.95l65.162 64.28l57.216-32.67a31.345 31.345 0 0 0 0-55.537z" />
+              <path
+                fill="#4285f4"
+                d="M1.06 23.487A30.6 30.6 0 0 0 0 31.61v219.327a32.3 32.3 0 0 0 1.06 8.124l122.555-120.966z" />
+              <path
+                fill="#34a853"
+                d="m120.436 141.274l61.278-60.483L48.564 4.503A32.85 32.85 0 0 0 32.051 0C17.644-.028 4.978 9.534 1.06 23.399z" />
+            </svg>
+            <span style="display: flex; flex-direction: column">
+              <span
+                style="
+                  font-family: var(--font-body);
+                  font-size: 0.6rem;
+                  font-weight: 400;
+                  color: rgba(0, 0, 0, 0.6);
+                  letter-spacing: 0.04em;
+                  line-height: 1.3;
+                "
+                >GET IT ON</span
+              >
+              <span
+                style="
+                  font-family: var(--font-body);
+                  font-size: 1rem;
+                  font-weight: 700;
+                  color: #000;
+                  letter-spacing: 0.01em;
+                  line-height: 1.2;
+                "
+                >Google Play</span
+              >
+            </span>
+          </a>
         </div>
       </div>
     </section>
@@ -649,7 +1067,12 @@
             gap: 20px;
             margin-bottom: 40px;
           ">
-          <div class="card-white">
+          <div
+            class="card-white"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 0 4px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 display: flex;
@@ -711,7 +1134,12 @@
               >
             </div>
           </div>
-          <div class="card-white">
+          <div
+            class="card-white"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 0 4px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 display: flex;
@@ -773,7 +1201,12 @@
               >
             </div>
           </div>
-          <div class="card-white">
+          <div
+            class="card-white"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 0 4px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 display: flex;
