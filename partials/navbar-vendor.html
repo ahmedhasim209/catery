@@ -48,6 +48,44 @@
   </div>
 
   <style>
+    /* Base link style */
+    .nav-link {
+      color: var(--color-cream);
+      text-decoration: none;
+      font-weight: 400;
+      position: relative;
+      padding-bottom: 2px;
+    }
+
+    /* Hover: white underline, keep white color */
+    .nav-link:hover {
+      color: var(--color-cream);
+      text-decoration: none;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1.5px;
+      background: var(--color-cream);
+      transition: width 0.2s ease;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* Active: lime color, bold, no underline */
+    .nav-link.active {
+      color: var(--color-lime) !important;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .nav-link.active::after {
+      display: none;
+    }
+
     @media (max-width: 768px) {
       .nav-desktop-links { display: none !important; }
       .nav-cta-btn       { display: none !important; }
