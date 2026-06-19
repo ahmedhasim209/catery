@@ -1043,7 +1043,7 @@
     </section>
 
     <!-- TESTIMONIALS -->
-    <section style="background: #d9f07d; padding: 64px 24px">
+    <!-- <section style="background: #d9f07d; padding: 64px 24px">
       <div class="container-site">
         <span
           class="tag-pill tag-maroon"
@@ -1350,144 +1350,392 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- APPLY FORM CTA -->
-    <section class="section-maroon">
-      <div
-        class="container-site"
+    <section
+      style="
+        position: relative;
+        background: var(--color-maroon);
+        padding: 120px 0 100px;
+        overflow: hidden;
+      ">
+      <!-- Decorative C letter — left side -->
+      <img
+        src="/assets/images/home-vendor/letter-c-for-catery.svg"
+        alt=""
+        aria-hidden="true"
         style="
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 64px;
-          align-items: start;
+          position: absolute;
+          left: 10%;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 340px;
+          pointer-events: none;
+          user-select: none;
+        " />
+
+      <!-- Decorative cream shape — right side -->
+      <img
+        src="/assets/images/home-vendor/shape-right.svg"
+        alt=""
+        aria-hidden="true"
+        style="
+          position: absolute;
+          right: -20px;
+          bottom: 0;
+          width: 260px;
+          pointer-events: none;
+          user-select: none;
+        " />
+
+      <!-- Content — centered column -->
+      <div
+        style="
+          position: relative;
+          z-index: 1;
+          max-width: 420px;
+          margin: 0 auto;
+          padding: 0 24px;
         ">
-        <div>
-          <p
+        <!-- Label -->
+        <p
+          style="
+            font-family: var(--font-body);
+            font-size: var(--text-caption);
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            color: var(--color-lime);
+            margin-bottom: 12px;
+          ">
+          READY TO START?
+        </p>
+
+        <!-- Heading -->
+        <h2
+          style="
+            font-family: var(--font-body);
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--color-cream);
+            line-height: 1.15;
+            margin-bottom: 10px;
+          ">
+          Apply in 2 minutes.
+        </h2>
+
+        <!-- Subtitle -->
+        <p
+          style="
+            font-family: var(--font-body);
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--color-cream);
+            opacity: 0.6;
+            margin-bottom: 28px;
+            line-height: 1.5;
+          ">
+          Drop your details — we'll call you back within 48 hours.
+        </p>
+
+        <!-- Form card -->
+        <form
+          onsubmit="return false;"
+          style="
+            background: #3f1b2c;
+            border-radius: 20px;
+            padding: 28px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+          ">
+          <!-- YOUR NAME -->
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <label
+              style="
+                font-family: var(--font-body);
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 1.1px;
+                text-transform: uppercase;
+                color: var(--color-lime);
+              "
+              >YOUR NAME</label
+            >
+            <input
+              type="text"
+              placeholder="Khaled Ahmed"
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--color-cream);
+                background: rgba(255, 255, 255, 0.08);
+                border: none;
+                border-radius: 16px;
+                padding: 13px 18px;
+                outline: none;
+                width: 100%;
+                box-sizing: border-box;
+              " />
+          </div>
+
+          <!-- WHATSAPP NUMBER -->
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <label
+              style="
+                font-family: var(--font-body);
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 1.1px;
+                text-transform: uppercase;
+                color: var(--color-lime);
+              "
+              >WHATSAPP NUMBER</label
+            >
+            <input
+              type="tel"
+              placeholder="+20 100 000 0000"
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--color-cream);
+                background: rgba(255, 255, 255, 0.08);
+                border: none;
+                border-radius: 16px;
+                padding: 13px 18px;
+                outline: none;
+                width: 100%;
+                box-sizing: border-box;
+              " />
+          </div>
+
+          <!-- CITY -->
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <label
+              style="
+                font-family: var(--font-body);
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 1.1px;
+                text-transform: uppercase;
+                color: var(--color-lime);
+              "
+              >CITY</label
+            >
+            <input
+              type="text"
+              placeholder="Alexandria"
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--color-cream);
+                background: rgba(255, 255, 255, 0.08);
+                border: none;
+                border-radius: 16px;
+                padding: 13px 18px;
+                outline: none;
+                width: 100%;
+                box-sizing: border-box;
+              " />
+          </div>
+
+          <!-- Submit button -->
+          <button
+            type="submit"
             style="
-              color: var(--color-lime);
-              font-size: 0.7rem;
+              font-family: var(--font-body);
+              font-size: 15px;
               font-weight: 700;
-              letter-spacing: 0.1em;
-              text-transform: uppercase;
-              margin-bottom: 8px;
-            ">
-            READY TO START?
-          </p>
-          <h2
-            style="
-              font-family: var(--font-display);
-              font-size: clamp(1.6rem, 3vw, 2.2rem);
-              font-weight: 800;
-              margin-bottom: 8px;
-            ">
-            Apply in 2 minutes.
-          </h2>
-          <p style="opacity: 0.6; font-size: 0.88rem; margin-bottom: 28px">
-            Drop your details — we'll call you back within 48 hours.
-          </p>
-          <form
-            style="
-              background: var(--color-maroon-dark);
-              border-radius: var(--radius-xl);
-              padding: 24px;
-              display: flex;
-              flex-direction: column;
-              gap: 16px;
+              color: var(--color-maroon);
+              background: var(--color-lime);
+              border: none;
+              border-radius: 24px;
+              padding: 15px;
+              width: 100%;
+              cursor: pointer;
+              transition: opacity 0.15s;
             "
-            onsubmit="return false;">
-            <div class="form-field">
-              <label class="form-label">YOUR NAME</label
-              ><input
-                type="text"
-                class="form-input"
-                placeholder="Khaled Ahmed" />
-            </div>
-            <div class="form-field">
-              <label class="form-label">WHATSAPP NUMBER</label
-              ><input
-                type="tel"
-                class="form-input"
-                placeholder="+20 100 000 0000" />
-            </div>
-            <div class="form-field">
-              <label class="form-label">CITY</label
-              ><input type="text" class="form-input" placeholder="Alexandria" />
-            </div>
-            <button type="submit" class="btn btn-lime" style="width: 100%">
-              Contact me →
-            </button>
-          </form>
+            onmouseover="this.style.opacity = '0.88'"
+            onmouseout="this.style.opacity = '1'">
+            Contact me →
+          </button>
+        </form>
+
+        <!-- OR divider -->
+        <div
+          style="display: flex; align-items: center; gap: 12px; margin: 20px 0">
           <div
             style="
-              display: flex;
-              align-items: center;
-              gap: 12px;
-              margin: 20px 0;
-            ">
-            <div
-              style="
-                height: 1px;
-                flex: 1;
-                background: rgba(255, 255, 255, 0.15);
-              "></div>
-            <span style="opacity: 0.4; font-size: 0.8rem">OR</span>
-            <div
-              style="
-                height: 1px;
-                flex: 1;
-                background: rgba(255, 255, 255, 0.15);
-              "></div>
-          </div>
-          <a
-            href="https://wa.me/201500292910"
+              height: 1px;
+              flex: 1;
+              background: rgba(255, 255, 255, 0.15);
+            "></div>
+          <span
             style="
-              color: var(--color-cream);
-              font-weight: 600;
-              font-size: 0.9rem;
-              text-decoration: none;
+              font-family: var(--font-body);
+              font-size: 12px;
+              font-weight: 500;
+              color: rgba(255, 255, 255, 0.35);
+              letter-spacing: 0.08em;
+            "
+            >OR</span
+          >
+          <div
+            style="
+              height: 1px;
+              flex: 1;
+              background: rgba(255, 255, 255, 0.15);
+            "></div>
+        </div>
+
+        <!-- WhatsApp link -->
+        <a
+          href="https://wa.me/201500292910"
+          style="
+            display: flex;
+            justify-content: center;
+            font-family: var(--font-body);
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--color-cream);
+            text-decoration: none;
+            margin-bottom: 14px;
+          "
+          >Chat with us on WhatsApp →</a
+        >
+
+        <!-- Privacy note -->
+        <p
+          style="
+            text-align: center;
+            font-family: var(--font-body);
+            font-size: 12px;
+            color: var(--color-cream);
+            opacity: 0.4;
+            margin-bottom: 32px;
+          ">
+          🔒 We won't share your details. No spam. Just one call.
+        </p>
+
+        <!-- Download the App -->
+        <p
+          style="
+            text-align: center;
+            font-family: var(--font-body);
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--color-lime);
+            margin-bottom: 16px;
+          ">
+          Download the App
+        </p>
+
+        <!-- App badges -->
+        <div style="display: flex; justify-content: center; gap: 12px">
+          <!-- App Store -->
+          <a
+            href="#"
+            style="
               display: inline-flex;
               align-items: center;
-              gap: 8px;
-              margin-bottom: 12px;
-            "
-            >Chat with us on WhatsApp →</a
-          >
-          <br />
-          <p style="font-size: 0.75rem; opacity: 0.4">
-            🔒 We won't share your details. No spam. Just one call.
-          </p>
-        </div>
-        <div>
-          <p
-            style="
-              color: var(--color-lime);
-              font-weight: 700;
-              font-size: 0.95rem;
-              margin-bottom: 12px;
+              gap: 10px;
+              padding: 10px 20px;
+              background: #fff;
+              border: 1.5px solid #1a1a1a;
+              border-radius: 10px;
+              text-decoration: none;
+              min-width: 150px;
             ">
-            Download the App
-          </p>
-          <div style="display: flex; gap: 12px; flex-wrap: wrap">
-            <a href="#" class="app-badge"
-              ><i class="fa-brands fa-apple" style="font-size: 1.3rem"></i
-              ><span
-                ><span style="font-size: 0.65rem; display: block; opacity: 0.7"
-                  >Download on the</span
+            <i
+              class="fa-brands fa-apple"
+              style="font-size: 1.8rem; color: #000"></i>
+            <span style="display: flex; flex-direction: column">
+              <span
+                style="
+                  font-family: var(--font-body);
+                  font-size: 0.6rem;
+                  font-weight: 400;
+                  color: rgba(0, 0, 0, 0.6);
+                  letter-spacing: 0.04em;
+                  line-height: 1.3;
+                "
+                >Download on the</span
+              >
+              <span
+                style="
+                  font-family: var(--font-body);
+                  font-size: 0.95rem;
+                  font-weight: 700;
+                  color: #000;
+                  letter-spacing: 0.01em;
+                  line-height: 1.2;
+                "
                 >App Store</span
-              ></a
-            >
-            <a href="#" class="app-badge"
-              ><i
-                class="fa-brands fa-google-play"
-                style="font-size: 1.1rem; color: #34a853"></i
-              ><span
-                ><span style="font-size: 0.65rem; display: block; opacity: 0.7"
-                  >GET IT ON</span
+              >
+            </span>
+          </a>
+          <!-- Google Play -->
+          <a
+            href="#"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 10px;
+              padding: 10px 20px;
+              background: #fff;
+              border: 1.5px solid #1a1a1a;
+              border-radius: 10px;
+              text-decoration: none;
+              min-width: 150px;
+            ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21px"
+              height="24px"
+              viewBox="0 0 256 283">
+              <path d="M0 0h256v283H0z" fill="none" />
+              <path
+                fill="#ea4335"
+                d="M119.553 134.916L1.06 259.061a32.14 32.14 0 0 0 47.062 19.071l133.327-75.934z" />
+              <path
+                fill="#fbbc04"
+                d="M239.37 113.814L181.715 80.79l-64.898 56.95l65.162 64.28l57.216-32.67a31.345 31.345 0 0 0 0-55.537z" />
+              <path
+                fill="#4285f4"
+                d="M1.06 23.487A30.6 30.6 0 0 0 0 31.61v219.327a32.3 32.3 0 0 0 1.06 8.124l122.555-120.966z" />
+              <path
+                fill="#34a853"
+                d="m120.436 141.274l61.278-60.483L48.564 4.503A32.85 32.85 0 0 0 32.051 0C17.644-.028 4.978 9.534 1.06 23.399z" />
+            </svg>
+            <span style="display: flex; flex-direction: column">
+              <span
+                style="
+                  font-family: var(--font-body);
+                  font-size: 0.6rem;
+                  font-weight: 400;
+                  color: rgba(0, 0, 0, 0.6);
+                  letter-spacing: 0.04em;
+                  line-height: 1.3;
+                "
+                >GET IT ON</span
+              >
+              <span
+                style="
+                  font-family: var(--font-body);
+                  font-size: 0.95rem;
+                  font-weight: 700;
+                  color: #000;
+                  letter-spacing: 0.01em;
+                  line-height: 1.2;
+                "
                 >Google Play</span
-              ></a
-            >
-          </div>
+              >
+            </span>
+          </a>
         </div>
       </div>
     </section>
