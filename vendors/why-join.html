@@ -282,186 +282,540 @@
 
     <!-- FAQ -->
     <section class="section-maroon">
+      <style>
+        .faq-head {
+          cursor: pointer;
+        }
+        .faq-body {
+          max-height: 0;
+          margin-top: 0;
+          opacity: 0;
+          overflow: hidden;
+          transition:
+            max-height 0.4s ease,
+            opacity 0.4s ease,
+            margin-top 0.4s ease;
+        }
+        .faq-card.open .faq-body {
+          max-height: 240px;
+          margin-top: 16px;
+          opacity: 1;
+        }
+        .faq-arrow {
+          transition: transform 0.4s ease;
+        }
+        .faq-card.open .faq-arrow {
+          transform: rotate(180deg);
+        }
+      </style>
       <div class="container-site">
         <span
-          class="tag-pill tag-lime"
-          style="margin-bottom: 20px; display: inline-block"
+          style="
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 7px 12px;
+            background: #c5e866;
+            color: #1a1a1a;
+            border: 1px solid #c5e866;
+            border-radius: 20px;
+            box-shadow: 0 0 6.5px 3px rgba(255, 81, 143, 0.45);
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+          "
           >COMMON QUESTIONS</span
         >
         <h2
           style="
-            font-family: var(--font-display);
-            font-size: clamp(1.6rem, 3vw, 2rem);
+            font-family: var(--font-body);
+            font-size: 28px;
             font-weight: 800;
+            line-height: 1;
+            color: #efece4;
             margin-bottom: 36px;
           ">
           Still not sure? We get it.
         </h2>
         <div
           class="faq-group"
-          style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px">
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            align-items: start;
+          ">
+          <!-- 1 -->
           <div
-            class="faq-item"
+            class="faq-card open"
             style="
-              background: var(--color-cream);
-              border-radius: var(--radius-xl);
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              width: 588px;
+              box-sizing: border-box;
             ">
-            <div class="faq-question" style="color: var(--color-ink)">
-              "I already get clients through referrals"
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                Is it free to join Catery?
+              </h3>
               <div
-                class="faq-icon"
-                style="color: var(--color-ink); border-color: var(--color-ink)">
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
                 <i
-                  class="fa-solid fa-chevron-down"
-                  style="font-size: 0.7rem"></i>
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
               </div>
             </div>
-            <div class="faq-answer" style="color: var(--color-muted)">
-              Catery gives you a constant stream of new clients who are actively
-              searching — not just people who already know you.
-            </div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              Yes. Creating a vendor profile is currently free.
+            </p>
           </div>
+
+          <!-- 2 -->
           <div
-            class="faq-item"
+            class="faq-card"
             style="
-              background: var(--color-cream);
-              border-radius: var(--radius-xl);
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              width: 588px;
+              box-sizing: border-box;
             ">
-            <div class="faq-question" style="color: var(--color-ink)">
-              "I'm not tech-savvy"
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                How long does setup take?
+              </h3>
               <div
-                class="faq-icon"
-                style="color: var(--color-ink); border-color: var(--color-ink)">
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
                 <i
-                  class="fa-solid fa-chevron-down"
-                  style="font-size: 0.7rem"></i>
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
               </div>
             </div>
-            <div class="faq-answer" style="color: var(--color-muted)">
-              Catery is designed to be as simple as possible. If you can use
-              WhatsApp, you can use Catery.
-            </div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              Most vendors can create their profile in less than 15 minutes.
+            </p>
           </div>
+
+          <!-- 3 -->
           <div
-            class="faq-item"
+            class="faq-card"
             style="
-              background: var(--color-cream);
-              border-radius: var(--radius-xl);
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              width: 588px;
+              box-sizing: border-box;
             ">
-            <div class="faq-question" style="color: var(--color-ink)">
-              "I already get clients through referrals"
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                What types of businesses can join?
+              </h3>
               <div
-                class="faq-icon"
-                style="color: var(--color-ink); border-color: var(--color-ink)">
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
                 <i
-                  class="fa-solid fa-chevron-down"
-                  style="font-size: 0.7rem"></i>
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
               </div>
             </div>
-            <div class="faq-answer" style="color: var(--color-muted)">
-              Catery gives you a constant stream of new clients who are actively
-              searching — not just people who already know you.
-            </div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              Catering companies, private chefs, food providers, dessert
+              businesses, and event food vendors.
+            </p>
           </div>
+
+          <!-- 4 -->
           <div
-            class="faq-item"
+            class="faq-card"
             style="
-              background: var(--color-cream);
-              border-radius: var(--radius-xl);
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              width: 588px;
+              box-sizing: border-box;
             ">
-            <div class="faq-question" style="color: var(--color-ink)">
-              "I'm not tech-savvy"
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                Which cities do you serve?
+              </h3>
               <div
-                class="faq-icon"
-                style="color: var(--color-ink); border-color: var(--color-ink)">
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
                 <i
-                  class="fa-solid fa-chevron-down"
-                  style="font-size: 0.7rem"></i>
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
               </div>
             </div>
-            <div class="faq-answer" style="color: var(--color-muted)">
-              Catery is designed to be as simple as possible. If you can use
-              WhatsApp, you can use Catery.
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              We're expanding across Egypt and continuously onboarding new
+              vendors.
+            </p>
+          </div>
+
+          <!-- 5 -->
+          <div
+            class="faq-card"
+            style="
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              width: 588px;
+              box-sizing: border-box;
+            ">
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                How do customers find me?
+              </h3>
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
+                <i
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
+              </div>
             </div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              Customers browse vendor profiles, packages, and services directly
+              through Catery.
+            </p>
+          </div>
+
+          <!-- 6 -->
+          <div
+            class="faq-card"
+            style="
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              width: 588px;
+              box-sizing: border-box;
+            ">
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                How do I get started?
+              </h3>
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
+                <i
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
+              </div>
+            </div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              Download the app and create your vendor profile.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- EARLY VENDORS CTA -->
-    <section style="background: #d9f07d; padding: 64px 24px">
+    <section style="background: #dcefb0; padding: 96px 0">
       <div
         class="container-site"
         style="
           display: grid;
           grid-template-columns: auto 1fr;
-          gap: 48px;
+          gap: 96px;
           align-items: center;
         ">
         <!-- Coffee cup illustration circle -->
         <div
           style="
-            width: 160px;
-            height: 160px;
+            width: 290px;
+            height: 290px;
             background: var(--color-lavender);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-            font-size: 4rem;
           ">
-          ☕
+          <img
+            src="/assets/images/why-join-vendor/cup-with-letter-c.svg"
+            alt=""
+            aria-hidden="true"
+            style="width: 200px; height: auto" />
         </div>
         <div>
+          <!-- WHY JOIN EARLY pill -->
           <span
-            class="tag-pill tag-maroon"
             style="
-              margin-bottom: 16px;
-              display: inline-block;
-              font-size: 0.65rem;
+              display: inline-flex;
+              align-items: center;
+              margin-bottom: 24px;
+              padding: 7px 12px;
+              background: #3f1b2c;
+              color: #c5e866;
+              border: 1px solid #c5e866;
+              border-radius: 20px;
+              box-shadow: 0 0 6.5px 3px rgba(255, 81, 143, 0.45);
+              font-family: var(--font-body);
+              font-size: 11px;
+              font-weight: 700;
+              line-height: 1;
+              letter-spacing: 1.2px;
+              text-transform: uppercase;
             "
             >WHY JOIN EARLY</span
           >
           <h2
             style="
-              font-family: var(--font-display);
-              font-size: clamp(1.6rem, 3vw, 2.2rem);
+              font-family: var(--font-body);
+              font-size: 28px;
               font-weight: 800;
-              color: var(--color-maroon);
-              margin-bottom: 12px;
+              color: #1a1a1a;
+              line-height: 1;
+              margin-bottom: 16px;
             ">
             Be Among the First Vendors on Catery
           </h2>
           <p
             style="
-              color: var(--color-maroon);
-              opacity: 0.75;
-              font-size: 0.9rem;
-              line-height: 1.7;
-              margin-bottom: 24px;
+              font-family: var(--font-body);
+              font-size: 16px;
+              font-weight: 400;
+              color: #1a1a1a;
+              line-height: 1;
+              max-width: 720px;
+              margin-bottom: 40px;
             ">
             Early vendors have the opportunity to build their presence, showcase
             their services, and grow alongside the platform.
           </p>
           <a
             href="/vendors/contact.html"
-            class="btn btn-dark"
-            style="margin-bottom: 20px"
-            >Get Started →</a
-          >
-          <br />
+            style="
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+              width: 344px;
+              max-width: 100%;
+              height: 56px;
+              padding: 0 24px;
+              background: #5c2839;
+              color: var(--color-cream);
+              font-family: var(--font-body);
+              font-size: 16px;
+              font-weight: 700;
+              border: 2px solid transparent;
+              border-radius: 24px;
+              text-decoration: none;
+              margin-bottom: 48px;
+            "
+            onmouseover="this.style.background='#A84065';this.style.borderColor='#C5E866'"
+            onmouseout="this.style.background='#5c2839';this.style.borderColor='transparent'"
+            onmousedown="this.style.background='#3F1B2C';this.style.borderColor='transparent'"
+            onmouseup="this.style.background='#A84065';this.style.borderColor='#C5E866'">
+            Get Started
+            <span style="color: var(--color-lime)">→</span>
+          </a>
+          <!-- Download the App -->
           <p
             style="
-              color: var(--color-maroon);
-              font-weight: 700;
-              font-size: 0.9rem;
-              margin-top: 16px;
-              margin-bottom: 10px;
+              font-family: var(--font-body);
+              font-size: 28px;
+              font-weight: 800;
+              color: #5c2839;
+              line-height: 1;
+              margin-bottom: 16px;
             ">
             Download the App
           </p>
-          <div style="display: flex; gap: 10px; flex-wrap: wrap">
+          <div style="display: flex; gap: 12px; flex-wrap: wrap">
             <div data-include="/partials/app-badges.html"></div>
           </div>
         </div>
@@ -473,6 +827,13 @@
     <script src="/js/content.js"></script>
     <script src="/js/faq.js"></script>
     <script>
+      // FAQ accordion toggle
+      document.querySelectorAll(".faq-card .faq-head").forEach(function (head) {
+        head.addEventListener("click", function () {
+          head.parentElement.classList.toggle("open");
+        });
+      });
+
       // Benefit tab switcher — auto-advances once on scroll-in, stops at last
       (function () {
         var tabs = Array.prototype.slice.call(
