@@ -47,6 +47,7 @@
             font-weight: 700;
             line-height: 1;
             color: var(--color-cream);
+            margin-bottom: 96px;
           ">
           Join and Create your vendor account
         </h1>
@@ -54,13 +55,15 @@
     </section>
 
     <!-- FORM + STEPS -->
-    <section class="section-maroon" style="padding-top: 0; padding-bottom: 144px">
+    <section
+      class="section-maroon"
+      style="padding-top: 0; padding-bottom: 144px">
       <div class="container-site">
         <div
           style="
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 24px;
+            gap: 320px;
             align-items: start;
           ">
           <!-- LEFT: Form -->
@@ -110,12 +113,15 @@
             <form
               onsubmit="return false;"
               style="
+                width: 383px;
+                height: 433px;
                 background: #3f1b2c;
                 border-radius: 20px;
                 padding: 28px 24px;
                 display: flex;
                 flex-direction: column;
                 gap: 18px;
+                box-sizing: border-box;
               ">
               <!-- YOUR NAME -->
               <div style="display: flex; flex-direction: column; gap: 6px">
@@ -139,11 +145,12 @@
                     font-weight: 400;
                     color: var(--color-cream);
                     background: rgba(255, 255, 255, 0.08);
-                    border: none;
+                    border: 1.5px solid rgba(239, 236, 228, 0.4);
                     border-radius: 16px;
-                    padding: 13px 18px;
+                    padding: 0 18px;
                     outline: none;
-                    width: 100%;
+                    width: 335px;
+                    height: 56px;
                     box-sizing: border-box;
                   " />
               </div>
@@ -170,11 +177,12 @@
                     font-weight: 400;
                     color: var(--color-cream);
                     background: rgba(255, 255, 255, 0.08);
-                    border: none;
+                    border: 1.5px solid rgba(239, 236, 228, 0.4);
                     border-radius: 16px;
-                    padding: 13px 18px;
+                    padding: 0 18px;
                     outline: none;
-                    width: 100%;
+                    width: 335px;
+                    height: 56px;
                     box-sizing: border-box;
                   " />
               </div>
@@ -201,11 +209,12 @@
                     font-weight: 400;
                     color: var(--color-cream);
                     background: rgba(255, 255, 255, 0.08);
-                    border: none;
+                    border: 1.5px solid rgba(239, 236, 228, 0.4);
                     border-radius: 16px;
-                    padding: 13px 18px;
+                    padding: 0 18px;
                     outline: none;
-                    width: 100%;
+                    width: 335px;
+                    height: 56px;
                     box-sizing: border-box;
                   " />
               </div>
@@ -226,8 +235,8 @@
                   cursor: pointer;
                   transition: opacity 0.15s;
                 "
-                onmouseover="this.style.opacity='0.88'"
-                onmouseout="this.style.opacity='1'">
+                onmouseover="this.style.opacity = '0.88'"
+                onmouseout="this.style.opacity = '1'">
                 Contact me →
               </button>
             </form>
@@ -299,18 +308,22 @@
             <!-- WHAT HAPPENS NEXT card -->
             <div
               style="
-                background: #3f1b2c;
-                border: 1px solid rgba(255, 255, 255, 0.12);
-                border-radius: 20px;
+                background: #5c2839;
+                border: 1px solid #efece4;
+                border-radius: 24px;
                 padding: 24px;
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                margin-bottom: 64px;
               ">
               <!-- Pill -->
               <span
                 style="
                   display: inline-flex;
                   align-items: center;
-                  margin-bottom: 16px;
-                  padding: 7px 12px;
+                  margin-bottom: 8px;
+                  padding: 7px 10px;
                   background: #3f1b2c;
                   color: #c5e866;
                   border: 1px solid #c5e866;
@@ -320,6 +333,7 @@
                   font-weight: 700;
                   letter-spacing: 1.2px;
                   text-transform: uppercase;
+                  max-width: 166px;
                 "
                 >WHAT HAPPENS NEXT</span
               >
@@ -330,13 +344,13 @@
                   font-size: 16px;
                   font-weight: 700;
                   color: var(--color-cream);
-                  margin-bottom: 20px;
+                  margin-bottom: 32px;
                 ">
                 After you sign up:
               </p>
 
               <!-- Steps -->
-              <div style="display: flex; flex-direction: column; gap: 16px">
+              <div style="display: flex; flex-direction: column; gap: 32px">
                 <!-- Step 1 -->
                 <div style="display: flex; align-items: flex-start; gap: 12px">
                   <div
