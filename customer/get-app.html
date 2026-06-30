@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,124 +8,612 @@
     <title>Get the App — Catery</title>
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/tailwind.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   </head>
-  <body style="background:var(--color-maroon);color:var(--color-cream);">
-
+  <body style="background: var(--color-maroon); color: var(--color-cream)">
     <div data-include="/partials/navbar-customer.html"></div>
 
     <!-- HERO -->
-    <section class="section-maroon" style="text-align:center;padding-bottom:48px;">
-      <div class="container-site">
-        <span class="tag-pill tag-lime" style="margin-bottom:24px;display:inline-block;">FREE DOWNLOAD</span>
-        <h1 style="font-family:var(--font-display);font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.15;margin-bottom:16px;">
-          Your Next Event Starts Here.<br>
-          <span style="color:var(--color-lime);">Download Catery Free.</span>
-        </h1>
-        <p style="opacity:0.75;font-size:0.95rem;max-width:500px;margin:0 auto 36px;line-height:1.6;">Browse verified caterers, compare menus and prices, and book — all from one free app.</p>
+    <section
+      style="
+        background: var(--color-maroon);
+        text-align: center;
+        padding: 64px 24px;
+      ">
+      <div style="max-width: 1044px; margin: 0 auto">
+        <!-- Pill -->
+        <span
+          style="
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: fit-content;
+            margin: 0 auto 24px;
+            padding: 7px 12px;
+            background: #3f1b2c;
+            color: #c5e866;
+            border: 1px solid #c5e866;
+            border-radius: 20px;
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            line-height: 1;
+          "
+          >FREE DOWNLOAD</span
+        >
 
-        <!-- 3 phone mockups -->
-        <div style="display:flex;justify-content:center;gap:20px;align-items:flex-end;margin-bottom:36px;flex-wrap:wrap;">
-          <div style="width:180px;height:360px;background:var(--color-maroon-dark);border-radius:28px;border:2px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;transform:rotate(-4deg);opacity:0.85;">
-            <span style="font-size:0.7rem;opacity:0.4;">Screenshot</span>
-          </div>
-          <div style="width:200px;height:400px;background:var(--color-maroon-dark);border-radius:30px;border:2px solid rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;z-index:1;">
-            <span style="font-size:0.7rem;opacity:0.4;">Screenshot</span>
-          </div>
-          <div style="width:180px;height:360px;background:var(--color-maroon-dark);border-radius:28px;border:2px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;transform:rotate(4deg);opacity:0.85;">
-            <span style="font-size:0.7rem;opacity:0.4;">Screenshot</span>
-          </div>
+        <!-- H1 -->
+        <h1
+          style="
+            font-family: var(--font-brand);
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: 0;
+            color: #efece4;
+            margin: 0 0 16px;
+          ">
+          Your Next Event Starts Here.<br />
+          <span style="color: var(--color-lime)">Download Catery Free.</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p
+          style="
+            font-family: var(--font-body);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.4;
+            letter-spacing: 0;
+            color: #efece4;
+            opacity: 0.85;
+            max-width: 560px;
+            margin: 0 auto 40px;
+          ">
+          Browse verified caterers, compare menus and prices, and book — all
+          from one free app.
+        </p>
+
+        <!-- 3 phone mockups — circular slide-position loop -->
+        <style>
+          /* 3 stops, 4s pause + 0.8s slide each = 14.4s per full lap */
+          @keyframes phoneOrbit {
+            0% {
+              transform: translate(calc(-50% - 260px), -50%) scale(0.85);
+              z-index: 1;
+            }
+            27.7% {
+              transform: translate(calc(-50% - 260px), -50%) scale(0.85);
+              z-index: 1;
+            }
+            33.33% {
+              transform: translate(-50%, -50%) scale(1);
+              z-index: 2;
+            }
+            61.1% {
+              transform: translate(-50%, -50%) scale(1);
+              z-index: 2;
+            }
+            66.67% {
+              transform: translate(calc(-50% + 260px), -50%) scale(0.85);
+              z-index: 1;
+            }
+            94.4% {
+              transform: translate(calc(-50% + 260px), -50%) scale(0.85);
+              z-index: 1;
+            }
+            100% {
+              transform: translate(calc(-50% - 260px), -50%) scale(0.85);
+              z-index: 1;
+            }
+          }
+          .phone-orbit {
+            position: relative;
+            height: 520px;
+            margin: 0 auto 32px;
+          }
+          .phone-orbit img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 240px;
+            height: auto;
+            transform-origin: center center;
+            animation: phoneOrbit 14.4s ease-in-out infinite;
+          }
+        </style>
+        <div class="phone-orbit">
+          <!-- starts left -->
+          <img
+            src="/assets/images/get-the-app-customer/left-phone.svg"
+            alt="App screenshot"
+            style="animation-delay: 0s" />
+          <!-- starts center -->
+          <img
+            src="/assets/images/get-the-app-customer/main-phone.svg"
+            alt="App screenshot"
+            style="animation-delay: -4.8s" />
+          <!-- starts right -->
+          <img
+            src="/assets/images/get-the-app-customer/right-phone.svg"
+            alt="App screenshot"
+            style="animation-delay: -9.6s" />
         </div>
 
         <!-- App badges -->
-        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:20px;">
+        <div
+          style="
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+          ">
           <div data-include="/partials/app-badges.html"></div>
         </div>
 
-        <div style="display:flex;align-items:center;gap:12px;justify-content:center;margin-bottom:32px;">
-          <div style="height:1px;width:80px;background:rgba(255,255,255,0.2);"></div>
-          <span style="opacity:0.5;font-size:0.85rem;">OR</span>
-          <div style="height:1px;width:80px;background:rgba(255,255,255,0.2);"></div>
+        <!-- OR divider -->
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            justify-content: center;
+            max-width: 280px;
+            margin: 0 auto 32px;
+          ">
+          <div
+            style="
+              height: 1px;
+              flex: 1;
+              background: rgba(255, 255, 255, 0.2);
+            "></div>
+          <span
+            style="
+              font-family: var(--font-body);
+              font-size: 13px;
+              font-weight: 700;
+              letter-spacing: 0.08em;
+              color: #efece4;
+              opacity: 0.6;
+            "
+            >OR</span
+          >
+          <div
+            style="
+              height: 1px;
+              flex: 1;
+              background: rgba(255, 255, 255, 0.2);
+            "></div>
         </div>
 
-        <p style="font-size:0.85rem;opacity:0.6;margin-bottom:16px;">Scan to download</p>
-        <!-- QR code placeholder -->
-        <div style="width:120px;height:120px;background:white;border-radius:12px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;">
-          <span style="font-size:0.7rem;color:#999;">QR Code</span>
+        <p
+          style="
+            font-family: var(--font-body);
+            font-size: 14px;
+            color: #efece4;
+            opacity: 0.7;
+            margin: 0 0 16px;
+          ">
+          Scan to download
+        </p>
+
+        <!-- QR code -->
+        <div
+          style="
+            width: 160px;
+            height: 160px;
+            background: #ffffff;
+            border-radius: 16px;
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            box-sizing: border-box;
+          ">
+          <svg
+            viewBox="0 0 29 29"
+            width="100%"
+            height="100%"
+            shape-rendering="crispEdges"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="29" height="29" fill="#ffffff" />
+            <g fill="#5c2839">
+              <rect x="0" y="0" width="7" height="7" />
+              <rect x="1" y="1" width="5" height="5" fill="#fff" />
+              <rect x="2" y="2" width="3" height="3" />
+              <rect x="22" y="0" width="7" height="7" />
+              <rect x="23" y="1" width="5" height="5" fill="#fff" />
+              <rect x="24" y="2" width="3" height="3" />
+              <rect x="0" y="22" width="7" height="7" />
+              <rect x="1" y="23" width="5" height="5" fill="#fff" />
+              <rect x="2" y="24" width="3" height="3" />
+              <rect x="9" y="0" width="1" height="1" />
+              <rect x="11" y="0" width="2" height="1" />
+              <rect x="15" y="0" width="1" height="1" />
+              <rect x="18" y="0" width="2" height="1" />
+              <rect x="9" y="2" width="2" height="1" />
+              <rect x="13" y="2" width="1" height="1" />
+              <rect x="16" y="2" width="2" height="2" />
+              <rect x="10" y="4" width="1" height="2" />
+              <rect x="12" y="4" width="3" height="1" />
+              <rect x="17" y="4" width="1" height="1" />
+              <rect x="9" y="6" width="3" height="1" />
+              <rect x="14" y="6" width="2" height="1" />
+              <rect x="18" y="6" width="1" height="1" />
+              <rect x="0" y="9" width="1" height="3" />
+              <rect x="2" y="9" width="2" height="1" />
+              <rect x="5" y="9" width="2" height="2" />
+              <rect x="9" y="9" width="1" height="1" />
+              <rect x="11" y="9" width="1" height="2" />
+              <rect x="13" y="9" width="2" height="1" />
+              <rect x="17" y="9" width="2" height="1" />
+              <rect x="21" y="9" width="1" height="2" />
+              <rect x="24" y="9" width="1" height="1" />
+              <rect x="27" y="9" width="2" height="2" />
+              <rect x="0" y="13" width="2" height="1" />
+              <rect x="3" y="13" width="1" height="2" />
+              <rect x="6" y="13" width="1" height="1" />
+              <rect x="9" y="13" width="2" height="2" />
+              <rect x="12" y="13" width="1" height="1" />
+              <rect x="15" y="13" width="3" height="1" />
+              <rect x="19" y="13" width="1" height="2" />
+              <rect x="22" y="13" width="2" height="1" />
+              <rect x="25" y="13" width="1" height="2" />
+              <rect x="0" y="17" width="3" height="1" />
+              <rect x="4" y="17" width="1" height="2" />
+              <rect x="9" y="17" width="1" height="2" />
+              <rect x="11" y="17" width="2" height="1" />
+              <rect x="14" y="17" width="1" height="2" />
+              <rect x="17" y="17" width="2" height="1" />
+              <rect x="21" y="17" width="1" height="2" />
+              <rect x="24" y="17" width="2" height="1" />
+              <rect x="27" y="17" width="1" height="2" />
+              <rect x="9" y="20" width="2" height="1" />
+              <rect x="12" y="20" width="1" height="2" />
+              <rect x="15" y="20" width="2" height="1" />
+              <rect x="18" y="20" width="1" height="2" />
+              <rect x="20" y="20" width="2" height="1" />
+              <rect x="23" y="20" width="1" height="1" />
+              <rect x="26" y="20" width="2" height="2" />
+              <rect x="9" y="23" width="1" height="2" />
+              <rect x="11" y="23" width="2" height="1" />
+              <rect x="14" y="23" width="1" height="2" />
+              <rect x="17" y="23" width="2" height="1" />
+              <rect x="20" y="23" width="1" height="2" />
+              <rect x="23" y="23" width="2" height="1" />
+              <rect x="26" y="23" width="1" height="2" />
+              <rect x="9" y="27" width="2" height="1" />
+              <rect x="12" y="27" width="1" height="2" />
+              <rect x="15" y="27" width="2" height="1" />
+              <rect x="18" y="27" width="1" height="2" />
+              <rect x="21" y="27" width="2" height="1" />
+              <rect x="24" y="27" width="1" height="2" />
+              <rect x="27" y="27" width="2" height="1" />
+            </g>
+          </svg>
         </div>
-        <p style="font-size:0.78rem;opacity:0.4;">Free · iOS & Android</p>
+        <p
+          style="
+            font-family: var(--font-body);
+            font-size: 13px;
+            color: #efece4;
+            opacity: 0.6;
+            margin: 0;
+          ">
+          Free · iOS & Android
+        </p>
       </div>
     </section>
 
     <!-- TESTIMONIALS -->
-    <section style="background:#d9f07d;padding:64px 24px;">
-      <div class="container-site">
-        <span class="tag-pill tag-maroon" style="margin-bottom:20px;display:inline-block;">REAL VENDOR · REAL RESULTS</span>
-        <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:var(--color-maroon);margin-bottom:36px;">Don't take our word for it.</h2>
+    <!-- <section style="background: #d9f07d; padding: 64px 24px"> -->
+    <!-- <div class="container-site">
+        <span
+          class="tag-pill tag-maroon"
+          style="margin-bottom: 20px; display: inline-block"
+          >REAL VENDOR · REAL RESULTS</span
+        >
+        <h2
+          style="
+            font-family: var(--font-display);
+            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            font-weight: 800;
+            color: var(--color-maroon);
+            margin-bottom: 36px;
+          ">
+          Don't take our word for it.
+        </h2> -->
 
-        <!-- Testimonial cards -->
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:48px;overflow:hidden;">
+    <!-- Testimonial cards -->
+    <!-- <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 48px;
+            overflow: hidden;
+          ">
           <div class="card-white">
-            <div style="display:flex;gap:4px;color:var(--color-lime-dark);margin-bottom:12px;">★★★★★</div>
-            <p style="font-size:0.88rem;color:var(--color-ink);line-height:1.6;margin-bottom:16px;">"I was skeptical at first — another app? But within my first month, I got <strong>12 qualified bookings</strong>. My profile finally shows my work properly, and clients come to me ready to order."</p>
-            <div style="display:flex;justify-content:space-between;align-items:center;">
-              <div style="display:flex;align-items:center;gap:10px;">
-                <div style="width:36px;height:36px;background:var(--color-maroon);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--color-cream);font-weight:700;font-size:0.85rem;">K</div>
+            <div
+              style="
+                display: flex;
+                gap: 4px;
+                color: var(--color-lime-dark);
+                margin-bottom: 12px;
+              ">
+              ★★★★★
+            </div>
+            <p
+              style="
+                font-size: 0.88rem;
+                color: var(--color-ink);
+                line-height: 1.6;
+                margin-bottom: 16px;
+              ">
+              "I was skeptical at first — another app? But within my first
+              month, I got <strong>12 qualified bookings</strong>. My profile
+              finally shows my work properly, and clients come to me ready to
+              order."
+            </p>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              ">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <div
+                  style="
+                    width: 36px;
+                    height: 36px;
+                    background: var(--color-maroon);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--color-cream);
+                    font-weight: 700;
+                    font-size: 0.85rem;
+                  ">
+                  K
+                </div>
                 <div>
-                  <p style="font-weight:700;font-size:0.85rem;color:var(--color-ink);">Khaled A.</p>
-                  <p style="font-size:0.75rem;color:var(--color-muted);">Catering Owner · Alexandria</p>
+                  <p
+                    style="
+                      font-weight: 700;
+                      font-size: 0.85rem;
+                      color: var(--color-ink);
+                    ">
+                    Khaled A.
+                  </p>
+                  <p style="font-size: 0.75rem; color: var(--color-muted)">
+                    Catering Owner · Alexandria
+                  </p>
                 </div>
               </div>
-              <span class="verified-badge"><i class="fa-solid fa-check"></i> VERIFIED</span>
+              <span class="verified-badge"
+                ><i class="fa-solid fa-check"></i> VERIFIED</span
+              >
             </div>
           </div>
           <div class="card-white">
-            <div style="display:flex;gap:4px;color:var(--color-lime-dark);margin-bottom:12px;">★★★★★</div>
-            <p style="font-size:0.88rem;color:var(--color-ink);line-height:1.6;margin-bottom:16px;">"I was skeptical at first — another app? But within my first month, I got <strong>12 qualified bookings</strong>. My profile finally shows my work properly, and clients come to me ready to order."</p>
-            <div style="display:flex;justify-content:space-between;align-items:center;">
-              <div style="display:flex;align-items:center;gap:10px;">
-                <div style="width:36px;height:36px;background:var(--color-maroon);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--color-cream);font-weight:700;font-size:0.85rem;">K</div>
+            <div
+              style="
+                display: flex;
+                gap: 4px;
+                color: var(--color-lime-dark);
+                margin-bottom: 12px;
+              ">
+              ★★★★★
+            </div>
+            <p
+              style="
+                font-size: 0.88rem;
+                color: var(--color-ink);
+                line-height: 1.6;
+                margin-bottom: 16px;
+              ">
+              "I was skeptical at first — another app? But within my first
+              month, I got <strong>12 qualified bookings</strong>. My profile
+              finally shows my work properly, and clients come to me ready to
+              order."
+            </p>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              ">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <div
+                  style="
+                    width: 36px;
+                    height: 36px;
+                    background: var(--color-maroon);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--color-cream);
+                    font-weight: 700;
+                    font-size: 0.85rem;
+                  ">
+                  K
+                </div>
                 <div>
-                  <p style="font-weight:700;font-size:0.85rem;color:var(--color-ink);">Khaled A.</p>
-                  <p style="font-size:0.75rem;color:var(--color-muted);">Catering Owner · Alexandria</p>
+                  <p
+                    style="
+                      font-weight: 700;
+                      font-size: 0.85rem;
+                      color: var(--color-ink);
+                    ">
+                    Khaled A.
+                  </p>
+                  <p style="font-size: 0.75rem; color: var(--color-muted)">
+                    Catering Owner · Alexandria
+                  </p>
                 </div>
               </div>
-              <span class="verified-badge"><i class="fa-solid fa-check"></i> VERIFIED</span>
+              <span class="verified-badge"
+                ><i class="fa-solid fa-check"></i> VERIFIED</span
+              >
             </div>
           </div>
           <div class="card-white">
-            <div style="display:flex;gap:4px;color:var(--color-lime-dark);margin-bottom:12px;">★★★★★</div>
-            <p style="font-size:0.88rem;color:var(--color-ink);line-height:1.6;margin-bottom:16px;">"I was skeptical at first — another app? But within my first month, I got <strong>12 qualified bookings</strong>. My profile finally shows my work properly, and clients come to me ready to order."</p>
-            <div style="display:flex;justify-content:space-between;align-items:center;">
-              <div style="display:flex;align-items:center;gap:10px;">
-                <div style="width:36px;height:36px;background:var(--color-maroon);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--color-cream);font-weight:700;font-size:0.85rem;">A</div>
+            <div
+              style="
+                display: flex;
+                gap: 4px;
+                color: var(--color-lime-dark);
+                margin-bottom: 12px;
+              ">
+              ★★★★★
+            </div>
+            <p
+              style="
+                font-size: 0.88rem;
+                color: var(--color-ink);
+                line-height: 1.6;
+                margin-bottom: 16px;
+              ">
+              "I was skeptical at first — another app? But within my first
+              month, I got <strong>12 qualified bookings</strong>. My profile
+              finally shows my work properly, and clients come to me ready to
+              order."
+            </p>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              ">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <div
+                  style="
+                    width: 36px;
+                    height: 36px;
+                    background: var(--color-maroon);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--color-cream);
+                    font-weight: 700;
+                    font-size: 0.85rem;
+                  ">
+                  A
+                </div>
                 <div>
-                  <p style="font-weight:700;font-size:0.85rem;color:var(--color-ink);">Ali Z.</p>
-                  <p style="font-size:0.75rem;color:var(--color-muted);">Catering Owner · Alexandria</p>
+                  <p
+                    style="
+                      font-weight: 700;
+                      font-size: 0.85rem;
+                      color: var(--color-ink);
+                    ">
+                    Ali Z.
+                  </p>
+                  <p style="font-size: 0.75rem; color: var(--color-muted)">
+                    Catering Owner · Alexandria
+                  </p>
                 </div>
               </div>
-              <span class="verified-badge"><i class="fa-solid fa-check"></i> VERIFIED</span>
+              <span class="verified-badge"
+                ><i class="fa-solid fa-check"></i> VERIFIED</span
+              >
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <!-- Stats -->
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center;">
+    <!-- Stats -->
+    <!-- <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            text-align: center;
+          ">
           <div>
-            <p style="font-family:var(--font-display);font-size:2.2rem;font-weight:800;color:var(--color-maroon);" data-bind="stats.vendors">200+</p>
-            <p style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-maroon);opacity:0.65;" data-bind="stats.vendors_label">ACTIVE VENDORS</p>
+            <p
+              style="
+                font-family: var(--font-display);
+                font-size: 2.2rem;
+                font-weight: 800;
+                color: var(--color-maroon);
+              "
+              data-bind="stats.vendors">
+              200+
+            </p>
+            <p
+              style="
+                font-size: 0.72rem;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: var(--color-maroon);
+                opacity: 0.65;
+              "
+              data-bind="stats.vendors_label">
+              ACTIVE VENDORS
+            </p>
           </div>
           <div>
-            <p style="font-family:var(--font-display);font-size:2.2rem;font-weight:800;color:var(--color-maroon);" data-bind="stats.rating">4.8★</p>
-            <p style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-maroon);opacity:0.65;" data-bind="stats.rating_label">AVG RATING</p>
+            <p
+              style="
+                font-family: var(--font-display);
+                font-size: 2.2rem;
+                font-weight: 800;
+                color: var(--color-maroon);
+              "
+              data-bind="stats.rating">
+              4.8★
+            </p>
+            <p
+              style="
+                font-size: 0.72rem;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: var(--color-maroon);
+                opacity: 0.65;
+              "
+              data-bind="stats.rating_label">
+              AVG RATING
+            </p>
           </div>
           <div>
-            <p style="font-family:var(--font-display);font-size:2.2rem;font-weight:800;color:var(--color-maroon);" data-bind="stats.response">48h</p>
-            <p style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-maroon);opacity:0.65;" data-bind="stats.response_label">FAST RESPONSE</p>
+            <p
+              style="
+                font-family: var(--font-display);
+                font-size: 2.2rem;
+                font-weight: 800;
+                color: var(--color-maroon);
+              "
+              data-bind="stats.response">
+              48h
+            </p>
+            <p
+              style="
+                font-size: 0.72rem;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: var(--color-maroon);
+                opacity: 0.65;
+              "
+              data-bind="stats.response_label">
+              FAST RESPONSE
+            </p>
           </div>
-        </div>
-      </div>
-    </section>
+        </div> -->
+    <!-- </div> -->
+    <!-- </section> -->
 
     <div data-include="/partials/footer.html"></div>
     <script src="/js/includes.js"></script>
