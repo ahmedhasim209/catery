@@ -16,7 +16,7 @@
     <div data-include="/partials/navbar-vendor.html"></div>
 
     <!-- HERO -->
-    <section class="section-maroon" style="padding-bottom: 48px">
+    <section class="section-maroon contact-hero-section" style="padding-bottom: 48px">
       <div class="container-site">
         <span
           style="
@@ -38,6 +38,7 @@
           >CONTACT US</span
         >
         <h1
+          class="contact-hero-h1"
           style="
             font-family: var(--font-brand);
             font-size: 46px;
@@ -63,10 +64,11 @@
 
     <!-- CONTACT METHOD CARDS -->
     <section
-      class="section-maroon"
+      class="section-maroon contact-cards-section"
       style="padding-top: 0; padding-bottom: 144px">
       <div class="container-site">
         <div
+          class="contact-cards-grid"
           style="
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -289,34 +291,6 @@
         padding: 144px 0 100px;
         overflow: hidden;
       ">
-      <!-- Decorative C letter — left side -->
-      <img
-        src="/assets/images/home-vendor/letter-c-for-catery.svg"
-        alt=""
-        aria-hidden="true"
-        style="
-          position: absolute;
-          left: 10%;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 340px;
-          pointer-events: none;
-          user-select: none;
-        " />
-
-      <!-- Decorative cream shape — right side -->
-      <img
-        src="/assets/images/home-vendor/shape-right.svg"
-        alt=""
-        aria-hidden="true"
-        style="
-          position: absolute;
-          right: -20px;
-          bottom: 0;
-          width: 260px;
-          pointer-events: none;
-          user-select: none;
-        " />
 
       <!-- Content — centered column -->
       <div
@@ -573,5 +547,29 @@
 
     <div data-include="/partials/footer.html"></div>
     <script src="/js/includes.js"></script>
+
+    <!-- Responsive overrides -->
+    <style>
+      @media (max-width: 1024px) {
+        .contact-hero-section {
+          padding-top: 115px !important;
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+          padding-bottom: 96px !important;
+        }
+        .contact-hero-h1 {
+          font-size: 64px !important;
+        }
+        .contact-cards-section {
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+          padding-bottom: 80px !important;
+        }
+        .contact-cards-grid {
+          grid-template-columns: 1fr !important;
+          gap: 16px !important;
+        }
+      }
+    </style>
   </body>
 </html>

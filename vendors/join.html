@@ -16,7 +16,7 @@
     <div data-include="/partials/navbar-vendor.html"></div>
 
     <!-- HERO -->
-    <section class="section-maroon" style="padding-bottom: 48px">
+    <section class="section-maroon join-hero-section" style="padding-bottom: 48px">
       <div class="container-site">
         <!-- Pill -->
         <span
@@ -41,6 +41,7 @@
 
         <!-- H1 -->
         <h1
+          class="join-hero-h1"
           style="
             font-family: var(--font-brand);
             font-size: 46px;
@@ -60,6 +61,7 @@
       style="padding-top: 0; padding-bottom: 144px">
       <div class="container-site">
         <div
+          class="join-main-grid"
           style="
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -112,6 +114,7 @@
             <!-- Form card -->
             <form
               onsubmit="return false;"
+              class="join-form-card"
               style="
                 width: 383px;
                 height: 433px;
@@ -628,5 +631,33 @@
     <div data-include="/partials/footer.html"></div>
     <script src="/js/includes.js"></script>
     <script src="/js/content.js"></script>
+
+    <!-- Responsive overrides -->
+    <style>
+      @media (max-width: 1024px) {
+        .join-hero-section {
+          padding-top: 115px !important;
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+        }
+        .join-hero-h1 {
+          font-size: 46px !important;
+          margin-bottom: 48px !important;
+        }
+        .join-main-grid {
+          grid-template-columns: 1fr !important;
+          gap: 48px !important;
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+        }
+        .join-form-card {
+          width: 100% !important;
+          height: auto !important;
+        }
+        .join-form-card input {
+          width: 100% !important;
+        }
+      }
+    </style>
   </body>
 </html>
