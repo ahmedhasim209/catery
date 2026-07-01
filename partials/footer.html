@@ -181,8 +181,8 @@
           </li>
         </ul>
 
-        <!-- Social icons below EXPLORE links -->
-        <div style="display: flex; gap: 18px; margin-top: 28px">
+        <!-- Social icons below EXPLORE links (desktop only) -->
+        <div class="footer-socials-inline" style="display: flex; gap: 18px; margin-top: 28px">
           <a
             href="#"
             data-bind="socials.facebook"
@@ -364,6 +364,33 @@
       </div>
     </div>
 
+    <!-- Social icons row — tablet & mobile only -->
+    <div
+      class="footer-socials-row"
+      style="display: none; gap: 18px; margin-bottom: 32px">
+      <a href="#" data-bind="socials.facebook" data-bind-attr="href" aria-label="Facebook" style="color:var(--color-cream);font-size:1.35rem;text-decoration:none;opacity:0.7;"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" data-bind="socials.tiktok" data-bind-attr="href" aria-label="TikTok" style="color:var(--color-cream);font-size:1.35rem;text-decoration:none;opacity:0.7;"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#" data-bind="socials.instagram" data-bind-attr="href" aria-label="Instagram" style="color:var(--color-cream);font-size:1.35rem;text-decoration:none;opacity:0.7;"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" data-bind="socials.whatsapp" data-bind-attr="href" aria-label="WhatsApp" style="color:var(--color-cream);font-size:1.35rem;text-decoration:none;opacity:0.7;"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Vendor link — tablet & mobile only -->
+    <div
+      class="footer-vendor-link"
+      style="display: none; text-align: center; margin-bottom: 32px">
+      <a
+        href="/vendors/index.html"
+        style="
+          font-family: var(--font-body);
+          font-size: 14px;
+          font-weight: 600;
+          color: var(--color-lime);
+          text-decoration: none;
+        "
+        >Are you a catering business? Join as a vendor →</a
+      >
+    </div>
+
     <!-- Bottom divider -->
     <div
       style="
@@ -437,19 +464,52 @@
 
   <!-- Responsive -->
   <style>
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
+      footer {
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+      }
+      /* Top: logo + newsletter stack vertically */
       footer > .container-site > div:first-child {
         grid-template-columns: 1fr !important;
         text-align: left !important;
+        gap: 50px !important;
       }
       footer > .container-site > div:first-child > div:last-child {
         text-align: left !important;
+        align-items: flex-start !important;
       }
+      /* Form: stack input + button, fixed 335px, left-aligned */
       footer > .container-site > div:first-child > div:last-child form {
+        flex-direction: column !important;
         justify-content: flex-start !important;
+        align-items: flex-start !important;
+        gap: 12px !important;
       }
+      footer > .container-site > div:first-child > div:last-child form input {
+        width: 335px !important;
+        max-width: 335px !important;
+        box-sizing: border-box !important;
+      }
+      footer > .container-site > div:first-child > div:last-child form button {
+        width: 335px !important;
+        justify-content: center !important;
+      }
+      /* Hide social icons from inside EXPLORE column on tablet */
+      .footer-socials-inline {
+        display: none !important;
+      }
+      /* Show standalone social icons row */
+      .footer-socials-row {
+        display: flex !important;
+      }
+      /* Links: 2-col grid */
       footer > .container-site > div:nth-child(3) {
         grid-template-columns: repeat(2, 1fr) !important;
+      }
+      /* Show vendor link */
+      .footer-vendor-link {
+        display: block !important;
       }
     }
   </style>
