@@ -19,8 +19,11 @@
     <div data-include="/partials/navbar-customer.html"></div>
 
     <!-- HERO -->
-    <section style="background: var(--color-maroon); padding: 64px 24px">
+    <section
+      class="wc-hero-section"
+      style="background: var(--color-maroon); padding: 64px 24px">
       <div
+        class="wc-hero-grid"
         style="
           max-width: 1044px;
           margin: 0 auto;
@@ -55,6 +58,7 @@
           >
 
           <h1
+            class="wc-hero-h1"
             data-bind="hero.title"
             style="
               font-family: var(--font-brand);
@@ -70,6 +74,7 @@
           </h1>
 
           <p
+            class="wc-hero-sub"
             data-bind="hero.subtitle"
             style="
               font-family: var(--font-body);
@@ -103,6 +108,7 @@
 
         <!-- Decorative bitten C -->
         <div
+          class="wc-hero-c"
           style="
             flex-shrink: 0;
             width: 423.35px;
@@ -120,7 +126,9 @@
     </section>
 
     <!-- PROBLEM SECTION -->
-    <section style="background: #ffffff; padding: 64px 24px 0">
+    <section
+      class="wc-problem-section"
+      style="background: #ffffff; padding: 64px 24px 0">
       <div style="max-width: 1044px; margin: 0 auto">
         <span
           style="
@@ -160,6 +168,7 @@
         </h2>
 
         <div
+          class="wc-problem-cards"
           style="
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -176,6 +185,7 @@
               height: 196px;
               background: #fefefe;
               border: 0.5px solid #ff2d55;
+              /* wc-problem-card */
               border-radius: 14px;
               padding: 24px;
               box-shadow: 0 0 2.7px 0 rgba(197, 232, 102, 0.81);
@@ -234,6 +244,7 @@
               height: 196px;
               background: #fefefe;
               border: 0.5px solid #ff2d55;
+              /* wc-problem-card */
               border-radius: 14px;
               padding: 24px;
               box-shadow: 0 0 2.7px 0 rgba(197, 232, 102, 0.81);
@@ -292,6 +303,7 @@
               height: 196px;
               background: #fefefe;
               border: 0.5px solid #ff2d55;
+              /* wc-problem-card */
               border-radius: 14px;
               padding: 24px;
               box-shadow: 0 0 2.7px 0 rgba(197, 232, 102, 0.81);
@@ -344,6 +356,7 @@
         </div>
 
         <p
+          class="wc-problem-note"
           data-bind="problem.bottom_note"
           style="
             font-family: var(--font-body);
@@ -362,7 +375,9 @@
     </section>
 
     <!-- COMPARISON -->
-    <section style="background: #ffffff; padding: 0 24px 64px">
+    <section
+      class="wc-comparison-section"
+      style="background: #ffffff; padding: 0 24px 64px">
       <div style="max-width: 1044px; margin: 0 auto">
         <h2
           data-bind="comparison.title"
@@ -378,6 +393,7 @@
           The Old Way vs Catery
         </h2>
         <div
+          class="wc-comparison-grid"
           style="
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -385,7 +401,18 @@
             position: relative;
           ">
           <!-- Old way -->
-          <div style="display:flex;flex-direction:column;gap:35px;width:100%;background:#5c2839;border-radius:24px;padding:32px;box-sizing:border-box;">
+          <div
+            class="wc-comparison-card"
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 35px;
+              width: 100%;
+              background: #5c2839;
+              border-radius: 24px;
+              padding: 32px;
+              box-sizing: border-box;
+            ">
             <p
               data-bind="comparison.old.label"
               style="
@@ -520,6 +547,7 @@
           </div>
           <!-- With Catery -->
           <div
+            class="wc-comparison-card"
             style="
               display: flex;
               flex-direction: column;
@@ -662,33 +690,17 @@
               </li>
             </ul>
           </div>
-          <!-- Heart accent -->
-          <div
-            style="
-              position: absolute;
-              right: -30px;
-              bottom: -40px;
-              width: 100px;
-              height: 100px;
-              background: #e9d9f7;
-              border-radius: 50%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            ">
-            <img
-              src="/assets/images/why-catery-customer/heart.svg"
-              alt=""
-              style="width: 64px; height: 64px" />
-          </div>
         </div>
       </div>
     </section>
 
     <!-- CTA + Image gallery -->
-    <section style="background: #ffffff; padding: 0 24px 64px">
+    <section
+      class="wc-cta-section"
+      style="background: #ffffff; padding: 0 24px 64px">
       <div style="max-width: 1044px; margin: 0 auto">
         <h2
+          class="wc-cta-h2"
           data-bind="cta.title"
           style="
             font-family: var(--font-brand);
@@ -738,6 +750,7 @@
 
         <!-- Image gallery -->
         <div
+          class="wc-gallery"
           style="
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -780,5 +793,72 @@
     <div data-include="/partials/footer.html"></div>
     <script src="/js/includes.js"></script>
     <script src="/js/content.js"></script>
+
+    <!-- Responsive overrides -->
+    <style>
+      @media (max-width: 1024px) {
+        /* Hero */
+        .wc-hero-section {
+          padding: 115px 70px 144px !important;
+        }
+        .wc-hero-grid {
+          grid-template-columns: 1fr !important;
+        }
+        .wc-hero-c {
+          display: none !important;
+        }
+        .wc-hero-h1 {
+          font-size: 46px !important;
+          max-width: 100% !important;
+          line-height: 1 !important;
+        }
+        .wc-hero-sub {
+          line-height: 1 !important;
+          max-width: 100% !important;
+        }
+
+        /* Problem */
+        .wc-problem-section {
+          padding: 64px 70px 0 !important;
+        }
+        .wc-problem-cards > div {
+          height: auto !important;
+        }
+        .wc-problem-note {
+          text-align: left !important;
+        }
+
+        /* Comparison */
+        .wc-comparison-section {
+          padding: 0 70px 144px !important;
+        }
+        .wc-comparison-grid {
+          grid-template-columns: repeat(2, 1fr) !important;
+          gap: 24px !important;
+          justify-content: center !important;
+        }
+        .wc-comparison-card {
+          min-height: 280px !important;
+          padding: 28px !important;
+          height: auto !important;
+        }
+
+        /* CTA + gallery */
+        .wc-cta-section {
+          padding: 0 70px 64px !important;
+        }
+        .wc-cta-h2 {
+          font-size: 46px !important;
+          max-width: 100% !important;
+        }
+        .wc-gallery {
+          grid-template-columns: repeat(3, 215.33px) !important;
+          gap: 24px !important;
+        }
+        .wc-gallery img {
+          height: 378px !important;
+        }
+      }
+    </style>
   </body>
 </html>

@@ -16,7 +16,7 @@
     <div data-include="/partials/navbar-customer.html"></div>
 
     <!-- HERO + IMAGE GALLERY -->
-    <section class="section-maroon" style="padding-bottom: 144px">
+    <section class="section-maroon about-hero-section" style="padding-bottom: 144px">
       <div class="container-site">
         <!-- Pill -->
         <span
@@ -41,6 +41,7 @@
 
         <!-- H1 -->
         <h1
+          class="about-hero-h1"
           style="
             font-family: var(--font-brand);
             font-size: 46px;
@@ -54,6 +55,7 @@
 
         <!-- Subtitle -->
         <p
+          class="about-hero-sub"
           style="
             font-family: var(--font-body);
             font-size: 16px;
@@ -68,6 +70,7 @@
 
         <!-- Photo grid -->
         <div
+          class="about-photo-grid"
           style="
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -119,6 +122,7 @@
       ">
       <!-- Decorative shape â€” bottom right -->
       <img
+        class="about-mission-shape"
         src="/assets/images/decoration-shape.svg"
         alt=""
         aria-hidden="true"
@@ -932,6 +936,33 @@
     <script src="/js/includes.js"></script>
     <script src="/js/content.js"></script>
     <script src="/js/faq.js"></script>
+
+    <!-- Responsive overrides -->
+    <style>
+      @media (max-width: 1024px) {
+        .about-hero-section {
+          padding-top: 115px !important;
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+        }
+        .about-hero-h1 {
+          font-size: 64px !important;
+          margin-bottom: 48px !important;
+        }
+        .about-hero-sub {
+          line-height: 1.5 !important;
+          max-width: 100% !important;
+          margin-bottom: 48px !important;
+        }
+        .about-photo-grid {
+          grid-template-columns: repeat(3, 215.33px) !important;
+          justify-content: center !important;
+        }
+        .about-mission-shape {
+          width: 140px !important;
+        }
+      }
+    </style>
     <script>
       document.querySelectorAll(".faq-card .faq-head").forEach(function (head) {
         head.addEventListener("click", function () {

@@ -376,7 +376,7 @@
           <!-- phone -->
           <div
             class="step-phone from-left"
-            style="display: flex; justify-content: flex-start">
+            style="display: flex; justify-content: flex-end">
             <div style="position: relative; display: inline-block">
               <div class="step-circle" style="background: #c4b5f8"></div>
               <img
@@ -487,7 +487,7 @@
           <!-- phone -->
           <div
             class="step-phone from-right"
-            style="display: flex; justify-content: flex-end">
+            style="display: flex; justify-content: flex-start">
             <div style="position: relative; display: inline-block">
               <div
                 class="step-circle step-circle-right"
@@ -517,7 +517,7 @@
           <!-- phone -->
           <div
             class="step-phone from-left"
-            style="display: flex; justify-content: flex-start">
+            style="display: flex; justify-content: flex-end">
             <div style="position: relative; display: inline-block">
               <div
                 class="step-circle"
@@ -577,6 +577,27 @@
           </div>
         </div>
       </div>
+
+      <!-- CTA button — tablet & mobile only -->
+      <div class="steps-cta" style="text-align: center; margin-top: 48px; display: none">
+        <a
+          href="/customer/why-catery.html"
+          style="
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            background: var(--color-maroon);
+            color: var(--color-cream);
+            font-family: var(--font-body);
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 100px;
+            text-decoration: none;
+          "
+          >See How it Works →</a
+        >
+      </div>
     </section>
 
     <script>
@@ -602,7 +623,7 @@
     <!-- ═══════════════════════════════════════════
          FEATURES — "Everything You Need"
     ═══════════════════════════════════════════ -->
-    <section style="background: #efece4; padding: 64px 24px">
+    <section class="features-section" style="background: #efece4; padding: 64px 24px">
       <div style="max-width: 1044px; margin: 0 auto">
         <!-- Pill -->
         <span
@@ -629,6 +650,7 @@
         >
 
         <h2
+          class="features-h2"
           style="
             font-family: var(--font-body);
             font-size: 28px;
@@ -641,6 +663,7 @@
         </h2>
 
         <div
+          class="features-grid"
           style="
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -947,7 +970,7 @@
     <!-- ═══════════════════════════════════════════
          FAQ
     ═══════════════════════════════════════════ -->
-    <section class="section-maroon">
+    <section class="section-maroon faq-section">
       <style>
         .faq-card {
           cursor: pointer;
@@ -998,6 +1021,7 @@
 
         <!-- H2 -->
         <h2
+          class="faq-h2"
           data-bind="faq.title"
           style="
             font-family: var(--font-body);
@@ -1012,6 +1036,7 @@
 
         <!-- Subtitle -->
         <p
+          class="faq-subtitle"
           data-bind="faq.subtitle"
           style="
             font-family: var(--font-body);
@@ -1023,8 +1048,8 @@
             max-width: 560px;
           ">
           Booking catering shouldn't take three days, five WhatsApps, and ten
-          Instagram DMs. We built Catery to give event planners the clarity
-          they need — and caterers the visibility they deserve.
+          Instagram DMs. We built Catery to give event planners the clarity they
+          need — and caterers the visibility they deserve.
         </p>
 
         <div
@@ -1378,8 +1403,8 @@
                 color: #1a1a1a;
                 line-height: 1;
               ">
-              Download the app from the App Store or Google Play and create
-              your free account.
+              Download the app from the App Store or Google Play and create your
+              free account.
             </p>
           </div>
         </div>
@@ -1455,10 +1480,22 @@
               text-decoration: none;
               align-self: flex-start;
             "
-            onmouseover="this.style.background='#A84065';this.style.borderColor='#C5E866'"
-            onmouseout="this.style.background='#5c2839';this.style.borderColor='transparent'"
-            onmousedown="this.style.background='#3F1B2C';this.style.borderColor='transparent'"
-            onmouseup="this.style.background='#A84065';this.style.borderColor='#C5E866'">
+            onmouseover="
+              this.style.background = '#A84065';
+              this.style.borderColor = '#C5E866';
+            "
+            onmouseout="
+              this.style.background = '#5c2839';
+              this.style.borderColor = 'transparent';
+            "
+            onmousedown="
+              this.style.background = '#3F1B2C';
+              this.style.borderColor = 'transparent';
+            "
+            onmouseup="
+              this.style.background = '#A84065';
+              this.style.borderColor = '#C5E866';
+            ">
             Contact us <span style="color: var(--color-lime)">→</span>
           </a>
         </div>
@@ -1477,25 +1514,13 @@
          MISSION — "Find Catering Without the Chase"
     ═══════════════════════════════════════════ -->
     <section
+      class="mission-section"
       style="
         background: #e5f3b8;
         padding: 144px 120px;
         position: relative;
         overflow: hidden;
       ">
-      <!-- Decorative shape — bottom right -->
-      <img
-        src="/assets/images/decoration-shape.svg"
-        alt=""
-        aria-hidden="true"
-        style="
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          width: 274px;
-          pointer-events: none;
-          user-select: none;
-        " />
 
       <div class="container-site">
         <!-- Pill -->
@@ -1522,6 +1547,7 @@
 
         <!-- H2 -->
         <h2
+          class="mission-h2"
           data-bind="cta.title"
           style="
             font-family: var(--font-brand);
@@ -1537,6 +1563,7 @@
 
         <!-- Body -->
         <p
+          class="mission-subtitle"
           data-bind="cta.subtitle"
           style="
             font-family: var(--font-body);
@@ -1577,21 +1604,62 @@
 
     <!-- Responsive overrides -->
     <style>
-      @media (max-width: 768px) {
-        .steps-grid {
-          grid-template-columns: 1fr !important;
+      /* Tablet */
+      @media (max-width: 1024px) {
+        .steps-cta {
+          display: block !important;
+        }
+        .features-section {
+          background: #efece4 !important;
+          padding: 64px 32px !important;
+        }
+        .features-h2 {
+          font-size: 36px !important;
+          margin-bottom: 40px !important;
         }
         .features-grid {
           grid-template-columns: repeat(2, 1fr) !important;
+          gap: 16px !important;
         }
         .faq-group {
-          grid-template-columns: 1fr !important;
+          grid-template-columns: 1fr 1fr !important;
         }
-        .cta-grid {
-          grid-template-columns: 1fr !important;
+        .faq-h2 {
+          font-size: 36px !important;
+          line-height: 1.1 !important;
+          margin-bottom: 16px !important;
         }
-        .hero-phones {
-          display: none !important;
+        .faq-subtitle {
+          line-height: 1.6 !important;
+          max-width: 100% !important;
+          margin-bottom: 40px !important;
+        }
+        .faq-section {
+          padding-left: 32px !important;
+        }
+        .mission-section {
+          padding: 80px 32px !important;
+        }
+        .mission-h2 {
+          font-size: 64px !important;
+          line-height: 1 !important;
+          max-width: 100% !important;
+        }
+        .mission-subtitle {
+          line-height: 1.5 !important;
+          max-width: 100% !important;
+          margin-bottom: 40px !important;
+        }
+        .mission-section .container-site {
+          padding: 0 !important;
+          padding-right: 32px !important;
+        }
+      }
+
+      /* Mobile */
+      @media (max-width: 640px) {
+        .features-grid {
+          grid-template-columns: 1fr !important;
         }
       }
     </style>
