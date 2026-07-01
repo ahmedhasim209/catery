@@ -16,8 +16,9 @@
     <div data-include="/partials/navbar-vendor.html"></div>
 
     <!-- HERO -->
-    <section style="background: var(--color-maroon); padding: 72px 24px 64px">
+    <section class="vd-hero-section" style="background: var(--color-maroon); padding: 72px 24px 64px">
       <div
+        class="vd-hero-grid"
         style="
           max-width: var(--width-site);
           margin: 0 auto;
@@ -50,6 +51,7 @@
 
           <!-- Heading -->
           <h1
+            class="vd-hero-h1"
             style="
               font-family: var(--font-brand);
               font-size: clamp(2.4rem, 4vw, 3.6rem);
@@ -210,7 +212,7 @@
       </div>
     </section>
     <!-- FEATURES GRID -->
-    <section class="section-cream">
+    <section class="section-cream vd-features-section">
       <div class="container-site">
         <span
           style="
@@ -240,6 +242,7 @@
           Everything you need to run your catering business
         </h2>
         <div
+          class="vd-features-grid"
           style="
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -247,7 +250,7 @@
             margin-bottom: 32px;
           ">
           <div
-            class="card-white"
+            class="card-white vd-feature-card"
             style="
               border: 1.5px solid var(--color-lime);
               box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
@@ -290,7 +293,7 @@
             </p>
           </div>
           <div
-            class="card-white"
+            class="card-white vd-feature-card"
             style="
               border: 1.5px solid var(--color-lime);
               box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
@@ -332,7 +335,7 @@
             </p>
           </div>
           <div
-            class="card-white"
+            class="card-white vd-feature-card"
             style="
               border: 1.5px solid var(--color-lime);
               box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
@@ -374,7 +377,7 @@
             </p>
           </div>
           <div
-            class="card-white"
+            class="card-white vd-feature-card"
             style="
               border: 1.5px solid var(--color-lime);
               box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
@@ -416,7 +419,7 @@
             </p>
           </div>
           <div
-            class="card-white"
+            class="card-white vd-feature-card"
             style="
               border: 1.5px solid var(--color-lime);
               box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
@@ -458,7 +461,7 @@
             </p>
           </div>
           <div
-            class="card-white"
+            class="card-white vd-feature-card"
             style="
               border: 1.5px solid var(--color-lime);
               box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
@@ -516,30 +519,8 @@
       </div>
     </section>
 
-    <!-- Floating heart divider -->
-    <div
-      style="
-        position: relative;
-        height: 0;
-        display: flex;
-        justify-content: right;
-        margin-right: 150px;
-      ">
-      <img
-        src="/assets/images/home-vendor/float-heart.svg"
-        alt=""
-        style="
-          position: absolute;
-          top: -85px;
-          width: 170px;
-          height: 170px;
-          z-index: 10;
-          pointer-events: none;
-        " />
-    </div>
-
     <!-- 3 STEPS -->
-    <section class="section-maroon">
+    <section class="section-maroon vd-steps-section">
       <div class="container-site">
         <!-- Label -->
         <span
@@ -561,6 +542,7 @@
 
         <!-- Heading -->
         <h2
+          class="vd-steps-h2"
           style="
             font-family: var(--font-body);
             font-size: 28px;
@@ -576,6 +558,7 @@
         <!-- Steps: single 3-col grid, badges + content in same cell, lines absolutely positioned -->
         <div
           id="steps-container"
+          class="vd-steps-container"
           style="
             position: relative;
             display: grid;
@@ -584,6 +567,7 @@
           ">
           <!-- Line 1: right edge of badge-1 → left edge of badge-2 (8px gap each side) -->
           <div
+            class="vd-step-line"
             style="
               position: absolute;
               top: 24px;
@@ -608,6 +592,7 @@
           </div>
           <!-- Line 2: right edge of badge-2 → left edge of badge-3 (8px gap each side) -->
           <div
+            class="vd-step-line"
             style="
               position: absolute;
               top: 24px;
@@ -830,6 +815,7 @@
 
         <!-- Download the App -->
         <p
+          class="vd-steps-download-heading"
           style="
             font-family: var(--font-body);
             font-size: 22px;
@@ -839,7 +825,7 @@
           ">
           Download the App
         </p>
-        <div style="display: flex; gap: 12px; flex-wrap: wrap">
+        <div class="vd-steps-badges" style="display: flex; gap: 12px; flex-wrap: wrap">
           <div data-include="/partials/app-badges.html"></div>
         </div>
       </div>
@@ -1163,34 +1149,6 @@
         padding: 120px 0 100px;
         overflow: hidden;
       ">
-      <!-- Decorative C letter — left side -->
-      <img
-        src="/assets/images/home-vendor/letter-c-for-catery.svg"
-        alt=""
-        aria-hidden="true"
-        style="
-          position: absolute;
-          left: 10%;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 340px;
-          pointer-events: none;
-          user-select: none;
-        " />
-
-      <!-- Decorative cream shape — right side -->
-      <img
-        src="/assets/images/home-vendor/shape-right.svg"
-        alt=""
-        aria-hidden="true"
-        style="
-          position: absolute;
-          right: -20px;
-          bottom: 0;
-          width: 260px;
-          pointer-events: none;
-          user-select: none;
-        " />
 
       <!-- Content — centered column -->
       <div
@@ -1447,5 +1405,66 @@
     <div data-include="/partials/footer.html"></div>
     <script src="/js/includes.js"></script>
     <script src="/js/content.js"></script>
+
+    <!-- Responsive overrides -->
+    <style>
+      @media (max-width: 1024px) {
+        .vd-hero-section {
+          padding: 115px 70px 64px !important;
+        }
+        .vd-hero-grid {
+          grid-template-columns: 55% 45% !important;
+          gap: 32px !important;
+          padding-bottom: 64px !important;
+        }
+        .vd-hero-h1 {
+          font-size: 46px !important;
+          line-height: 1.1 !important;
+        }
+        .vd-features-section {
+          background: #fefefe !important;
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+        }
+        .vd-features-grid {
+          grid-template-columns: repeat(2, 1fr) !important;
+        }
+        .vd-feature-card {
+          background: #fefefe !important;
+        }
+        .vd-steps-section {
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+          text-align: center !important;
+        }
+        .vd-steps-container {
+          grid-template-columns: 1fr !important;
+          gap: 24px !important;
+          text-align: center !important;
+        }
+        .vd-steps-container > div {
+          padding-right: 0 !important;
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+        }
+        .vd-steps-h2 {
+          text-align: center !important;
+          max-width: 100% !important;
+        }
+        .vd-steps-download-heading {
+          text-align: center !important;
+        }
+        .vd-steps-badges {
+          justify-content: center !important;
+        }
+        /* hide horizontal connecting lines on tablet & mobile */
+        .vd-step-line,
+        .vd-step-line * {
+          display: none !important;
+          visibility: hidden !important;
+        }
+      }
+    </style>
   </body>
 </html>

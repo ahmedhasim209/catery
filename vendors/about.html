@@ -16,7 +16,7 @@
     <div data-include="/partials/navbar-vendor.html"></div>
 
     <!-- HERO + IMAGE GALLERY -->
-    <section class="section-maroon" style="padding-bottom: 144px">
+    <section class="section-maroon about-hero-section" style="padding-bottom: 144px">
       <div class="container-site">
         <!-- Pill -->
         <span
@@ -41,6 +41,7 @@
 
         <!-- H1 -->
         <h1
+          class="about-hero-h1"
           style="
             font-family: var(--font-brand);
             font-size: 46px;
@@ -54,6 +55,7 @@
 
         <!-- Photo grid -->
         <div
+          class="about-photo-grid"
           style="
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -123,6 +125,7 @@
 
     <!-- MISSION -->
     <section
+      class="vd-about-mission-section"
       style="
         background: #e5f3b8;
         padding: 144px 120px;
@@ -131,6 +134,7 @@
       ">
       <!-- Decorative shape — bottom right -->
       <img
+        class="about-mission-shape"
         src="/assets/images/decoration-shape.svg"
         alt=""
         aria-hidden="true"
@@ -225,7 +229,7 @@
     </section>
 
     <!-- VALUES -->
-    <section class="section-maroon">
+    <section class="section-maroon vd-about-values-section">
       <div class="container-site">
         <span
           style="
@@ -417,7 +421,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="section-maroon">
+    <section class="section-maroon vd-about-faq-section">
       <style>
         .faq-card {
           cursor: pointer;
@@ -934,6 +938,62 @@
     <script src="/js/includes.js"></script>
     <script src="/js/content.js"></script>
     <script src="/js/faq.js"></script>
+
+    <!-- Responsive overrides -->
+    <style>
+      @media (max-width: 1024px) {
+        /* Hero */
+        .about-hero-section {
+          padding-top: 115px !important;
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+        }
+        .about-hero-h1 {
+          font-size: 64px !important;
+          margin-bottom: 48px !important;
+        }
+        .about-photo-grid {
+          grid-template-columns: repeat(3, 215.33px) !important;
+          justify-content: center !important;
+        }
+
+        /* Mission */
+        .vd-about-mission-section {
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+        }
+        .about-mission-shape {
+          width: 140px !important;
+        }
+
+        /* Values */
+        .vd-about-values-section {
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+        }
+        .vd-about-values-section div[style*="grid-template-columns: repeat(3"] {
+          grid-template-columns: repeat(3, 1fr) !important;
+        }
+        .vd-about-values-section div[style*="height: 196px"] {
+          height: auto !important;
+        }
+
+        /* FAQ */
+        .vd-about-faq-section {
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+        }
+        .vd-about-faq-section .faq-group {
+          grid-template-columns: 1fr 1fr !important;
+          gap: 16px !important;
+        }
+        .vd-about-faq-section a[style*="width: 327px"] {
+          width: auto !important;
+          align-self: stretch !important;
+          justify-content: center !important;
+        }
+      }
+    </style>
     <script>
       document.querySelectorAll(".faq-card .faq-head").forEach(function (head) {
         head.addEventListener("click", function () {

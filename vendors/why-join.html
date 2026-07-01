@@ -52,9 +52,9 @@
     </section>
 
     <!-- BENEFITS -->
-    <section class="section-cream">
+    <section class="section-cream wj-benefits-section">
       <div
-        class="container-site"
+        class="container-site wj-benefits-grid"
         style="
           display: grid;
           grid-template-columns: 1fr auto;
@@ -95,7 +95,7 @@
           </h2>
 
           <!-- Tabbed benefit list -->
-          <div style="display: flex; gap: 60px; align-items: flex-start">
+          <div class="wj-tabs-row" style="display: flex; gap: 60px; align-items: flex-start">
             <ul
               id="benefit-list"
               style="
@@ -261,6 +261,7 @@
 
         <!-- Decorative maroon ellipse with white C -->
         <div
+          class="wj-c-circle"
           style="
             width: 340px;
             height: 450px;
@@ -281,7 +282,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="section-maroon">
+    <section class="section-maroon wj-faq-section">
       <style>
         .faq-head {
           cursor: pointer;
@@ -702,9 +703,9 @@
     </section>
 
     <!-- EARLY VENDORS CTA -->
-    <section style="background: #dcefb0; padding: 96px 0">
+    <section class="wj-early-section" style="background: #dcefb0; padding: 96px 0">
       <div
-        class="container-site"
+        class="container-site wj-early-grid"
         style="
           display: grid;
           grid-template-columns: auto 1fr;
@@ -713,6 +714,7 @@
         ">
         <!-- Coffee cup illustration circle -->
         <div
+          class="wj-cup-circle"
           style="
             width: 290px;
             height: 290px;
@@ -777,6 +779,7 @@
           </p>
           <a
             href="/vendors/contact.html"
+            class="wj-early-btn"
             style="
               display: inline-flex;
               align-items: center;
@@ -826,6 +829,91 @@
     <script src="/js/includes.js"></script>
     <script src="/js/content.js"></script>
     <script src="/js/faq.js"></script>
+
+    <!-- Responsive overrides -->
+    <style>
+      @media (max-width: 1024px) {
+        /* BENEFITS section */
+        .wj-benefits-section {
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+        }
+        .wj-benefits-grid {
+          grid-template-columns: 1fr auto !important;
+          gap: 32px !important;
+        }
+        .wj-benefits-grid h2 {
+          font-size: 28px !important;
+          max-width: 100% !important;
+        }
+        .wj-c-circle {
+          width: 240px !important;
+          height: 320px !important;
+        }
+        .wj-c-circle img {
+          width: 140px !important;
+        }
+        #benefit-list {
+          min-width: 200px !important;
+        }
+        #benefit-list li {
+          width: auto !important;
+        }
+        .wj-tabs-row {
+          flex-direction: column !important;
+          gap: 24px !important;
+        }
+        #benefit-content {
+          padding-top: 0 !important;
+        }
+        #benefit-content h3 {
+          font-size: 22px !important;
+          max-width: 100% !important;
+        }
+
+        /* FAQ section */
+        .wj-faq-section {
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+        }
+        .wj-faq-section .faq-group {
+          grid-template-columns: 1fr 1fr !important;
+          gap: 16px !important;
+        }
+        .wj-faq-section .faq-card {
+          width: auto !important;
+        }
+
+        /* EARLY VENDORS CTA section */
+        .wj-early-section {
+          padding: 96px 70px !important;
+        }
+        .wj-early-grid {
+          grid-template-columns: auto 1fr !important;
+          gap: 48px !important;
+        }
+        .wj-early-grid .wj-cup-circle {
+          width: 220px !important;
+          height: 220px !important;
+        }
+        .wj-early-grid .wj-cup-circle img {
+          width: 150px !important;
+        }
+        .wj-early-grid h2 {
+          font-size: 36px !important;
+          line-height: 1.1 !important;
+          margin-bottom: 16px !important;
+        }
+        .wj-early-grid p {
+          line-height: 1.5 !important;
+          margin-bottom: 32px !important;
+        }
+        .wj-early-grid a.wj-early-btn {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+      }
+    </style>
     <script>
       // FAQ accordion toggle
       document.querySelectorAll(".faq-card .faq-head").forEach(function (head) {
