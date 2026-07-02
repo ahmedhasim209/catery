@@ -1,14 +1,11 @@
-<nav style="background:var(--color-maroon);padding:32px 24px 14px;">
+<nav style="background:var(--color-maroon);padding:32px 24px 14px;position:relative;z-index:100;">
   <div style="max-width:1044px;margin:0 auto;">
-    <!-- Main nav container — 3-col grid for perfect centering -->
-    <div style="background:var(--color-maroon-dark);border-radius:24px;padding:12px 24px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:64px;">
 
-      <!-- Logo — left -->
-      <a href="/vendors/index.html" style="display:flex;align-items:center;justify-self:start;">
+    <!-- DESKTOP / TABLET pill bar -->
+    <div class="nav-desktop-bar" style="background:var(--color-maroon-dark);border-radius:24px;padding:12px 24px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:64px;">
+      <a href="/index.html" style="display:flex;align-items:center;justify-self:start;">
         <img src="/assets/images/Logo.svg" alt="Catery" style="height:28px;width:auto;" />
       </a>
-
-      <!-- Desktop links — perfectly centered -->
       <ul class="nav-desktop-links" style="list-style:none;margin:0;padding:0;display:flex;gap:57px;align-items:center;">
         <li><a class="nav-link" data-nav-link href="/vendors/index.html"        style="font-size:0.9rem;font-family:var(--font-body);white-space:nowrap;">Home</a></li>
         <li><a class="nav-link" data-nav-link href="/vendors/how-it-works.html" style="font-size:0.9rem;font-family:var(--font-body);white-space:nowrap;">How It Works</a></li>
@@ -16,9 +13,7 @@
         <li><a class="nav-link" data-nav-link href="/vendors/contact.html"      style="font-size:0.9rem;font-family:var(--font-body);white-space:nowrap;">Contact</a></li>
         <li><a class="nav-link" data-nav-link href="/vendors/about.html"        style="font-size:0.9rem;font-family:var(--font-body);white-space:nowrap;">About</a></li>
       </ul>
-
-      <!-- Join Now button — right -->
-      <div style="justify-self:end;display:flex;align-items:center;gap:8px;">
+      <div style="justify-self:end;display:flex;align-items:center;">
         <a href="/vendors/join.html"
            class="nav-cta-btn"
            style="display:inline-flex;align-items:center;gap:8px;padding:10px 22px;background:#5C2839;border:none;border-radius:100px;color:var(--color-cream);font-size:0.88rem;font-weight:600;font-family:var(--font-body);text-decoration:none;transition:background 0.15s;white-space:nowrap;"
@@ -26,29 +21,75 @@
            onmouseout="this.style.background='#5C2839'">
           Join Now&nbsp;<span style="color:var(--color-lime);font-size:1rem;">→</span>
         </a>
-        <!-- Hamburger (mobile) -->
-        <button id="nav-toggle" class="hamburger" aria-label="Open menu"
-          style="display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;">
-          <span style="display:block;width:22px;height:2px;background:var(--color-cream);border-radius:2px;"></span>
-          <span style="display:block;width:22px;height:2px;background:var(--color-cream);border-radius:2px;"></span>
-          <span style="display:block;width:22px;height:2px;background:var(--color-cream);border-radius:2px;"></span>
-        </button>
       </div>
     </div>
 
-    <!-- Mobile menu -->
-    <div id="mobile-menu" style="display:none;flex-direction:column;gap:12px;padding:16px 20px;background:var(--color-maroon-dark);border-radius:20px;margin-top:8px;">
-      <a class="nav-link" href="/vendors/index.html"        style="font-size:0.9rem;">Home</a>
-      <a class="nav-link" href="/vendors/how-it-works.html" style="font-size:0.9rem;">How It Works</a>
-      <a class="nav-link" href="/vendors/why-join.html"     style="font-size:0.9rem;">Why Join</a>
-      <a class="nav-link" href="/vendors/contact.html"      style="font-size:0.9rem;">Contact</a>
-      <a class="nav-link" href="/vendors/about.html"        style="font-size:0.9rem;">About</a>
-      <a href="/vendors/join.html" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:rgba(255,255,255,0.10);border-radius:100px;color:var(--color-cream);font-size:0.85rem;font-weight:600;text-decoration:none;width:fit-content;">Join Now <span style="color:var(--color-lime);">→</span></a>
+    <!-- MOBILE bar -->
+    <div class="nav-mobile-bar" style="display:none;align-items:center;justify-content:space-between;">
+      <button id="nav-toggle" aria-label="Open menu"
+        style="display:flex;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;">
+        <span style="display:block;width:22px;height:2px;background:var(--color-cream);border-radius:2px;"></span>
+        <span style="display:block;width:22px;height:2px;background:var(--color-cream);border-radius:2px;"></span>
+        <span style="display:block;width:22px;height:2px;background:var(--color-cream);border-radius:2px;"></span>
+      </button>
+      <a href="/index.html" style="display:flex;align-items:center;">
+        <img src="/assets/images/Logo.svg" alt="Catery" style="height:28px;width:auto;" />
+      </a>
+      <div style="width:30px;"></div>
+    </div>
+  </div>
+
+  <!-- FULL-SCREEN mobile menu overlay -->
+  <div id="mobile-menu"
+    style="
+      position:fixed;
+      top:0;left:0;
+      width:100%;height:100%;
+      background:var(--color-maroon-dark);
+      z-index:9999;
+      display:flex;
+      flex-direction:column;
+      padding:40px 32px;
+      box-sizing:border-box;
+      transform:translateX(-100%);
+      transition:transform 0.35s cubic-bezier(0.4,0,0.2,1);
+      overflow-y:auto;
+    ">
+
+    <!-- Top row: close button + logo -->
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:56px;">
+      <button id="nav-close" aria-label="Close menu"
+        style="background:none;border:none;cursor:pointer;padding:4px;display:flex;align-items:center;justify-content:center;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <line x1="4" y1="4" x2="20" y2="20" stroke="#EFECE4" stroke-width="2" stroke-linecap="round"/>
+          <line x1="20" y1="4" x2="4" y2="20" stroke="#EFECE4" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <a href="/index.html" style="display:flex;align-items:center;">
+        <img src="/assets/images/Logo.svg" alt="Catery" style="height:28px;width:auto;" />
+      </a>
+      <div style="width:32px;"></div>
+    </div>
+
+    <!-- Nav links -->
+    <nav style="background:transparent;padding:0;display:flex;flex-direction:column;gap:0;">
+      <a class="nav-link mob-link" href="/vendors/index.html"        >Home</a>
+      <a class="nav-link mob-link" href="/vendors/how-it-works.html" >How It Works</a>
+      <a class="nav-link mob-link" href="/vendors/why-join.html"     >Why Join</a>
+      <a class="nav-link mob-link" href="/vendors/contact.html"      >Contact</a>
+      <a class="nav-link mob-link" href="/vendors/about.html"        >About</a>
+    </nav>
+
+    <!-- CTA -->
+    <div style="margin-top:auto;padding-top:48px;">
+      <a href="/vendors/join.html"
+         style="display:flex;align-items:center;justify-content:center;gap:8px;padding:16px 24px;background:var(--color-lime);border-radius:100px;color:var(--color-maroon);font-size:1rem;font-weight:700;font-family:var(--font-body);text-decoration:none;">
+        Join Now&nbsp;<span style="font-size:1.1rem;">→</span>
+      </a>
     </div>
   </div>
 
   <style>
-    /* Base link style */
     .nav-link {
       color: var(--color-cream);
       text-decoration: none;
@@ -56,52 +97,45 @@
       position: relative;
       padding-bottom: 2px;
     }
-
-    /* Hover: white underline, keep white color */
-    .nav-link:hover {
-      color: var(--color-cream);
-      text-decoration: none;
-    }
+    .nav-link:hover { color: var(--color-cream); text-decoration: none; }
     .nav-link::after {
       content: '';
       position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 0;
-      height: 1.5px;
+      bottom: -2px; left: 0;
+      width: 0; height: 1.5px;
       background: var(--color-cream);
       transition: width 0.2s ease;
     }
-    .nav-link:hover::after {
-      width: 100%;
-    }
-
-    /* Active: lime color, bold, no underline */
+    .nav-link:hover::after { width: 100%; }
     .nav-link.active {
       color: var(--color-lime) !important;
       font-weight: 700;
       text-decoration: none;
     }
-    .nav-link.active::after {
-      display: none;
+    .nav-link.active::after { display: none; }
+
+    .mob-link {
+      font-family: var(--font-body);
+      font-size: 1.4rem;
+      font-weight: 600;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(239,236,228,0.1);
     }
+    .mob-link:last-child { border-bottom: none; }
+    .mob-link::after { display: none; }
+
+    #mobile-menu.open { transform: translateX(0) !important; }
 
     @media (max-width: 1024px) {
       .nav-desktop-links { gap: 32px !important; }
-    }
-
-    @media (max-width: 1024px) {
-      nav > div > div:first-child {
-        gap: 32px !important;
-        padding: 12px 20px !important;
-      }
+      .nav-desktop-bar   { gap: 32px !important; padding: 12px 20px !important; }
     }
 
     @media (max-width: 768px) {
-      .nav-desktop-links { display: none !important; }
-      .nav-cta-btn       { display: none !important; }
-      #nav-toggle        { display: flex !important; }
+      nav { padding: 20px 24px 14px !important; }
+      .nav-desktop-bar { display: none !important; }
+      .nav-mobile-bar  { display: flex !important; }
     }
-    #mobile-menu.open { display: flex !important; }
+    body.nav-open .nav-mobile-bar { display: none !important; }
   </style>
 </nav>

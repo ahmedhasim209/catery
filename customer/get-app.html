@@ -17,6 +17,7 @@
 
     <!-- HERO -->
     <section
+      class="fix-padding"
       style="
         background: var(--color-maroon);
         text-align: center;
@@ -49,6 +50,7 @@
 
         <!-- H1 -->
         <h1
+          class="fix-text-padding"
           style="
             font-family: var(--font-brand);
             font-size: 46px;
@@ -64,6 +66,7 @@
 
         <!-- Subtitle -->
         <p
+          class="fix-text-padding"
           style="
             font-family: var(--font-body);
             font-size: 16px;
@@ -205,6 +208,7 @@
 
         <!-- QR code -->
         <div
+          class="qr-wrapper"
           style="
             width: 160px;
             height: 160px;
@@ -615,8 +619,65 @@
     <!-- </div> -->
     <!-- </section> -->
 
-    <div data-include="/partials/footer.html"></div>
+    <div data-include="/partials/footer-customer.html"></div>
     <script src="/js/includes.js"></script>
     <script src="/js/content.js"></script>
+
+    <style>
+      @media (max-width: 768px) {
+        /* Phone orbit — side phones peek from screen edges */
+        @keyframes phoneOrbit {
+          0% {
+            transform: translate(calc(-50% - 215px), -50%) scale(0.82);
+            z-index: 1;
+          }
+          27.7% {
+            transform: translate(calc(-50% - 215px), -50%) scale(0.82);
+            z-index: 1;
+          }
+          33.33% {
+            transform: translate(-50%, -50%) scale(1);
+            z-index: 2;
+          }
+          61.1% {
+            transform: translate(-50%, -50%) scale(1);
+            z-index: 2;
+          }
+          66.67% {
+            transform: translate(calc(-50% + 215px), -50%) scale(0.82);
+            z-index: 1;
+          }
+          94.4% {
+            transform: translate(calc(-50% + 215px), -50%) scale(0.82);
+            z-index: 1;
+          }
+          100% {
+            transform: translate(calc(-50% - 215px), -50%) scale(0.82);
+            z-index: 1;
+          }
+        }
+        .fix-padding {
+          padding: 64px 0 !important;
+        }
+        .fix-text-padding {
+          padding: 0 24px;
+        }
+        .phone-orbit {
+          height: 400px !important;
+          overflow: hidden !important;
+        }
+        .phone-orbit img {
+          width: 180px !important;
+        }
+
+        /* QR code — bigger on mobile */
+        .qr-wrapper {
+          width: 270px !important;
+          height: 270px !important;
+          border-radius: 24px !important;
+          padding: 16px !important;
+        }
+      }
+    </style>
   </body>
 </html>

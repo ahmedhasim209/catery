@@ -790,7 +790,7 @@
       </div>
     </section>
 
-    <div data-include="/partials/footer.html"></div>
+    <div data-include="/partials/footer-customer.html"></div>
     <script src="/js/includes.js"></script>
     <script src="/js/content.js"></script>
 
@@ -808,9 +808,13 @@
           display: none !important;
         }
         .wc-hero-h1 {
+          font-family: var(--font-brand) !important;
           font-size: 46px !important;
+          font-weight: 700 !important;
+          line-height: 1.0 !important;
+          letter-spacing: 0 !important;
+          color: #EFECE4 !important;
           max-width: 100% !important;
-          line-height: 1 !important;
         }
         .wc-hero-sub {
           line-height: 1 !important;
@@ -857,6 +861,90 @@
         }
         .wc-gallery img {
           height: 378px !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        /* ── Hero ── */
+        .wc-hero-section {
+          padding: 48px 24px 48px !important;
+        }
+        .wc-hero-grid {
+          grid-template-columns: 1fr !important;
+          gap: 24px !important;
+        }
+        .wc-hero-c {
+          display: none !important;
+        }
+        .wc-hero-h1 {
+          font-family: var(--font-brand) !important;
+          font-size: 46px !important;
+          font-weight: 700 !important;
+          line-height: 1.0 !important;
+          color: #EFECE4 !important;
+          max-width: 100% !important;
+          margin-bottom: 20px !important;
+        }
+        .wc-hero-sub {
+          max-width: 100% !important;
+          font-size: 16px !important;
+          font-weight: 400 !important;
+          line-height: 1.0 !important;
+          color: #EFECE4 !important;
+          margin-bottom: 24px !important;
+        }
+
+        /* ── Problem ── */
+        .wc-problem-section {
+          padding: 48px 24px 0 !important;
+        }
+        .wc-problem-cards {
+          grid-template-columns: 1fr !important;
+          gap: 16px !important;
+        }
+        .wc-problem-cards > div {
+          height: auto !important;
+        }
+        .wc-problem-note {
+          text-align: left !important;
+          padding: 0 0 48px !important;
+        }
+
+        /* ── Comparison ── */
+        .wc-comparison-section {
+          padding: 0 24px 48px !important;
+        }
+        .wc-comparison-grid {
+          grid-template-columns: 1fr !important;
+          gap: 16px !important;
+        }
+        .wc-comparison-card {
+          padding: 24px !important;
+          height: auto !important;
+          min-height: unset !important;
+        }
+
+        /* ── CTA + gallery ── */
+        .wc-cta-section {
+          padding: 0 24px 48px !important;
+        }
+        .wc-cta-h2 {
+          font-family: var(--font-brand) !important;
+          font-size: 46px !important;
+          font-weight: 700 !important;
+          line-height: 1.0 !important;
+          max-width: 100% !important;
+        }
+        .wc-gallery {
+          grid-template-columns: repeat(2, 1fr) !important;
+          gap: 12px !important;
+        }
+        .wc-gallery img {
+          height: 378px !important;
+          border-radius: 24px !important;
+        }
+        .wc-gallery img:nth-child(3) {
+          display: none !important;
         }
       }
     </style>

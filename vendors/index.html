@@ -24,12 +24,14 @@
           margin: 0 auto;
           display: grid;
           grid-template-columns: 55% 45%;
+          grid-template-rows: auto auto;
           gap: 48px;
           align-items: center;
           padding-bottom: 100px;
         ">
-        <!-- Left: copy -->
-        <div>
+
+        <!-- Top-left: copy (pill + heading + subtitles) -->
+        <div class="vd-hero-copy-top" style="grid-column:1; grid-row:1 / span 2; align-self:center;">
           <!-- Tag pill -->
           <span
             style="
@@ -54,9 +56,9 @@
             class="vd-hero-h1"
             style="
               font-family: var(--font-brand);
-              font-size: clamp(2.4rem, 4vw, 3.6rem);
-              font-weight: 800;
-              line-height: 1.1;
+              font-size: 46px;
+              font-weight: 700;
+              line-height: 1.0;
               color: var(--color-cream);
               margin-bottom: 24px;
             ">
@@ -64,15 +66,14 @@
             <span style="color: var(--color-lime)">Catery</span>.
           </h1>
 
-          <!-- Subtitle -->
+          <!-- Subtitles -->
           <p
             style="
               font-family: var(--font-body);
-              font-size: 1rem;
+              font-size: 16px;
               font-weight: 400;
-              line-height: 1.6;
-              color: var(--color-cream);
-              opacity: 0.75;
+              line-height: 1.0;
+              color: #EFECE4;
               max-width: 520px;
               margin-top: 0;
               margin-bottom: 20px;
@@ -82,133 +83,165 @@
           <p
             style="
               font-family: var(--font-body);
-              font-size: 1rem;
+              font-size: 16px;
               font-weight: 400;
-              line-height: 1.6;
-              color: var(--color-cream);
-              opacity: 0.75;
+              line-height: 1.0;
+              color: #EFECE4;
               max-width: 480px;
               margin-top: 0;
-              margin-bottom: 40px;
+              margin-bottom: 0;
             ">
             Join Egypt's catering marketplace and make it easier for customers
             to discover your business.
           </p>
 
-          <!-- CTA buttons + OR divider grouped to share width -->
-          <div
-            style="
-              display: inline-flex;
-              flex-direction: column;
-              gap: 0;
-              margin-bottom: 24px;
-            ">
+          <!-- CTA buttons + OR + Download — hidden on mobile (moved to vd-hero-cta-block) -->
+          <div class="vd-hero-cta-desktop">
+            <!-- CTA buttons + OR divider -->
             <div
               style="
-                display: flex;
-                gap: 24px;
-                flex-wrap: wrap;
-                align-items: center;
-                margin-bottom: 20px;
+                display: inline-flex;
+                flex-direction: column;
+                gap: 0;
+                margin-top: 40px;
+                margin-bottom: 24px;
               ">
-              <a
-                href="/vendors/contact.html"
+              <div class="vd-hero-btns"
                 style="
-                  display: inline-flex;
+                  display: flex;
+                  gap: 24px;
+                  flex-wrap: wrap;
                   align-items: center;
-                  justify-content: center;
-                  gap: 8px;
-                  width: 180px;
-                  height: 56px;
-                  background: var(--color-lime);
-                  color: var(--color-maroon);
-                  font-family: var(--font-body);
-                  font-size: 14px;
-                  font-weight: 700;
-                  border-radius: 24px;
-                  text-decoration: none;
-                  transition: opacity 0.15s;
-                "
-                onmouseover="this.style.opacity = '0.88'"
-                onmouseout="this.style.opacity = '1'">
-                Join Catery →
-              </a>
-              <a
-                href="/vendors/how-it-works.html"
-                style="
-                  display: inline-flex;
-                  align-items: center;
-                  justify-content: center;
-                  gap: 8px;
-                  width: 180px;
-                  height: 56px;
-                  background: transparent;
-                  border: 2px solid var(--color-lime);
-                  color: var(--color-lime);
-                  font-family: var(--font-body);
-                  font-size: 14px;
-                  font-weight: 700;
-                  border-radius: 24px;
-                  text-decoration: none;
-                  transition: opacity 0.15s;
-                "
-                onmouseover="this.style.opacity = '0.8'"
-                onmouseout="this.style.opacity = '1'">
-                How It Works ?
-              </a>
+                  margin-bottom: 20px;
+                ">
+                <a
+                  href="/vendors/contact.html"
+                  class="vd-hero-btn-primary"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    width: 180px;
+                    height: 56px;
+                    background: var(--color-lime);
+                    color: var(--color-maroon);
+                    font-family: var(--font-body);
+                    font-size: 14px;
+                    font-weight: 700;
+                    border-radius: 24px;
+                    text-decoration: none;
+                    transition: opacity 0.15s;
+                  "
+                  onmouseover="this.style.opacity = '0.88'"
+                  onmouseout="this.style.opacity = '1'">
+                  Join Catery →
+                </a>
+                <a
+                  href="/vendors/how-it-works.html"
+                  class="vd-hero-btn-outline"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    width: 180px;
+                    height: 56px;
+                    background: transparent;
+                    border: 2px solid var(--color-lime);
+                    color: var(--color-lime);
+                    font-family: var(--font-body);
+                    font-size: 14px;
+                    font-weight: 700;
+                    border-radius: 24px;
+                    text-decoration: none;
+                    transition: opacity 0.15s;
+                  "
+                  onmouseover="this.style.opacity = '0.8'"
+                  onmouseout="this.style.opacity = '1'">
+                  How It Works ?
+                </a>
+              </div>
+              <!-- OR divider -->
+              <div style="display: flex; align-items: center; gap: 12px">
+                <div style="height: 1px; flex: 1; background: rgba(255,255,255,0.15);"></div>
+                <span style="font-family:var(--font-body);font-size:0.75rem;font-weight:500;color:rgba(255,255,255,0.35);letter-spacing:0.08em;">OR</span>
+                <div style="height: 1px; flex: 1; background: rgba(255,255,255,0.15);"></div>
+              </div>
             </div>
-            <!-- OR divider — same width as buttons row above -->
-            <div style="display: flex; align-items: center; gap: 12px">
-              <div
-                style="
-                  height: 1px;
-                  flex: 1;
-                  background: rgba(255, 255, 255, 0.15);
-                "></div>
-              <span
-                style="
-                  font-family: var(--font-body);
-                  font-size: 0.75rem;
-                  font-weight: 500;
-                  color: rgba(255, 255, 255, 0.35);
-                  letter-spacing: 0.08em;
-                "
-                >OR</span
-              >
-              <div
-                style="
-                  height: 1px;
-                  flex: 1;
-                  background: rgba(255, 255, 255, 0.15);
-                "></div>
+            <!-- Download the App heading -->
+            <p
+              style="
+                font-family: var(--font-brand);
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: var(--color-lime);
+                margin: 20px 0 14px;
+              ">
+              Download the App
+            </p>
+            <!-- App badges -->
+            <div style="display: flex; gap: 12px; flex-wrap: wrap">
+              <div data-include="/partials/app-badges.html"></div>
             </div>
-          </div>
-          <!-- end buttons+OR wrapper -->
-          <!-- Download the App heading -->
-          <p
-            style="
-              font-family: var(--font-brand);
-              font-size: 1.4rem;
-              font-weight: 700;
-              color: var(--color-lime);
-              margin: 20px 0 14px;
-            ">
-            Download the App
-          </p>
-          <!-- Official app badges -->
-          <div style="display: flex; gap: 12px; flex-wrap: wrap">
-            <div data-include="/partials/app-badges.html"></div>
           </div>
         </div>
 
-        <!-- Right: phone mockup — centered in column -->
-        <div
-          style="display: flex; justify-content: center; align-items: center">
+        <!-- Right: phone mockup -->
+        <div class="vd-hero-phone"
+          style="display:flex; justify-content:center; align-items:center; grid-column:2; grid-row:1 / span 2;">
           <img
             src="/assets/images/home-vendor/Hero Section UI Desktop.svg"
             alt="Catery app interface"
             style="width: 100%; max-width: 440px; display: block" />
         </div>
+
+        <!-- Mobile-only CTA block (hidden on desktop) -->
+        <div class="vd-hero-cta-mobile" style="display:none;">
+          <div class="vd-hero-btns"
+            style="display:flex; gap:12px; margin-bottom:20px;">
+            <a
+              href="/vendors/contact.html"
+              class="vd-hero-btn-primary"
+              style="
+                display:inline-flex; align-items:center; justify-content:center;
+                flex:1; height:52px;
+                background:var(--color-lime); color:var(--color-maroon);
+                font-family:var(--font-body); font-size:14px; font-weight:700;
+                border-radius:24px; text-decoration:none;
+              ">
+              Join Catery →
+            </a>
+            <a
+              href="/vendors/how-it-works.html"
+              class="vd-hero-btn-outline"
+              style="
+                display:inline-flex; align-items:center; justify-content:center;
+                flex:1; height:52px;
+                background:transparent; border:2px solid var(--color-lime);
+                color:var(--color-lime);
+                font-family:var(--font-body); font-size:14px; font-weight:700;
+                border-radius:24px; text-decoration:none;
+              ">
+              How It Works ?
+            </a>
+          </div>
+          <!-- OR divider -->
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:0;">
+            <div style="height:1px; flex:1; background:rgba(255,255,255,0.15);"></div>
+            <span style="font-family:var(--font-body);font-size:0.75rem;font-weight:500;color:rgba(255,255,255,0.35);letter-spacing:0.08em;">OR</span>
+            <div style="height:1px; flex:1; background:rgba(255,255,255,0.15);"></div>
+          </div>
+          <!-- Download the App heading -->
+          <p style="font-family:var(--font-brand);font-size:1.4rem;font-weight:700;color:var(--color-lime);margin:20px 0 14px;">
+            Download the App
+          </p>
+          <!-- App badges -->
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <div data-include="/partials/app-badges.html"></div>
+          </div>
+        </div>
+
       </div>
     </section>
     <!-- FEATURES GRID -->
@@ -1463,6 +1496,65 @@
         .vd-step-line * {
           display: none !important;
           visibility: hidden !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        /* ── Hero ── */
+        .vd-hero-section {
+          padding: 40px 24px 56px !important;
+        }
+        .vd-hero-grid {
+          display: flex !important;
+          flex-direction: column !important;
+          gap: 0 !important;
+          padding-bottom: 0 !important;
+        }
+        /* Order: copy-top (1) → phone (2) → mobile-cta (3) */
+        .vd-hero-copy-top { order: 1; }
+        .vd-hero-phone    { order: 2; margin: 32px 0; justify-content: center; }
+        .vd-hero-cta-mobile { order: 3; }
+
+        /* Hide desktop CTA block, show mobile one */
+        .vd-hero-cta-desktop { display: none !important; }
+        .vd-hero-cta-mobile  { display: block !important; }
+
+        .vd-hero-h1 {
+          font-size: 46px !important;
+          line-height: 1.0 !important;
+          margin-bottom: 16px !important;
+        }
+
+        /* Features */
+        .vd-features-section {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+        }
+        .vd-features-grid {
+          grid-template-columns: 1fr !important;
+        }
+        /* Steps */
+        .vd-steps-section {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+          text-align: left !important;
+        }
+        .vd-steps-container > div {
+          align-items: flex-start !important;
+          text-align: left !important;
+        }
+        .vd-steps-container h4,
+        .vd-steps-container p {
+          text-align: left !important;
+        }
+        .vd-steps-h2 {
+          text-align: left !important;
+        }
+        .vd-steps-download-heading {
+          text-align: left !important;
+        }
+        .vd-steps-badges {
+          justify-content: flex-start !important;
         }
       }
     </style>

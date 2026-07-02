@@ -96,6 +96,7 @@
 
         <!-- Body text -->
         <p
+          class="about-hero-sub"
           style="
             font-family: var(--font-body);
             font-size: 16px;
@@ -109,6 +110,7 @@
           they offer.
         </p>
         <p
+          class="about-hero-sub"
           style="
             font-family: var(--font-body);
             font-size: 16px;
@@ -989,6 +991,98 @@
         }
         .vd-about-faq-section a[style*="width: 327px"] {
           width: auto !important;
+          align-self: stretch !important;
+          justify-content: center !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        /* ── Hero ── */
+        .about-hero-section {
+          padding-top: 40px !important;
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+          padding-bottom: 56px !important;
+        }
+        /* Make container a flex column so we can reorder elements */
+        .about-hero-section .container-site {
+          display: flex !important;
+          flex-direction: column !important;
+        }
+        .about-hero-section .container-site > span { order: 1; align-self: flex-start; }
+        .about-hero-h1 {
+          order: 2;
+          font-family: var(--font-brand) !important;
+          font-size: 46px !important;
+          font-weight: 700 !important;
+          line-height: 1.0 !important;
+          color: var(--color-cream) !important;
+          margin-bottom: 40px !important;
+        }
+        /* Photo grid comes BEFORE subtitle */
+        .about-photo-grid {
+          order: 3;
+          display: flex !important;
+          flex-direction: column !important;
+          gap: 16px !important;
+          margin-bottom: 32px !important;
+        }
+        /* Show only first 2 photos */
+        .about-photo-grid img:nth-child(3) {
+          display: none !important;
+        }
+        .about-photo-grid img:nth-child(1),
+        .about-photo-grid img:nth-child(2) {
+          width: 100% !important;
+          height: 240px !important;
+          border-radius: 16px !important;
+        }
+        /* Subtitle moves AFTER photos */
+        .about-hero-sub {
+          order: 4;
+          font-size: 16px !important;
+          line-height: 1.5 !important;
+          margin-bottom: 0 !important;
+        }
+
+        /* ── Mission section ── */
+        .vd-about-mission-section {
+          padding: 48px 24px !important;
+        }
+        .about-mission-shape {
+          display: none !important;
+        }
+        .vd-about-mission-section h2 {
+          font-size: 32px !important;
+          line-height: 1.2 !important;
+        }
+        .vd-about-mission-section p {
+          line-height: 1.5 !important;
+        }
+
+        /* ── Values section ── */
+        .vd-about-values-section {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+        }
+        .vd-about-values-section div[style*="grid-template-columns"] {
+          grid-template-columns: 1fr !important;
+        }
+        .vd-about-values-section div[style*="height: 196px"] {
+          height: auto !important;
+        }
+
+        /* ── FAQ section ── */
+        .vd-about-faq-section {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+        }
+        .vd-about-faq-section .faq-group {
+          grid-template-columns: 1fr !important;
+          gap: 12px !important;
+        }
+        .vd-about-faq-section a[style*="width: 327px"] {
+          width: 100% !important;
           align-self: stretch !important;
           justify-content: center !important;
         }

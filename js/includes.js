@@ -28,8 +28,25 @@
 
   // Mobile menu toggle — runs after partials are injected
   const toggle = document.getElementById("nav-toggle");
+  const close  = document.getElementById("nav-close");
   const menu   = document.getElementById("mobile-menu");
+
   if (toggle && menu) {
-    toggle.addEventListener("click", () => menu.classList.toggle("open"));
+    function openMenu() {
+      menu.classList.add("open");
+      document.body.classList.add("nav-open");
+    }
+    function closeMenu() {
+      menu.classList.remove("open");
+      document.body.classList.remove("nav-open");
+    }
+
+    toggle.addEventListener("click", openMenu);
+    if (close) close.addEventListener("click", closeMenu);
+
+    // Close on backdrop tap
+    menu.addEventListener("click", function (e) {
+      if (e.target === menu) closeMenu();
+    });
   }
 })();
