@@ -95,7 +95,9 @@
           </h2>
 
           <!-- Tabbed benefit list -->
-          <div class="wj-tabs-row" style="display: flex; gap: 60px; align-items: flex-start">
+          <div
+            class="wj-tabs-row"
+            style="display: flex; gap: 60px; align-items: flex-start">
             <ul
               id="benefit-list"
               style="
@@ -703,7 +705,9 @@
     </section>
 
     <!-- EARLY VENDORS CTA -->
-    <section class="wj-early-section" style="background: #dcefb0; padding: 96px 0">
+    <section
+      class="wj-early-section"
+      style="background: #dcefb0; padding: 96px 0">
       <div
         class="container-site wj-early-grid"
         style="
@@ -799,10 +803,22 @@
               text-decoration: none;
               margin-bottom: 48px;
             "
-            onmouseover="this.style.background='#A84065';this.style.borderColor='#C5E866'"
-            onmouseout="this.style.background='#5c2839';this.style.borderColor='transparent'"
-            onmousedown="this.style.background='#3F1B2C';this.style.borderColor='transparent'"
-            onmouseup="this.style.background='#A84065';this.style.borderColor='#C5E866'">
+            onmouseover="
+              this.style.background = '#A84065';
+              this.style.borderColor = '#C5E866';
+            "
+            onmouseout="
+              this.style.background = '#5c2839';
+              this.style.borderColor = 'transparent';
+            "
+            onmousedown="
+              this.style.background = '#3F1B2C';
+              this.style.borderColor = 'transparent';
+            "
+            onmouseup="
+              this.style.background = '#A84065';
+              this.style.borderColor = '#C5E866';
+            ">
             Get Started
             <span style="color: var(--color-lime)">→</span>
           </a>
@@ -911,6 +927,81 @@
         .wj-early-grid a.wj-early-btn {
           width: 100% !important;
           max-width: 100% !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        /* ── Benefits section ── */
+        .wj-benefits-section {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+        }
+        .wj-benefits-grid {
+          display: flex !important;
+          flex-direction: column !important;
+          gap: 32px !important;
+        }
+        /* Hide the decorative C circle on mobile */
+        .wj-c-circle {
+          display: none !important;
+        }
+        .wj-benefits-grid h2 {
+          font-size: 28px !important;
+          margin-bottom: 32px !important;
+        }
+        /* Tab list: full-width, vertical */
+        .wj-tabs-row {
+          flex-direction: column !important;
+          gap: 0 !important;
+        }
+        #benefit-list {
+          width: 100% !important;
+          min-width: unset !important;
+        }
+        #benefit-list li {
+          width: 100% !important;
+          height: auto !important;
+          padding: 12px 20px !important;
+          font-size: 15px !important;
+        }
+        #benefit-content {
+          padding-top: 0 !important;
+        }
+        #benefit-content h3 {
+          font-size: 24px !important;
+          max-width: 100% !important;
+          line-height: 1.2 !important;
+          margin-top: 60px !important;
+          margin-bottom: 150px !important;
+        }
+
+        /* ── FAQ section ── */
+        .wj-faq-section {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+        }
+        .wj-faq-section .faq-group {
+          grid-template-columns: 1fr !important;
+        }
+
+        /* ── Early vendors CTA ── */
+        .wj-early-section {
+          padding: 56px 24px !important;
+        }
+        .wj-early-grid {
+          grid-template-columns: 1fr !important;
+          gap: 32px !important;
+        }
+        .wj-cup-circle {
+          width: 180px !important;
+          height: 180px !important;
+          margin: 0 auto !important;
+        }
+        .wj-cup-circle img {
+          width: 120px !important;
+        }
+        .wj-early-grid h2 {
+          font-size: 28px !important;
         }
       }
     </style>

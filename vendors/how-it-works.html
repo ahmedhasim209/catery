@@ -15,41 +15,43 @@
     <div data-include="/partials/navbar-vendor.html"></div>
 
     <!-- HERO -->
-    <section class="section-maroon" style="padding-bottom: 48px">
+    <section class="section-maroon hiw-hero-section" style="padding-bottom: 48px">
       <div
-        class="container-site"
+        class="container-site hiw-hero-grid"
         style="
           display: grid;
           grid-template-columns: 1fr auto;
           gap: 40px;
           align-items: center;
         ">
-        <!-- Left: copy -->
-        <div>
-          <span
-            style="
-              display: inline-block;
-              margin-bottom: 24px;
-              padding: 7px 16px;
-              background: #3f1b2c;
-              color: var(--color-lime);
-              border: 1.5px solid var(--color-lime);
-              border-radius: var(--radius-pill);
-              box-shadow: 0 0 6.5px 3px rgba(255, 81, 143, 0.45);
-              font-family: var(--font-body);
-              font-size: var(--text-caption);
-              font-weight: 700;
-              letter-spacing: 1.2px;
-              text-transform: uppercase;
-            "
-            >VENDOR ONBOARDING</span
-          >
-          <h1
+        <!-- Pill — separate grid child so it can be ordered above the circle on mobile -->
+        <span class="hiw-hero-pill"
+          style="
+            display: inline-block;
+            margin-bottom: 24px;
+            padding: 7px 16px;
+            background: #3f1b2c;
+            color: var(--color-lime);
+            border: 1.5px solid var(--color-lime);
+            border-radius: var(--radius-pill);
+            box-shadow: 0 0 6.5px 3px rgba(255, 81, 143, 0.45);
+            font-family: var(--font-body);
+            font-size: var(--text-caption);
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+          "
+          >VENDOR ONBOARDING</span
+        >
+
+        <!-- Left: copy (heading + subtitle only) -->
+        <div class="hiw-hero-copy">
+          <h1 class="hiw-hero-h1"
             style="
               font-family: var(--font-brand);
-              font-size: 44px;
-              font-weight: 800;
-              line-height: 1.1;
+              font-size: 46px;
+              font-weight: 700;
+              line-height: 1.0;
               color: var(--color-cream);
               margin-bottom: 16px;
               max-width: 480px;
@@ -69,7 +71,7 @@
         </div>
 
         <!-- Right: lime circle with shopping cart SVG -->
-        <div
+        <div class="hiw-circle"
           style="
             width: 200px;
             height: 200px;
@@ -93,21 +95,25 @@
       class="section-maroon"
       style="padding-top: 8px; padding-bottom: 64px">
       <div class="container-site">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+        <div class="hiw-cards-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
           <!-- Card 01 -->
           <div
+            class="hiw-card"
             style="
-              background: #fff;
-              border-radius: 16px;
+              background: #FEFEFE;
+              border-radius: 24px;
               padding: 24px;
-              box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+              border: 0.5px solid #C5E866;
+              box-shadow: 0 0 2.7px 0 rgba(197,232,102,0.81);
+              display: flex;
+              flex-direction: column;
+              gap: 44px;
             ">
             <div
               style="
                 display: flex;
                 align-items: center;
                 gap: 14px;
-                margin-bottom: 20px;
               ">
               <div
                 style="
@@ -153,9 +159,7 @@
                 font-size: 12px;
                 font-weight: 400;
                 color: #1a1a1a;
-                line-height: 1;
-                margin-top: 44px;
-                margin-bottom: 44px;
+                line-height: 1.5;
               ">
               Sign up using your phone number and basic business information.
             </p>
@@ -176,18 +180,22 @@
 
           <!-- Card 02 -->
           <div
+            class="hiw-card"
             style="
-              background: #fff;
-              border-radius: 16px;
+              background: #FEFEFE;
+              border-radius: 24px;
               padding: 24px;
-              box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+              border: 0.5px solid #C5E866;
+              box-shadow: 0 0 2.7px 0 rgba(197,232,102,0.81);
+              display: flex;
+              flex-direction: column;
+              gap: 44px;
             ">
             <div
               style="
                 display: flex;
                 align-items: center;
                 gap: 14px;
-                margin-bottom: 20px;
               ">
               <div
                 style="
@@ -233,9 +241,7 @@
                 font-size: 12px;
                 font-weight: 400;
                 color: #1a1a1a;
-                line-height: 1;
-                margin-top: 44px;
-                margin-bottom: 44px;
+                line-height: 1.5;
               ">
               Add your logo, photos, service areas, and catering specialties.
             </p>
@@ -256,18 +262,22 @@
 
           <!-- Card 03 -->
           <div
+            class="hiw-card"
             style="
-              background: #fff;
-              border-radius: 16px;
+              background: #FEFEFE;
+              border-radius: 24px;
               padding: 24px;
-              box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+              border: 0.5px solid #C5E866;
+              box-shadow: 0 0 2.7px 0 rgba(197,232,102,0.81);
+              display: flex;
+              flex-direction: column;
+              gap: 44px;
             ">
             <div
               style="
                 display: flex;
                 align-items: center;
                 gap: 14px;
-                margin-bottom: 20px;
               ">
               <div
                 style="
@@ -313,9 +323,7 @@
                 font-size: 12px;
                 font-weight: 400;
                 color: #1a1a1a;
-                line-height: 1;
-                margin-top: 44px;
-                margin-bottom: 44px;
+                line-height: 1.5;
               ">
               Add package names, descriptions, and pricing information.
             </p>
@@ -336,18 +344,22 @@
 
           <!-- Card 04 -->
           <div
+            class="hiw-card"
             style="
-              background: #fff;
-              border-radius: 16px;
+              background: #FEFEFE;
+              border-radius: 24px;
               padding: 24px;
-              box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+              border: 0.5px solid #C5E866;
+              box-shadow: 0 0 2.7px 0 rgba(197,232,102,0.81);
+              display: flex;
+              flex-direction: column;
+              gap: 44px;
             ">
             <div
               style="
                 display: flex;
                 align-items: center;
                 gap: 14px;
-                margin-bottom: 20px;
               ">
               <div
                 style="
@@ -393,9 +405,7 @@
                 font-size: 12px;
                 font-weight: 400;
                 color: #1a1a1a;
-                line-height: 1;
-                margin-top: 44px;
-                margin-bottom: 44px;
+                line-height: 1.5;
               ">
               Keep your schedule updated so customers know when you're
               available.
@@ -417,18 +427,22 @@
 
           <!-- Card 05 -->
           <div
+            class="hiw-card"
             style="
-              background: #fff;
-              border-radius: 16px;
+              background: #FEFEFE;
+              border-radius: 24px;
               padding: 24px;
-              box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+              border: 0.5px solid #C5E866;
+              box-shadow: 0 0 2.7px 0 rgba(197,232,102,0.81);
+              display: flex;
+              flex-direction: column;
+              gap: 44px;
             ">
             <div
               style="
                 display: flex;
                 align-items: center;
                 gap: 14px;
-                margin-bottom: 20px;
               ">
               <div
                 style="
@@ -474,9 +488,7 @@
                 font-size: 12px;
                 font-weight: 400;
                 color: #1a1a1a;
-                line-height: 1;
-                margin-top: 44px;
-                margin-bottom: 44px;
+                line-height: 1.5;
               ">
               Customers can browse your profile and submit inquiries.
             </p>
@@ -497,18 +509,22 @@
 
           <!-- Card 06 -->
           <div
+            class="hiw-card"
             style="
-              background: #fff;
-              border-radius: 16px;
+              background: #FEFEFE;
+              border-radius: 24px;
               padding: 24px;
-              box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+              border: 0.5px solid #C5E866;
+              box-shadow: 0 0 2.7px 0 rgba(197,232,102,0.81);
+              display: flex;
+              flex-direction: column;
+              gap: 44px;
             ">
             <div
               style="
                 display: flex;
                 align-items: center;
                 gap: 14px;
-                margin-bottom: 20px;
               ">
               <div
                 style="
@@ -554,9 +570,7 @@
                 font-size: 12px;
                 font-weight: 400;
                 color: #1a1a1a;
-                line-height: 1;
-                margin-top: 44px;
-                margin-bottom: 44px;
+                line-height: 1.5;
               ">
               Coordinate with your customer and deliver a great event
               experience.
@@ -580,7 +594,7 @@
     </section>
 
     <!-- CTA -->
-    <section
+    <section class="hiw-cta-section"
       style="
         position: relative;
         background: var(--color-maroon);
@@ -645,5 +659,61 @@
     <div data-include="/partials/footer.html"></div>
     <script src="/js/includes.js"></script>
     <script src="/js/content.js"></script>
+
+    <style>
+      @media (max-width: 768px) {
+        /* ── Hero ── */
+        .hiw-hero-section {
+          padding: 40px 24px 32px !important;
+        }
+        .hiw-hero-grid {
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          gap: 24px !important;
+          text-align: center !important;
+        }
+        /* Order: pill(1) → circle(2) → copy(3) */
+        .hiw-hero-pill {
+          order: 1;
+          margin-bottom: 0 !important;
+        }
+        .hiw-circle {
+          order: 2;
+          width: 160px !important;
+          height: 160px !important;
+        }
+        .hiw-hero-copy {
+          order: 3;
+        }
+        .hiw-hero-h1 {
+          font-size: 46px !important;
+          max-width: 100% !important;
+          text-align: center !important;
+        }
+        .hiw-hero-copy p {
+          text-align: center !important;
+        }
+
+        /* ── Step cards: 1 column ── */
+        .hiw-cards-grid {
+          grid-template-columns: 1fr !important;
+          gap: 16px !important;
+        }
+        .hiw-cards-grid > div p {
+          line-height: 1.5 !important;
+          margin-top: 16px !important;
+          margin-bottom: 16px !important;
+        }
+
+        /* ── CTA section ── */
+        .hiw-cta-section {
+          padding: 48px 24px 64px !important;
+        }
+        .hiw-cta-section img[aria-hidden="true"] {
+          display: none !important;
+        }
+      }
+    </style>
   </body>
 </html>
