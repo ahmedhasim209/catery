@@ -1,3 +1,4 @@
+<!-- @format -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,105 +7,651 @@
     <title>How It Works — Catery Vendors</title>
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/tailwind.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   </head>
-  <body style="background:var(--color-maroon);color:var(--color-cream);">
-
+  <body style="background: var(--color-maroon); color: var(--color-cream)">
     <div data-include="/partials/navbar-vendor.html"></div>
 
     <!-- HERO -->
-    <section class="section-maroon" style="padding-bottom:64px;">
-      <div class="container-site" style="display:grid;grid-template-columns:1fr auto;gap:40px;align-items:start;">
-        <div>
-          <span class="tag-pill tag-lime" style="margin-bottom:24px;display:inline-block;">VENDOR ONBOARDING</span>
-          <h1 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;margin-bottom:16px;">How does Catery work for vendors?</h1>
-          <p style="opacity:0.65;font-size:0.95rem;">Getting started is simple.</p>
+    <section class="section-maroon hiw-hero-section" style="padding-bottom: 48px">
+      <div
+        class="container-site hiw-hero-grid"
+        style="
+          display: grid;
+          grid-template-columns: 1fr auto;
+          gap: 40px;
+          align-items: center;
+        ">
+        <!-- Pill — separate grid child so it can be ordered above the circle on mobile -->
+        <span class="hiw-hero-pill"
+          style="
+            display: inline-block;
+            margin-bottom: 24px;
+            padding: 7px 16px;
+            background: #3f1b2c;
+            color: var(--color-lime);
+            border: 1.5px solid var(--color-lime);
+            border-radius: var(--radius-pill);
+            box-shadow: 0 0 6.5px 3px rgba(255, 81, 143, 0.45);
+            font-family: var(--font-body);
+            font-size: var(--text-caption);
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+          "
+          >VENDOR ONBOARDING</span
+        >
+
+        <!-- Left: copy (heading + subtitle only) -->
+        <div class="hiw-hero-copy">
+          <h1 class="hiw-hero-h1"
+            style="
+              font-family: var(--font-brand);
+              font-size: 46px;
+              font-weight: 700;
+              line-height: 1.0;
+              color: var(--color-cream);
+              margin-bottom: 16px;
+              max-width: 480px;
+            ">
+            How does Catery work for vendors?
+          </h1>
+          <p
+            style="
+              font-family: var(--font-body);
+              font-size: 14px;
+              font-weight: 400;
+              color: var(--color-cream);
+              opacity: 0.65;
+            ">
+            Getting started is simple.
+          </p>
         </div>
-        <!-- Lime circle with illustration -->
-        <div style="width:120px;height:120px;background:var(--color-lime);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:2.5rem;">🛒</div>
+
+        <!-- Right: lime circle with shopping cart SVG -->
+        <div class="hiw-circle"
+          style="
+            width: 200px;
+            height: 200px;
+            background: var(--color-lime);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+          ">
+          <img
+            src="/assets/images/how-it-work-vendor/shopping-cart-how-it-work.svg"
+            alt=""
+            style="width: 140px; height: 140px" />
+        </div>
       </div>
     </section>
 
     <!-- 6 STEP CARDS -->
-    <section class="section-maroon" style="padding-top:0;">
+    <section
+      class="section-maroon"
+      style="padding-top: 8px; padding-bottom: 64px">
       <div class="container-site">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
-
-          <div class="card-white">
-            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-              <div style="width:36px;height:36px;background:var(--color-maroon);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--color-cream);font-weight:700;font-size:0.85rem;flex-shrink:0;">01</div>
-              <div><h4 style="font-weight:700;color:var(--color-ink);font-size:1rem;">Create Your Account</h4><p style="font-size:0.75rem;color:var(--color-muted);">Takes under 5 minutes</p></div>
+        <div class="hiw-cards-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+          <!-- Card 01 -->
+          <div
+            class="hiw-card"
+            style="
+              background: #FEFEFE;
+              border-radius: 24px;
+              padding: 24px;
+              border: 0.5px solid #C5E866;
+              box-shadow: 0 0 2.7px 0 rgba(197,232,102,0.81);
+              display: flex;
+              flex-direction: column;
+              gap: 44px;
+            ">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 14px;
+              ">
+              <div
+                style="
+                  width: 44px;
+                  height: 44px;
+                  background: var(--color-maroon);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: var(--color-lime);
+                  font-family: var(--font-body);
+                  font-weight: 700;
+                  font-size: 13px;
+                  flex-shrink: 0;
+                ">
+                01
+              </div>
+              <div>
+                <h4
+                  style="
+                    font-family: var(--font-body);
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: var(--color-ink);
+                    margin-bottom: 3px;
+                  ">
+                  Create Your Account
+                </h4>
+                <p
+                  style="
+                    font-family: var(--font-body);
+                    font-size: 13px;
+                    color: var(--color-grey);
+                  ">
+                  Takes under 5 minutes
+                </p>
+              </div>
             </div>
-            <p style="font-size:0.85rem;color:var(--color-muted);line-height:1.6;margin-bottom:16px;">Sign up using your phone number and basic business information.</p>
-            <div style="background:var(--color-lime);border-radius:8px;padding:10px 16px;font-size:0.83rem;color:var(--color-maroon);font-weight:500;">→ Getting started takes only a few minutes.</div>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1.5;
+              ">
+              Sign up using your phone number and basic business information.
+            </p>
+            <div
+              style="
+                background: var(--color-lime);
+                border-radius: 48px;
+                padding: 12px 18px;
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1;
+                color: #1a1a1a;
+              ">
+              → Getting started takes only a few minutes.
+            </div>
           </div>
 
-          <div class="card-white">
-            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-              <div style="width:36px;height:36px;background:var(--color-maroon);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--color-cream);font-weight:700;font-size:0.85rem;flex-shrink:0;">02</div>
-              <div><h4 style="font-weight:700;color:var(--color-ink);font-size:1rem;">Build Your Profile</h4><p style="font-size:0.75rem;color:var(--color-muted);">Your professional storefront</p></div>
+          <!-- Card 02 -->
+          <div
+            class="hiw-card"
+            style="
+              background: #FEFEFE;
+              border-radius: 24px;
+              padding: 24px;
+              border: 0.5px solid #C5E866;
+              box-shadow: 0 0 2.7px 0 rgba(197,232,102,0.81);
+              display: flex;
+              flex-direction: column;
+              gap: 44px;
+            ">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 14px;
+              ">
+              <div
+                style="
+                  width: 44px;
+                  height: 44px;
+                  background: var(--color-maroon);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: var(--color-lime);
+                  font-family: var(--font-body);
+                  font-weight: 700;
+                  font-size: 13px;
+                  flex-shrink: 0;
+                ">
+                02
+              </div>
+              <div>
+                <h4
+                  style="
+                    font-family: var(--font-body);
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: var(--color-ink);
+                    margin-bottom: 3px;
+                  ">
+                  Build Your Profile
+                </h4>
+                <p
+                  style="
+                    font-family: var(--font-body);
+                    font-size: 13px;
+                    color: var(--color-grey);
+                  ">
+                  Your professional storefront
+                </p>
+              </div>
             </div>
-            <p style="font-size:0.85rem;color:var(--color-muted);line-height:1.6;margin-bottom:16px;">Add your logo, photos, service areas, and catering specialties.</p>
-            <div style="background:var(--color-lime);border-radius:8px;padding:10px 16px;font-size:0.83rem;color:var(--color-maroon);font-weight:500;">→ Profiles with photos attract more interest.</div>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1.5;
+              ">
+              Add your logo, photos, service areas, and catering specialties.
+            </p>
+            <div
+              style="
+                background: var(--color-lime);
+                border-radius: 48px;
+                padding: 12px 18px;
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1;
+                color: #1a1a1a;
+              ">
+              → Profiles with photos attract more interest.
+            </div>
           </div>
 
-          <div class="card-white">
-            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-              <div style="width:36px;height:36px;background:var(--color-maroon);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--color-cream);font-weight:700;font-size:0.85rem;flex-shrink:0;">03</div>
-              <div><h4 style="font-weight:700;color:var(--color-ink);font-size:1rem;">Create Your Packages</h4><p style="font-size:0.75rem;color:var(--color-muted);">Define what you offer</p></div>
+          <!-- Card 03 -->
+          <div
+            class="hiw-card"
+            style="
+              background: #FEFEFE;
+              border-radius: 24px;
+              padding: 24px;
+              border: 0.5px solid #C5E866;
+              box-shadow: 0 0 2.7px 0 rgba(197,232,102,0.81);
+              display: flex;
+              flex-direction: column;
+              gap: 44px;
+            ">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 14px;
+              ">
+              <div
+                style="
+                  width: 44px;
+                  height: 44px;
+                  background: var(--color-maroon);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: var(--color-lime);
+                  font-family: var(--font-body);
+                  font-weight: 700;
+                  font-size: 13px;
+                  flex-shrink: 0;
+                ">
+                03
+              </div>
+              <div>
+                <h4
+                  style="
+                    font-family: var(--font-body);
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: var(--color-ink);
+                    margin-bottom: 3px;
+                  ">
+                  Create Your Packages
+                </h4>
+                <p
+                  style="
+                    font-family: var(--font-body);
+                    font-size: 13px;
+                    color: var(--color-grey);
+                  ">
+                  Define what you offer
+                </p>
+              </div>
             </div>
-            <p style="font-size:0.85rem;color:var(--color-muted);line-height:1.6;margin-bottom:16px;">Add package names, descriptions, and pricing information.</p>
-            <div style="background:var(--color-lime);border-radius:8px;padding:10px 16px;font-size:0.83rem;color:var(--color-maroon);font-weight:500;">→ Start with your most popular packages.</div>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1.5;
+              ">
+              Add package names, descriptions, and pricing information.
+            </p>
+            <div
+              style="
+                background: var(--color-lime);
+                border-radius: 48px;
+                padding: 12px 18px;
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1;
+                color: #1a1a1a;
+              ">
+              → Start with your most popular packages.
+            </div>
           </div>
 
-          <div class="card-white">
-            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-              <div style="width:36px;height:36px;background:var(--color-maroon);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--color-cream);font-weight:700;font-size:0.85rem;flex-shrink:0;">04</div>
-              <div><h4 style="font-weight:700;color:var(--color-ink);font-size:1rem;">Set Your Availability</h4><p style="font-size:0.75rem;color:var(--color-muted);">Control your calendar</p></div>
+          <!-- Card 04 -->
+          <div
+            class="hiw-card"
+            style="
+              background: #FEFEFE;
+              border-radius: 24px;
+              padding: 24px;
+              border: 0.5px solid #C5E866;
+              box-shadow: 0 0 2.7px 0 rgba(197,232,102,0.81);
+              display: flex;
+              flex-direction: column;
+              gap: 44px;
+            ">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 14px;
+              ">
+              <div
+                style="
+                  width: 44px;
+                  height: 44px;
+                  background: var(--color-maroon);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: var(--color-lime);
+                  font-family: var(--font-body);
+                  font-weight: 700;
+                  font-size: 13px;
+                  flex-shrink: 0;
+                ">
+                04
+              </div>
+              <div>
+                <h4
+                  style="
+                    font-family: var(--font-body);
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: var(--color-ink);
+                    margin-bottom: 3px;
+                  ">
+                  Set Your Availability
+                </h4>
+                <p
+                  style="
+                    font-family: var(--font-body);
+                    font-size: 13px;
+                    color: var(--color-grey);
+                  ">
+                  Control your calendar
+                </p>
+              </div>
             </div>
-            <p style="font-size:0.85rem;color:var(--color-muted);line-height:1.6;margin-bottom:16px;">Keep your schedule updated so customers know when you're available.</p>
-            <div style="background:var(--color-lime);border-radius:8px;padding:10px 16px;font-size:0.83rem;color:var(--color-maroon);font-weight:500;">→ Regular updates help you stay organized.</div>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1.5;
+              ">
+              Keep your schedule updated so customers know when you're
+              available.
+            </p>
+            <div
+              style="
+                background: var(--color-lime);
+                border-radius: 48px;
+                padding: 12px 18px;
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1;
+                color: #1a1a1a;
+              ">
+              → Regular updates help you stay organized.
+            </div>
           </div>
 
-          <div class="card-white">
-            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-              <div style="width:36px;height:36px;background:var(--color-maroon);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--color-cream);font-weight:700;font-size:0.85rem;flex-shrink:0;">05</div>
-              <div><h4 style="font-weight:700;color:var(--color-ink);font-size:1rem;">Receive Booking Requests</h4><p style="font-size:0.75rem;color:var(--color-muted);">Sit back and get notified</p></div>
+          <!-- Card 05 -->
+          <div
+            class="hiw-card"
+            style="
+              background: #FEFEFE;
+              border-radius: 24px;
+              padding: 24px;
+              border: 0.5px solid #C5E866;
+              box-shadow: 0 0 2.7px 0 rgba(197,232,102,0.81);
+              display: flex;
+              flex-direction: column;
+              gap: 44px;
+            ">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 14px;
+              ">
+              <div
+                style="
+                  width: 44px;
+                  height: 44px;
+                  background: var(--color-maroon);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: var(--color-lime);
+                  font-family: var(--font-body);
+                  font-weight: 700;
+                  font-size: 13px;
+                  flex-shrink: 0;
+                ">
+                05
+              </div>
+              <div>
+                <h4
+                  style="
+                    font-family: var(--font-body);
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: var(--color-ink);
+                    margin-bottom: 3px;
+                  ">
+                  Receive Booking Requests
+                </h4>
+                <p
+                  style="
+                    font-family: var(--font-body);
+                    font-size: 13px;
+                    color: var(--color-grey);
+                  ">
+                  Sit back and get notified
+                </p>
+              </div>
             </div>
-            <p style="font-size:0.85rem;color:var(--color-muted);line-height:1.6;margin-bottom:16px;">Customers can browse your profile and submit inquiries.</p>
-            <div style="background:var(--color-lime);border-radius:8px;padding:10px 16px;font-size:0.83rem;color:var(--color-maroon);font-weight:500;">→ Responding quickly helps create a better experience.</div>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1.5;
+              ">
+              Customers can browse your profile and submit inquiries.
+            </p>
+            <div
+              style="
+                background: var(--color-lime);
+                border-radius: 48px;
+                padding: 12px 18px;
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1;
+                color: #1a1a1a;
+              ">
+              → Responding quickly helps create a better experience.
+            </div>
           </div>
 
-          <div class="card-white">
-            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
-              <div style="width:36px;height:36px;background:var(--color-maroon);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--color-cream);font-weight:700;font-size:0.85rem;flex-shrink:0;">06</div>
-              <div><h4 style="font-weight:700;color:var(--color-ink);font-size:1rem;">Confirm & Deliver</h4><p style="font-size:0.75rem;color:var(--color-muted);">Build your reputation</p></div>
+          <!-- Card 06 -->
+          <div
+            class="hiw-card"
+            style="
+              background: #FEFEFE;
+              border-radius: 24px;
+              padding: 24px;
+              border: 0.5px solid #C5E866;
+              box-shadow: 0 0 2.7px 0 rgba(197,232,102,0.81);
+              display: flex;
+              flex-direction: column;
+              gap: 44px;
+            ">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 14px;
+              ">
+              <div
+                style="
+                  width: 44px;
+                  height: 44px;
+                  background: var(--color-maroon);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: var(--color-lime);
+                  font-family: var(--font-body);
+                  font-weight: 700;
+                  font-size: 13px;
+                  flex-shrink: 0;
+                ">
+                06
+              </div>
+              <div>
+                <h4
+                  style="
+                    font-family: var(--font-body);
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: var(--color-ink);
+                    margin-bottom: 3px;
+                  ">
+                  Confirm &amp; Deliver
+                </h4>
+                <p
+                  style="
+                    font-family: var(--font-body);
+                    font-size: 13px;
+                    color: var(--color-grey);
+                  ">
+                  Build your reputation
+                </p>
+              </div>
             </div>
-            <p style="font-size:0.85rem;color:var(--color-muted);line-height:1.6;margin-bottom:16px;">Coordinate with your customer and deliver a great event experience.</p>
-            <div style="background:var(--color-lime);border-radius:8px;padding:10px 16px;font-size:0.83rem;color:var(--color-maroon);font-weight:500;">→ Great service helps build long-term customer relationships.</div>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1.5;
+              ">
+              Coordinate with your customer and deliver a great event
+              experience.
+            </p>
+            <div
+              style="
+                background: var(--color-lime);
+                border-radius: 48px;
+                padding: 12px 18px;
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1;
+                color: #1a1a1a;
+              ">
+              → Great service helps build long-term customer relationships.
+            </div>
           </div>
-
         </div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="section-maroon" style="padding-top:48px;">
-      <div class="container-site" style="display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;">
-        <div>
-          <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2rem);font-weight:800;margin-bottom:8px;">Ready to Get Started?</h2>
-          <p style="opacity:0.65;font-size:0.9rem;">Join catering businesses building their presence on Catery.</p>
-          <p style="color:var(--color-lime);font-weight:700;font-size:0.95rem;margin:20px 0 10px;">Download the App</p>
-          <div style="display:flex;gap:10px;flex-wrap:wrap;">
-            <a href="#" class="app-badge"><i class="fa-brands fa-apple" style="font-size:1.3rem;"></i><span><span style="font-size:0.65rem;display:block;opacity:0.7;">Download on the</span>App Store</span></a>
-            <a href="#" class="app-badge"><i class="fa-brands fa-google-play" style="font-size:1.1rem;color:#34a853;"></i><span><span style="font-size:0.65rem;display:block;opacity:0.7;">GET IT ON</span>Google Play</span></a>
-          </div>
-        </div>
-        <!-- decorative blob -->
-        <div style="position:relative;width:120px;height:120px;flex-shrink:0;">
-          <div style="width:80px;height:80px;background:var(--color-cream);border-radius:50%;opacity:0.08;position:absolute;right:0;top:0;"></div>
-          <div style="width:40px;height:40px;background:var(--color-cream);border-radius:50%;opacity:0.06;position:absolute;right:30px;top:50px;"></div>
-          <div style="width:20px;height:20px;background:var(--color-cream);border-radius:50%;opacity:0.05;position:absolute;right:10px;top:80px;"></div>
+    <section class="hiw-cta-section"
+      style="
+        position: relative;
+        background: var(--color-maroon);
+        padding: 72px 120px 96px;
+        overflow: hidden;
+      ">
+      <!-- Decorative shape right -->
+      <img
+        src="/assets/images/home-vendor/shape-right.svg"
+        alt=""
+        aria-hidden="true"
+        style="
+          position: absolute;
+          right: -20px;
+          bottom: 0;
+          width: 220px;
+          pointer-events: none;
+        " />
+
+      <div class="container-site" style="position: relative; z-index: 1">
+        <h2
+          style="
+            font-family: var(--font-body);
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 1;
+            color: #efece4;
+            margin-bottom: 15px;
+          ">
+          Ready to Get Started?
+        </h2>
+        <p
+          style="
+            font-family: var(--font-body);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1;
+            color: #efece4;
+            margin-bottom: 50px;
+          ">
+          Join catering businesses building their presence on Catery.
+        </p>
+
+        <p
+          style="
+            font-family: var(--font-body);
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 1;
+            color: #c5e866;
+            margin-bottom: 16px;
+          ">
+          Download the App
+        </p>
+
+        <div style="display: flex; gap: 12px; flex-wrap: wrap">
+          <div data-include="/partials/app-badges.html"></div>
         </div>
       </div>
     </section>
@@ -112,5 +659,61 @@
     <div data-include="/partials/footer.html"></div>
     <script src="/js/includes.js"></script>
     <script src="/js/content.js"></script>
+
+    <style>
+      @media (max-width: 768px) {
+        /* ── Hero ── */
+        .hiw-hero-section {
+          padding: 40px 24px 32px !important;
+        }
+        .hiw-hero-grid {
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          gap: 24px !important;
+          text-align: center !important;
+        }
+        /* Order: pill(1) → circle(2) → copy(3) */
+        .hiw-hero-pill {
+          order: 1;
+          margin-bottom: 0 !important;
+        }
+        .hiw-circle {
+          order: 2;
+          width: 160px !important;
+          height: 160px !important;
+        }
+        .hiw-hero-copy {
+          order: 3;
+        }
+        .hiw-hero-h1 {
+          font-size: 46px !important;
+          max-width: 100% !important;
+          text-align: center !important;
+        }
+        .hiw-hero-copy p {
+          text-align: center !important;
+        }
+
+        /* ── Step cards: 1 column ── */
+        .hiw-cards-grid {
+          grid-template-columns: 1fr !important;
+          gap: 16px !important;
+        }
+        .hiw-cards-grid > div p {
+          line-height: 1.5 !important;
+          margin-top: 16px !important;
+          margin-bottom: 16px !important;
+        }
+
+        /* ── CTA section ── */
+        .hiw-cta-section {
+          padding: 48px 24px 64px !important;
+        }
+        .hiw-cta-section img[aria-hidden="true"] {
+          display: none !important;
+        }
+      }
+    </style>
   </body>
 </html>

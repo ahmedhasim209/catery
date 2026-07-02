@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,91 +8,834 @@
     <title>Why Join — Catery Vendors</title>
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/tailwind.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   </head>
-  <body style="background:var(--color-maroon);color:var(--color-cream);">
-
+  <body style="background: var(--color-maroon); color: var(--color-cream)">
     <div data-include="/partials/navbar-vendor.html"></div>
 
     <!-- HERO -->
-    <section class="section-maroon" style="padding-bottom:64px;">
+    <section class="section-maroon" style="padding-bottom: 144px">
       <div class="container-site">
-        <span class="tag-pill tag-lime" style="margin-bottom:24px;display:inline-block;">WHY VENDORS CHOOSE CATERY</span>
-        <h1 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,2.8rem);font-weight:800;line-height:1.15;max-width:700px;">Get Discovered. Stay Organized. Grow Smarter.</h1>
+        <span
+          style="
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 16px;
+            padding: 7px 12px;
+            background: #3f1b2c;
+            color: #c5e866;
+            border: 1px solid #c5e866;
+            border-radius: 20px;
+            box-shadow: 0 0 6.5px 3px rgba(255, 81, 143, 0.45);
+            font-family: var(--font-body);
+            font-size: var(--text-caption);
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+          "
+          >WHY VENDORS CHOOSE CATERY</span
+        >
+        <h1
+          style="
+            font-family: var(--font-brand);
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 1;
+            color: #efece4;
+            max-width: 1100px;
+          ">
+          Get Discovered. Stay Organized. Grow Smarter.
+        </h1>
       </div>
     </section>
 
     <!-- BENEFITS -->
-    <section class="section-cream">
-      <div class="container-site" style="display:grid;grid-template-columns:1fr auto;gap:48px;align-items:start;">
+    <section class="section-cream wj-benefits-section">
+      <div
+        class="container-site wj-benefits-grid"
+        style="
+          display: grid;
+          grid-template-columns: 1fr auto;
+          gap: 48px;
+          align-items: center;
+        ">
         <div>
-          <span class="tag-pill tag-maroon" style="margin-bottom:20px;display:inline-block;">THE BENEFITS</span>
-          <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:var(--color-ink);margin-bottom:28px;">Get Discovered. Stay Organized.<br>Grow Smarter.</h2>
+          <!-- THE BENEFITS pill -->
+          <span
+            style="
+              display: inline-block;
+              margin-bottom: 24px;
+              padding: 7px 12px;
+              background: #c5e866;
+              color: #1a1a1a;
+              border: 1px solid #a84065;
+              border-radius: 20px;
+              font-family: var(--font-body);
+              font-size: 11px;
+              font-weight: 700;
+              line-height: 1;
+              letter-spacing: 1.2px;
+              text-transform: uppercase;
+            "
+            >THE BENEFITS</span
+          >
+          <h2
+            style="
+              font-family: var(--font-body);
+              font-size: 28px;
+              font-weight: 800;
+              color: #1a1a1a;
+              line-height: 1;
+              margin-bottom: 44px;
+              max-width: 500px;
+            ">
+            Get Discovered. Stay Organized. Grow Smarter.
+          </h2>
 
           <!-- Tabbed benefit list -->
-          <div style="display:flex;gap:40px;align-items:start;">
-            <ul id="benefit-list" style="list-style:none;display:flex;flex-direction:column;gap:4px;min-width:200px;">
-              <li class="benefit-tab active-tab" data-target="reach" style="padding:10px 14px;border-radius:8px;cursor:pointer;font-size:0.9rem;font-weight:600;color:var(--color-ink);background:var(--color-lime);border-left:3px solid var(--color-maroon);">Reach More Customers</li>
-              <li class="benefit-tab" data-target="professional" style="padding:10px 14px;border-radius:8px;cursor:pointer;font-size:0.9rem;color:var(--color-muted);">Look Professional</li>
-              <li class="benefit-tab" data-target="time" style="padding:10px 14px;border-radius:8px;cursor:pointer;font-size:0.9rem;color:var(--color-muted);">Save Time</li>
-              <li class="benefit-tab" data-target="showcase" style="padding:10px 14px;border-radius:8px;cursor:pointer;font-size:0.9rem;color:var(--color-muted);">Showcase Your Work</li>
-              <li class="benefit-tab" data-target="organized" style="padding:10px 14px;border-radius:8px;cursor:pointer;font-size:0.9rem;color:var(--color-muted);">Stay Organized</li>
-              <li class="benefit-tab" data-target="grow" style="padding:10px 14px;border-radius:8px;cursor:pointer;font-size:0.9rem;color:var(--color-muted);">Grow Your Presence</li>
+          <div
+            class="wj-tabs-row"
+            style="display: flex; gap: 60px; align-items: flex-start">
+            <ul
+              id="benefit-list"
+              style="
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                border-left: 5px solid var(--color-lime);
+                min-width: 240px;
+              ">
+              <li
+                class="benefit-tab"
+                data-target="reach"
+                data-copy="Help more people find your business online."
+                style="
+                  display: flex;
+                  align-items: center;
+                  width: 247px;
+                  height: 42px;
+                  box-sizing: border-box;
+                  padding: 8px 24px;
+                  cursor: pointer;
+                  font-family: var(--font-body);
+                  font-size: 15px;
+                  font-weight: 700;
+                  line-height: 1;
+                  color: #1a1a1a;
+                  transition: background 0.3s ease;
+                  background: linear-gradient(
+                    90deg,
+                    rgba(197, 232, 102, 0.42),
+                    rgba(197, 232, 102, 0)
+                  );
+                ">
+                Reach More Customers
+              </li>
+              <li
+                class="benefit-tab"
+                data-target="professional"
+                data-copy="Present your business with a polished, trustworthy profile."
+                style="
+                  display: flex;
+                  align-items: center;
+                  width: 247px;
+                  height: 42px;
+                  box-sizing: border-box;
+                  padding: 8px 24px;
+                  cursor: pointer;
+                  font-family: var(--font-body);
+                  font-size: 15px;
+                  font-weight: 700;
+                  line-height: 1;
+                  color: #1a1a1a;
+                  transition: background 0.3s ease;
+                  background: transparent;
+                ">
+                Look Professional
+              </li>
+              <li
+                class="benefit-tab"
+                data-target="time"
+                data-copy="Manage bookings and inquiries all in one place."
+                style="
+                  display: flex;
+                  align-items: center;
+                  width: 247px;
+                  height: 42px;
+                  box-sizing: border-box;
+                  padding: 8px 24px;
+                  cursor: pointer;
+                  font-family: var(--font-body);
+                  font-size: 15px;
+                  font-weight: 700;
+                  line-height: 1;
+                  color: #1a1a1a;
+                  transition: background 0.3s ease;
+                  background: transparent;
+                ">
+                Save Time
+              </li>
+              <li
+                class="benefit-tab"
+                data-target="showcase"
+                data-copy="Display your best photos, menus, and packages."
+                style="
+                  display: flex;
+                  align-items: center;
+                  width: 247px;
+                  height: 42px;
+                  box-sizing: border-box;
+                  padding: 8px 24px;
+                  cursor: pointer;
+                  font-family: var(--font-body);
+                  font-size: 15px;
+                  font-weight: 700;
+                  line-height: 1;
+                  color: #1a1a1a;
+                  transition: background 0.3s ease;
+                  background: transparent;
+                ">
+                Showcase Your Work
+              </li>
+              <li
+                class="benefit-tab"
+                data-target="organized"
+                data-copy="Keep your schedule and requests neatly in order."
+                style="
+                  display: flex;
+                  align-items: center;
+                  width: 247px;
+                  height: 42px;
+                  box-sizing: border-box;
+                  padding: 8px 24px;
+                  cursor: pointer;
+                  font-family: var(--font-body);
+                  font-size: 15px;
+                  font-weight: 700;
+                  line-height: 1;
+                  color: #1a1a1a;
+                  transition: background 0.3s ease;
+                  background: transparent;
+                ">
+                Stay Organized
+              </li>
+              <li
+                class="benefit-tab"
+                data-target="grow"
+                data-copy="Build your reputation and expand your reach."
+                style="
+                  display: flex;
+                  align-items: center;
+                  width: 247px;
+                  height: 42px;
+                  box-sizing: border-box;
+                  padding: 8px 24px;
+                  cursor: pointer;
+                  font-family: var(--font-body);
+                  font-size: 15px;
+                  font-weight: 700;
+                  line-height: 1;
+                  color: #1a1a1a;
+                  transition: background 0.3s ease;
+                  background: transparent;
+                ">
+                Grow Your Presence
+              </li>
             </ul>
-            <div id="benefit-content" style="flex:1;">
-              <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--color-maroon);line-height:1.4;">Help more people find your business online.</h3>
+            <div id="benefit-content" style="flex: 1; padding-top: 6px">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 28px;
+                  font-weight: 800;
+                  color: #5c2839;
+                  line-height: 1;
+                  max-width: 420px;
+                  transition: opacity 0.25s ease;
+                ">
+                Help more people find your business online.
+              </h3>
             </div>
           </div>
         </div>
-        <!-- Decorative C blob -->
-        <div style="width:180px;height:220px;border:3px solid var(--color-maroon);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;">
-          <span style="font-family:var(--font-brand);font-size:7rem;color:var(--color-maroon);font-weight:900;line-height:1;">C</span>
-          <div style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;background:var(--color-maroon);border-radius:50%;opacity:0.3;"></div>
+
+        <!-- Decorative maroon ellipse with white C -->
+        <div
+          class="wj-c-circle"
+          style="
+            width: 340px;
+            height: 450px;
+            background: var(--color-maroon);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+          ">
+          <img
+            src="/assets/images/why-join-vendor/letter-c-white.svg"
+            alt=""
+            aria-hidden="true"
+            style="width: 190px; height: auto" />
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section class="section-maroon">
+    <section class="section-maroon wj-faq-section">
+      <style>
+        .faq-head {
+          cursor: pointer;
+        }
+        .faq-body {
+          max-height: 0;
+          margin-top: 0;
+          opacity: 0;
+          overflow: hidden;
+          transition:
+            max-height 0.4s ease,
+            opacity 0.4s ease,
+            margin-top 0.4s ease;
+        }
+        .faq-card.open .faq-body {
+          max-height: 240px;
+          margin-top: 16px;
+          opacity: 1;
+        }
+        .faq-arrow {
+          transition: transform 0.4s ease;
+        }
+        .faq-card.open .faq-arrow {
+          transform: rotate(180deg);
+        }
+      </style>
       <div class="container-site">
-        <span class="tag-pill tag-lime" style="margin-bottom:20px;display:inline-block;">COMMON QUESTIONS</span>
-        <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2rem);font-weight:800;margin-bottom:36px;">Still not sure? We get it.</h2>
-        <div class="faq-group" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-          <div class="faq-item" style="background:var(--color-cream);border-radius:var(--radius-xl);">
-            <div class="faq-question" style="color:var(--color-ink);">"I already get clients through referrals"<div class="faq-icon" style="color:var(--color-ink);border-color:var(--color-ink);"><i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></div></div>
-            <div class="faq-answer" style="color:var(--color-muted);">Catery gives you a constant stream of new clients who are actively searching — not just people who already know you.</div>
+        <span
+          style="
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 7px 12px;
+            background: #c5e866;
+            color: #1a1a1a;
+            border: 1px solid #c5e866;
+            border-radius: 20px;
+            box-shadow: 0 0 6.5px 3px rgba(255, 81, 143, 0.45);
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+          "
+          >COMMON QUESTIONS</span
+        >
+        <h2
+          style="
+            font-family: var(--font-body);
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 1;
+            color: #efece4;
+            margin-bottom: 36px;
+          ">
+          Still not sure? We get it.
+        </h2>
+        <div
+          class="faq-group"
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            align-items: start;
+          ">
+          <!-- 1 -->
+          <div
+            class="faq-card open"
+            style="
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              width: 588px;
+              box-sizing: border-box;
+            ">
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                Is it free to join Catery?
+              </h3>
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
+                <i
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
+              </div>
+            </div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              Yes. Creating a vendor profile is currently free.
+            </p>
           </div>
-          <div class="faq-item" style="background:var(--color-cream);border-radius:var(--radius-xl);">
-            <div class="faq-question" style="color:var(--color-ink);">"I'm not tech-savvy"<div class="faq-icon" style="color:var(--color-ink);border-color:var(--color-ink);"><i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></div></div>
-            <div class="faq-answer" style="color:var(--color-muted);">Catery is designed to be as simple as possible. If you can use WhatsApp, you can use Catery.</div>
+
+          <!-- 2 -->
+          <div
+            class="faq-card"
+            style="
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              width: 588px;
+              box-sizing: border-box;
+            ">
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                How long does setup take?
+              </h3>
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
+                <i
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
+              </div>
+            </div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              Most vendors can create their profile in less than 15 minutes.
+            </p>
           </div>
-          <div class="faq-item" style="background:var(--color-cream);border-radius:var(--radius-xl);">
-            <div class="faq-question" style="color:var(--color-ink);">"I already get clients through referrals"<div class="faq-icon" style="color:var(--color-ink);border-color:var(--color-ink);"><i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></div></div>
-            <div class="faq-answer" style="color:var(--color-muted);">Catery gives you a constant stream of new clients who are actively searching — not just people who already know you.</div>
+
+          <!-- 3 -->
+          <div
+            class="faq-card"
+            style="
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              width: 588px;
+              box-sizing: border-box;
+            ">
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                What types of businesses can join?
+              </h3>
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
+                <i
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
+              </div>
+            </div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              Catering companies, private chefs, food providers, dessert
+              businesses, and event food vendors.
+            </p>
           </div>
-          <div class="faq-item" style="background:var(--color-cream);border-radius:var(--radius-xl);">
-            <div class="faq-question" style="color:var(--color-ink);">"I'm not tech-savvy"<div class="faq-icon" style="color:var(--color-ink);border-color:var(--color-ink);"><i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></div></div>
-            <div class="faq-answer" style="color:var(--color-muted);">Catery is designed to be as simple as possible. If you can use WhatsApp, you can use Catery.</div>
+
+          <!-- 4 -->
+          <div
+            class="faq-card"
+            style="
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              width: 588px;
+              box-sizing: border-box;
+            ">
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                Which cities do you serve?
+              </h3>
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
+                <i
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
+              </div>
+            </div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              We're expanding across Egypt and continuously onboarding new
+              vendors.
+            </p>
+          </div>
+
+          <!-- 5 -->
+          <div
+            class="faq-card"
+            style="
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              width: 588px;
+              box-sizing: border-box;
+            ">
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                How do customers find me?
+              </h3>
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
+                <i
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
+              </div>
+            </div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              Customers browse vendor profiles, packages, and services directly
+              through Catery.
+            </p>
+          </div>
+
+          <!-- 6 -->
+          <div
+            class="faq-card"
+            style="
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              width: 588px;
+              box-sizing: border-box;
+            ">
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                How do I get started?
+              </h3>
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
+                <i
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
+              </div>
+            </div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              Download the app and create your vendor profile.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- EARLY VENDORS CTA -->
-    <section style="background:#d9f07d;padding:64px 24px;">
-      <div class="container-site" style="display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center;">
+    <section
+      class="wj-early-section"
+      style="background: #dcefb0; padding: 96px 0">
+      <div
+        class="container-site wj-early-grid"
+        style="
+          display: grid;
+          grid-template-columns: auto 1fr;
+          gap: 96px;
+          align-items: center;
+        ">
         <!-- Coffee cup illustration circle -->
-        <div style="width:160px;height:160px;background:var(--color-lavender);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:4rem;">☕</div>
+        <div
+          class="wj-cup-circle"
+          style="
+            width: 290px;
+            height: 290px;
+            background: var(--color-lavender);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+          ">
+          <img
+            src="/assets/images/why-join-vendor/cup-with-letter-c.svg"
+            alt=""
+            aria-hidden="true"
+            style="width: 200px; height: auto" />
+        </div>
         <div>
-          <span class="tag-pill tag-maroon" style="margin-bottom:16px;display:inline-block;font-size:0.65rem;">WHY JOIN EARLY</span>
-          <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:var(--color-maroon);margin-bottom:12px;">Be Among the First Vendors on Catery</h2>
-          <p style="color:var(--color-maroon);opacity:0.75;font-size:0.9rem;line-height:1.7;margin-bottom:24px;">Early vendors have the opportunity to build their presence, showcase their services, and grow alongside the platform.</p>
-          <a href="/vendors/contact.html" class="btn btn-dark" style="margin-bottom:20px;">Get Started →</a>
-          <br>
-          <p style="color:var(--color-maroon);font-weight:700;font-size:0.9rem;margin-top:16px;margin-bottom:10px;">Download the App</p>
-          <div style="display:flex;gap:10px;flex-wrap:wrap;">
-            <a href="#" class="app-badge"><i class="fa-brands fa-apple" style="font-size:1.3rem;"></i><span><span style="font-size:0.65rem;display:block;opacity:0.7;">Download on the</span>App Store</span></a>
-            <a href="#" class="app-badge"><i class="fa-brands fa-google-play" style="font-size:1.1rem;color:#34a853;"></i><span><span style="font-size:0.65rem;display:block;opacity:0.7;">GET IT ON</span>Google Play</span></a>
+          <!-- WHY JOIN EARLY pill -->
+          <span
+            style="
+              display: inline-flex;
+              align-items: center;
+              margin-bottom: 24px;
+              padding: 7px 12px;
+              background: #3f1b2c;
+              color: #c5e866;
+              border: 1px solid #c5e866;
+              border-radius: 20px;
+              box-shadow: 0 0 6.5px 3px rgba(255, 81, 143, 0.45);
+              font-family: var(--font-body);
+              font-size: 11px;
+              font-weight: 700;
+              line-height: 1;
+              letter-spacing: 1.2px;
+              text-transform: uppercase;
+            "
+            >WHY JOIN EARLY</span
+          >
+          <h2
+            style="
+              font-family: var(--font-body);
+              font-size: 28px;
+              font-weight: 800;
+              color: #1a1a1a;
+              line-height: 1;
+              margin-bottom: 16px;
+            ">
+            Be Among the First Vendors on Catery
+          </h2>
+          <p
+            style="
+              font-family: var(--font-body);
+              font-size: 16px;
+              font-weight: 400;
+              color: #1a1a1a;
+              line-height: 1;
+              max-width: 720px;
+              margin-bottom: 40px;
+            ">
+            Early vendors have the opportunity to build their presence, showcase
+            their services, and grow alongside the platform.
+          </p>
+          <a
+            href="/vendors/contact.html"
+            class="wj-early-btn"
+            style="
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+              width: 344px;
+              max-width: 100%;
+              height: 56px;
+              padding: 0 24px;
+              background: #5c2839;
+              color: var(--color-cream);
+              font-family: var(--font-body);
+              font-size: 16px;
+              font-weight: 700;
+              border: 2px solid transparent;
+              border-radius: 24px;
+              text-decoration: none;
+              margin-bottom: 48px;
+            "
+            onmouseover="
+              this.style.background = '#A84065';
+              this.style.borderColor = '#C5E866';
+            "
+            onmouseout="
+              this.style.background = '#5c2839';
+              this.style.borderColor = 'transparent';
+            "
+            onmousedown="
+              this.style.background = '#3F1B2C';
+              this.style.borderColor = 'transparent';
+            "
+            onmouseup="
+              this.style.background = '#A84065';
+              this.style.borderColor = '#C5E866';
+            ">
+            Get Started
+            <span style="color: var(--color-lime)">→</span>
+          </a>
+          <!-- Download the App -->
+          <p
+            style="
+              font-family: var(--font-body);
+              font-size: 28px;
+              font-weight: 800;
+              color: #5c2839;
+              line-height: 1;
+              margin-bottom: 16px;
+            ">
+            Download the App
+          </p>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap">
+            <div data-include="/partials/app-badges.html"></div>
           </div>
         </div>
       </div>
@@ -100,20 +845,245 @@
     <script src="/js/includes.js"></script>
     <script src="/js/content.js"></script>
     <script src="/js/faq.js"></script>
+
+    <!-- Responsive overrides -->
+    <style>
+      @media (max-width: 1024px) {
+        /* BENEFITS section */
+        .wj-benefits-section {
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+        }
+        .wj-benefits-grid {
+          grid-template-columns: 1fr auto !important;
+          gap: 32px !important;
+        }
+        .wj-benefits-grid h2 {
+          font-size: 28px !important;
+          max-width: 100% !important;
+        }
+        .wj-c-circle {
+          width: 240px !important;
+          height: 320px !important;
+        }
+        .wj-c-circle img {
+          width: 140px !important;
+        }
+        #benefit-list {
+          min-width: 200px !important;
+        }
+        #benefit-list li {
+          width: auto !important;
+        }
+        .wj-tabs-row {
+          flex-direction: column !important;
+          gap: 24px !important;
+        }
+        #benefit-content {
+          padding-top: 0 !important;
+        }
+        #benefit-content h3 {
+          font-size: 22px !important;
+          max-width: 100% !important;
+        }
+
+        /* FAQ section */
+        .wj-faq-section {
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+        }
+        .wj-faq-section .faq-group {
+          grid-template-columns: 1fr 1fr !important;
+          gap: 16px !important;
+        }
+        .wj-faq-section .faq-card {
+          width: auto !important;
+        }
+
+        /* EARLY VENDORS CTA section */
+        .wj-early-section {
+          padding: 96px 70px !important;
+        }
+        .wj-early-grid {
+          grid-template-columns: auto 1fr !important;
+          gap: 48px !important;
+        }
+        .wj-early-grid .wj-cup-circle {
+          width: 220px !important;
+          height: 220px !important;
+        }
+        .wj-early-grid .wj-cup-circle img {
+          width: 150px !important;
+        }
+        .wj-early-grid h2 {
+          font-size: 36px !important;
+          line-height: 1.1 !important;
+          margin-bottom: 16px !important;
+        }
+        .wj-early-grid p {
+          line-height: 1.5 !important;
+          margin-bottom: 32px !important;
+        }
+        .wj-early-grid a.wj-early-btn {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        /* ── Benefits section ── */
+        .wj-benefits-section {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+        }
+        .wj-benefits-grid {
+          display: flex !important;
+          flex-direction: column !important;
+          gap: 32px !important;
+        }
+        /* Hide the decorative C circle on mobile */
+        .wj-c-circle {
+          display: none !important;
+        }
+        .wj-benefits-grid h2 {
+          font-size: 28px !important;
+          margin-bottom: 32px !important;
+        }
+        /* Tab list: full-width, vertical */
+        .wj-tabs-row {
+          flex-direction: column !important;
+          gap: 0 !important;
+        }
+        #benefit-list {
+          width: 100% !important;
+          min-width: unset !important;
+        }
+        #benefit-list li {
+          width: 100% !important;
+          height: auto !important;
+          padding: 12px 20px !important;
+          font-size: 15px !important;
+        }
+        #benefit-content {
+          padding-top: 0 !important;
+        }
+        #benefit-content h3 {
+          font-size: 24px !important;
+          max-width: 100% !important;
+          line-height: 1.2 !important;
+          margin-top: 60px !important;
+          margin-bottom: 150px !important;
+        }
+
+        /* ── FAQ section ── */
+        .wj-faq-section {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+        }
+        .wj-faq-section .faq-group {
+          grid-template-columns: 1fr !important;
+        }
+
+        /* ── Early vendors CTA ── */
+        .wj-early-section {
+          padding: 56px 24px !important;
+        }
+        .wj-early-grid {
+          grid-template-columns: 1fr !important;
+          gap: 32px !important;
+        }
+        .wj-cup-circle {
+          width: 180px !important;
+          height: 180px !important;
+          margin: 0 auto !important;
+        }
+        .wj-cup-circle img {
+          width: 120px !important;
+        }
+        .wj-early-grid h2 {
+          font-size: 28px !important;
+        }
+      }
+    </style>
     <script>
-      // Benefit tab switcher
-      document.querySelectorAll('.benefit-tab').forEach(tab => {
-        tab.addEventListener('click', () => {
-          document.querySelectorAll('.benefit-tab').forEach(t => {
-            t.style.background = 'transparent';
-            t.style.color = 'var(--color-muted)';
-            t.style.borderLeft = 'none';
-          });
-          tab.style.background = 'var(--color-lime)';
-          tab.style.color = 'var(--color-ink)';
-          tab.style.borderLeft = '3px solid var(--color-maroon)';
+      // FAQ accordion toggle
+      document.querySelectorAll(".faq-card .faq-head").forEach(function (head) {
+        head.addEventListener("click", function () {
+          head.parentElement.classList.toggle("open");
         });
       });
+
+      // Benefit tab switcher — auto-advances once on scroll-in, stops at last
+      (function () {
+        var tabs = Array.prototype.slice.call(
+          document.querySelectorAll(".benefit-tab"),
+        );
+        var content = document.querySelector("#benefit-content h3");
+        var list = document.getElementById("benefit-list");
+        if (!tabs.length || !list) return;
+
+        var ACTIVE_BG =
+          "linear-gradient(90deg, rgba(197,232,102,0.42), rgba(197,232,102,0))";
+        var STEP_MS = 900;
+        var timer = null;
+
+        function activate(tab) {
+          tabs.forEach(function (t) {
+            t.style.background = "transparent";
+            t.style.color = "#1a1a1a";
+          });
+          tab.style.background = ACTIVE_BG;
+          tab.style.color = "#1a1a1a";
+          if (content && tab.dataset.copy) {
+            // quick fade between copies
+            content.style.opacity = "0";
+            setTimeout(function () {
+              content.textContent = tab.dataset.copy;
+              content.style.opacity = "1";
+            }, 130);
+          }
+        }
+
+        function stopAuto() {
+          if (timer) {
+            clearInterval(timer);
+            timer = null;
+          }
+        }
+
+        // Manual click cancels the auto sequence
+        tabs.forEach(function (tab) {
+          tab.addEventListener("click", function () {
+            stopAuto();
+            activate(tab);
+          });
+        });
+
+        // Start auto-advance the first time the list scrolls into view
+        var started = false;
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting && !started) {
+                started = true;
+                var i = 0;
+                activate(tabs[0]);
+                timer = setInterval(function () {
+                  i++;
+                  if (i >= tabs.length) {
+                    stopAuto();
+                    return;
+                  }
+                  activate(tabs[i]);
+                }, STEP_MS);
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.4 },
+        );
+        observer.observe(list);
+      })();
     </script>
   </body>
 </html>

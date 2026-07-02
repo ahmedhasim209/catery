@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,108 +8,625 @@
     <title>Contact — Catery</title>
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/tailwind.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   </head>
-  <body style="background:var(--color-maroon);color:var(--color-cream);">
-
+  <body style="background: var(--color-maroon); color: var(--color-cream)">
     <div data-include="/partials/navbar-customer.html"></div>
 
     <!-- HERO -->
-    <section class="section-maroon" style="padding-bottom:48px;">
+    <section
+      class="section-maroon contact-hero-section"
+      style="padding-bottom: 48px">
       <div class="container-site">
-        <span class="tag-pill tag-lime" style="margin-bottom:24px;display:inline-block;">CONTACT US</span>
-        <h1 style="font-family:var(--font-display);font-size:clamp(2rem,5vw,3.5rem);font-weight:800;line-height:1.1;margin-bottom:12px;">Let's talk.</h1>
-        <p style="opacity:0.65;font-size:0.95rem;line-height:1.6;">Questions, feedback, partnerships — we want to hear from you.</p>
+        <span
+          style="
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 24px;
+            padding: 7px 12px;
+            background: #3f1b2c;
+            color: var(--color-lime);
+            border: 1px solid #c5e866;
+            border-radius: 20px;
+            box-shadow: 0 0 6.5px 3px rgba(255, 81, 143, 0.45);
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+          "
+          >CONTACT US</span
+        >
+        <h1
+          class="contact-hero-h1"
+          style="
+            font-family: var(--font-brand);
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 1;
+            color: var(--color-cream);
+            margin-bottom: 16px;
+          ">
+          Let's talk.
+        </h1>
+        <p
+          style="
+            font-family: var(--font-body);
+            font-size: 16px;
+            font-weight: 400;
+            color: #efece4;
+            line-height: 1;
+          ">
+          Questions, feedback, partnerships — we want to hear from you.
+        </p>
       </div>
     </section>
 
     <!-- CONTACT METHOD CARDS -->
-    <section class="section-maroon" style="padding-top:0;padding-bottom:64px;">
+    <section
+      class="section-maroon contact-cards-section"
+      style="padding-top: 0; padding-bottom: 144px">
       <div class="container-site">
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
-          <a href="mailto:hello@catery.eg" class="contact-card">
-            <div class="contact-icon"><i class="fa-solid fa-envelope" style="color:var(--color-maroon);font-size:1rem;"></i></div>
-            <div style="flex:1;">
-              <p style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);margin-bottom:4px;">EMAIL</p>
-              <p data-bind="contact.email" style="color:var(--color-cream);font-weight:600;font-size:0.9rem;margin-bottom:2px;">hello@catery.eg</p>
-              <p data-bind="contact.email_note" style="color:var(--color-muted);font-size:0.78rem;">Replies within 24 Hours</p>
+        <div
+          class="contact-cards-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+          ">
+          <!-- Email -->
+          <a
+            href="mailto:hello@catery.eg"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 16px;
+              background: #3f1b2c;
+              border: 1px solid #000000;
+              border-radius: 24px;
+              padding: 24px;
+              text-decoration: none;
+              transition: opacity 0.15s;
+            "
+            onmouseover="this.style.opacity = '0.85'"
+            onmouseout="this.style.opacity = '1'">
+            <div
+              style="
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                background: var(--color-lime);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+              ">
+              <img
+                src="/assets/images/contact-vendor/message-with-heart.svg"
+                alt=""
+                style="width: 24px; height: 24px" />
             </div>
-            <i class="fa-solid fa-arrow-right" style="color:var(--color-cream);opacity:0.5;"></i>
+            <div style="flex: 1">
+              <p
+                style="
+                  font-size: 9px;
+                  font-weight: 700;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  color: var(--color-cream);
+                  opacity: 0.5;
+                  margin-bottom: 4px;
+                ">
+                EMAIL
+              </p>
+              <p
+                style="
+                  color: var(--color-cream);
+                  font-weight: 600;
+                  font-size: 14px;
+                  margin-bottom: 2px;
+                ">
+                hello@catery.eg
+              </p>
+              <p
+                style="
+                  color: var(--color-cream);
+                  opacity: 0.5;
+                  font-size: 12px;
+                ">
+                Replies within 24 Hours
+              </p>
+            </div>
+            <i
+              class="fa-solid fa-arrow-right"
+              style="color: var(--color-cream); opacity: 0.5"></i>
           </a>
-          <a href="tel:+201500292910" class="contact-card">
-            <div class="contact-icon"><i class="fa-solid fa-phone" style="color:var(--color-maroon);font-size:1rem;"></i></div>
-            <div style="flex:1;">
-              <p style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);margin-bottom:4px;">PHONE</p>
-              <p data-bind="contact.phone" style="color:var(--color-cream);font-weight:600;font-size:0.9rem;margin-bottom:2px;">+201500292910</p>
-              <p data-bind="contact.phone_note" style="color:var(--color-muted);font-size:0.78rem;">Sun-Thu, 9 AM – 6 PM</p>
+
+          <!-- Phone -->
+          <a
+            href="tel:+201500292910"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 16px;
+              background: #3f1b2c;
+              border: 1px solid #000000;
+              border-radius: 24px;
+              padding: 24px;
+              text-decoration: none;
+              transition: opacity 0.15s;
+            "
+            onmouseover="this.style.opacity = '0.85'"
+            onmouseout="this.style.opacity = '1'">
+            <div
+              style="
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                background: var(--color-lime);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+              ">
+              <i
+                class="fa-solid fa-phone"
+                style="color: var(--color-maroon); font-size: 1rem"></i>
             </div>
-            <i class="fa-solid fa-arrow-right" style="color:var(--color-cream);opacity:0.5;"></i>
+            <div style="flex: 1">
+              <p
+                style="
+                  font-size: 9px;
+                  font-weight: 700;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  color: var(--color-cream);
+                  opacity: 0.5;
+                  margin-bottom: 4px;
+                ">
+                PHONE
+              </p>
+              <p
+                style="
+                  color: var(--color-cream);
+                  font-weight: 600;
+                  font-size: 14px;
+                  margin-bottom: 2px;
+                ">
+                +201500292910
+              </p>
+              <p
+                style="
+                  color: var(--color-cream);
+                  opacity: 0.5;
+                  font-size: 12px;
+                ">
+                Sun-Thu, 9 AM – 6 PM
+              </p>
+            </div>
+            <i
+              class="fa-solid fa-arrow-right"
+              style="color: var(--color-cream); opacity: 0.5"></i>
           </a>
-          <a href="https://wa.me/201500292910" target="_blank" class="contact-card">
-            <div class="contact-icon"><i class="fa-brands fa-whatsapp" style="color:var(--color-maroon);font-size:1.1rem;"></i></div>
-            <div style="flex:1;">
-              <p style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);margin-bottom:4px;">WHATSAPP</p>
-              <p style="color:var(--color-cream);font-weight:600;font-size:0.9rem;margin-bottom:2px;">Chat with us</p>
-              <p data-bind="contact.whatsapp_note" style="color:var(--color-muted);font-size:0.78rem;">Tap to open WhatsApp</p>
+
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/201500292910"
+            target="_blank"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 16px;
+              background: #3f1b2c;
+              border: 1px solid #000000;
+              border-radius: 24px;
+              padding: 24px;
+              text-decoration: none;
+              transition: opacity 0.15s;
+            "
+            onmouseover="this.style.opacity = '0.85'"
+            onmouseout="this.style.opacity = '1'">
+            <div
+              style="
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                background: var(--color-lime);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+              ">
+              <i
+                class="fa-brands fa-whatsapp"
+                style="color: var(--color-maroon); font-size: 1.2rem"></i>
             </div>
-            <i class="fa-solid fa-arrow-right" style="color:var(--color-cream);opacity:0.5;"></i>
+            <div style="flex: 1">
+              <p
+                style="
+                  font-size: 9px;
+                  font-weight: 700;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  color: var(--color-cream);
+                  opacity: 0.5;
+                  margin-bottom: 4px;
+                ">
+                WHATSAPP
+              </p>
+              <p
+                style="
+                  color: var(--color-cream);
+                  font-weight: 600;
+                  font-size: 14px;
+                  margin-bottom: 2px;
+                ">
+                Chat with us
+              </p>
+              <p
+                style="
+                  color: var(--color-cream);
+                  opacity: 0.5;
+                  font-size: 12px;
+                ">
+                Tap to open WhatsApp
+              </p>
+            </div>
+            <i
+              class="fa-solid fa-arrow-right"
+              style="color: var(--color-cream); opacity: 0.5"></i>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- APPLY FORM SECTION -->
-    <section class="section-maroon" style="padding-top:0;padding-bottom:80px;">
-      <div class="container-site" style="display:grid;grid-template-columns:auto 1fr;gap:80px;align-items:center;">
-        <!-- Decorative C -->
-        <div style="width:200px;height:240px;border:3px solid var(--color-cream);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0;">
-          <span style="font-family:var(--font-brand);font-size:7rem;color:var(--color-cream);font-weight:900;line-height:1;">C</span>
-          <div style="position:absolute;top:-8px;right:-8px;width:20px;height:20px;background:var(--color-cream);border-radius:50%;opacity:0.4;"></div>
+    <!-- FORM SECTION -->
+    <section
+      style="
+        position: relative;
+        background: var(--color-maroon);
+        padding: 144px 0 100px;
+        overflow: hidden;
+      ">
+
+      <!-- Content — centered column -->
+      <div
+        style="
+          position: relative;
+          z-index: 1;
+          max-width: 420px;
+          margin: 0 auto;
+          padding: 0 24px;
+        ">
+        <!-- Label -->
+        <p
+          style="
+            font-family: var(--font-body);
+            font-size: var(--text-caption);
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            color: var(--color-lime);
+            margin-bottom: 12px;
+          ">
+          READY TO START?
+        </p>
+
+        <!-- Heading -->
+        <h2
+          style="
+            font-family: var(--font-body);
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--color-cream);
+            line-height: 1.15;
+            margin-bottom: 10px;
+          ">
+          Apply in 2 minutes.
+        </h2>
+
+        <!-- Subtitle -->
+        <p
+          style="
+            font-family: var(--font-body);
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--color-cream);
+            opacity: 0.6;
+            margin-bottom: 28px;
+            line-height: 1.5;
+          ">
+          Drop your details — we'll call you back within 48 hours.
+        </p>
+
+        <!-- Form card -->
+        <form
+          onsubmit="return false;"
+          style="
+            background: #3f1b2c;
+            border-radius: 20px;
+            padding: 28px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+          ">
+          <!-- YOUR NAME -->
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <label
+              style="
+                font-family: var(--font-body);
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 1.1px;
+                text-transform: uppercase;
+                color: var(--color-lime);
+              "
+              >YOUR NAME</label
+            >
+            <input
+              type="text"
+              placeholder="Khaled Ahmed"
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--color-cream);
+                background: rgba(255, 255, 255, 0.08);
+                border: none;
+                border-radius: 16px;
+                padding: 13px 18px;
+                outline: none;
+                width: 100%;
+                box-sizing: border-box;
+              " />
+          </div>
+
+          <!-- WHATSAPP NUMBER -->
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <label
+              style="
+                font-family: var(--font-body);
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 1.1px;
+                text-transform: uppercase;
+                color: var(--color-lime);
+              "
+              >WHATSAPP NUMBER</label
+            >
+            <input
+              type="tel"
+              placeholder="+20 100 000 0000"
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--color-cream);
+                background: rgba(255, 255, 255, 0.08);
+                border: none;
+                border-radius: 16px;
+                padding: 13px 18px;
+                outline: none;
+                width: 100%;
+                box-sizing: border-box;
+              " />
+          </div>
+
+          <!-- CITY -->
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <label
+              style="
+                font-family: var(--font-body);
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 1.1px;
+                text-transform: uppercase;
+                color: var(--color-lime);
+              "
+              >CITY</label
+            >
+            <input
+              type="text"
+              placeholder="Alexandria"
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--color-cream);
+                background: rgba(255, 255, 255, 0.08);
+                border: none;
+                border-radius: 16px;
+                padding: 13px 18px;
+                outline: none;
+                width: 100%;
+                box-sizing: border-box;
+              " />
+          </div>
+
+          <!-- Submit button -->
+          <button
+            type="submit"
+            style="
+              font-family: var(--font-body);
+              font-size: 15px;
+              font-weight: 700;
+              color: var(--color-maroon);
+              background: var(--color-lime);
+              border: none;
+              border-radius: 24px;
+              padding: 15px;
+              width: 100%;
+              cursor: pointer;
+              transition: opacity 0.15s;
+            "
+            onmouseover="this.style.opacity = '0.88'"
+            onmouseout="this.style.opacity = '1'">
+            Contact me →
+          </button>
+        </form>
+
+        <!-- OR divider -->
+        <div
+          style="display: flex; align-items: center; gap: 12px; margin: 20px 0">
+          <div
+            style="
+              height: 1px;
+              flex: 1;
+              background: rgba(255, 255, 255, 0.15);
+            "></div>
+          <span
+            style="
+              font-family: var(--font-body);
+              font-size: 12px;
+              font-weight: 500;
+              color: rgba(255, 255, 255, 0.35);
+              letter-spacing: 0.08em;
+            "
+            >OR</span
+          >
+          <div
+            style="
+              height: 1px;
+              flex: 1;
+              background: rgba(255, 255, 255, 0.15);
+            "></div>
         </div>
 
-        <!-- Form -->
-        <div>
-          <p style="color:var(--color-lime);font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">READY TO START?</p>
-          <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;margin-bottom:8px;">Apply in 2 minutes.</h2>
-          <p style="opacity:0.6;font-size:0.88rem;margin-bottom:28px;">Drop your details — we'll call you back within 48 hours.</p>
+        <!-- WhatsApp link -->
+        <a
+          href="https://wa.me/201500292910"
+          target="_blank"
+          style="
+            display: flex;
+            justify-content: center;
+            font-family: var(--font-body);
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--color-cream);
+            text-decoration: none;
+            margin-bottom: 14px;
+          "
+          >Chat with us on WhatsApp →</a
+        >
 
-          <form style="display:flex;flex-direction:column;gap:16px;max-width:360px;" onsubmit="return false;">
-            <div class="form-field">
-              <label class="form-label">YOUR NAME</label>
-              <input type="text" class="form-input" placeholder="Khaled Ahmed" />
-            </div>
-            <div class="form-field">
-              <label class="form-label">WHATSAPP NUMBER</label>
-              <input type="tel" class="form-input" placeholder="+20 100 000 0000" />
-            </div>
-            <div class="form-field">
-              <label class="form-label">CITY</label>
-              <input type="text" class="form-input" placeholder="Alexandria" />
-            </div>
-            <button type="submit" class="btn btn-lime" style="width:100%;">Contact me →</button>
-          </form>
+        <!-- Privacy note -->
+        <p
+          style="
+            text-align: center;
+            font-family: var(--font-body);
+            font-size: 12px;
+            color: var(--color-cream);
+            opacity: 0.4;
+            margin-bottom: 32px;
+          ">
+          🔒 We won't share your details. No spam. Just one call.
+        </p>
 
-          <div style="display:flex;align-items:center;gap:12px;margin:20px 0;">
-            <div style="height:1px;flex:1;background:rgba(255,255,255,0.15);"></div>
-            <span style="opacity:0.4;font-size:0.8rem;">OR</span>
-            <div style="height:1px;flex:1;background:rgba(255,255,255,0.15);"></div>
-          </div>
+        <!-- Download the App -->
+        <p
+          style="
+            text-align: center;
+            font-family: var(--font-body);
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--color-lime);
+            margin-bottom: 16px;
+          ">
+          Download the App
+        </p>
 
-          <a href="https://wa.me/201500292910" target="_blank" style="color:var(--color-cream);font-weight:600;font-size:0.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;">Chat with us on WhatsApp →</a>
-          <br>
-          <p style="font-size:0.75rem;opacity:0.4;margin-bottom:28px;">🔒 We won't share your details. No spam. Just one call.</p>
-
-          <p style="color:var(--color-lime);font-weight:700;font-size:0.95rem;margin-bottom:12px;">Download the App</p>
-          <div style="display:flex;gap:12px;flex-wrap:wrap;">
-            <a href="#" class="app-badge"><i class="fa-brands fa-apple" style="font-size:1.3rem;"></i><span><span style="font-size:0.65rem;display:block;opacity:0.7;">Download on the</span>App Store</span></a>
-            <a href="#" class="app-badge"><i class="fa-brands fa-google-play" style="font-size:1.1rem;color:#34a853;"></i><span><span style="font-size:0.65rem;display:block;opacity:0.7;">GET IT ON</span>Google Play</span></a>
-          </div>
+        <!-- App badges -->
+        <div style="display: flex; justify-content: center; gap: 12px">
+          <div data-include="/partials/app-badges.html"></div>
         </div>
       </div>
     </section>
 
-    <div data-include="/partials/footer.html"></div>
+    <div data-include="/partials/footer-customer.html"></div>
     <script src="/js/includes.js"></script>
-    <script src="/js/content.js"></script>
+
+    <!-- Responsive overrides -->
+    <style>
+      @media (max-width: 1024px) {
+        .contact-hero-section {
+          padding-top: 115px !important;
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+          padding-bottom: 96px !important;
+        }
+        .contact-hero-h1 {
+          font-size: 64px !important;
+        }
+        .contact-cards-section {
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+          padding-bottom: 80px !important;
+        }
+        .contact-cards-grid {
+          grid-template-columns: 1fr !important;
+          gap: 16px !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        /* ── Hero ── */
+        .contact-hero-section {
+          padding-top: 48px !important;
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+          padding-bottom: 48px !important;
+        }
+        .contact-hero-h1 {
+          font-family: var(--font-brand) !important;
+          font-size: 46px !important;
+          font-weight: 700 !important;
+          line-height: 1.0 !important;
+          color: var(--color-cream) !important;
+        }
+        .contact-hero-section p {
+          font-size: 16px !important;
+          line-height: 1.5 !important;
+        }
+
+        /* ── Contact cards ── */
+        .contact-cards-section {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+          padding-bottom: 56px !important;
+        }
+        .contact-cards-grid {
+          grid-template-columns: 1fr !important;
+          gap: 16px !important;
+        }
+        .contact-cards-grid > a {
+          border-radius: 20px !important;
+          padding: 20px !important;
+        }
+        .contact-cards-grid > a > div:first-child {
+          width: 56px !important;
+          height: 56px !important;
+        }
+        .contact-cards-grid > a > div:first-child img,
+        .contact-cards-grid > a > div:first-child i {
+          font-size: 1.3rem !important;
+          width: 26px !important;
+          height: 26px !important;
+        }
+        .contact-cards-grid > a > div:nth-child(2) p:nth-child(2) {
+          font-size: 16px !important;
+          font-weight: 700 !important;
+        }
+
+        /* ── Form section ── */
+        .contact-form-section {
+          padding: 48px 24px 64px !important;
+        }
+      }
+    </style>
   </body>
 </html>

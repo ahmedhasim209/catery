@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,156 +8,964 @@
     <title>Catery — Find & Book Catering for Any Event</title>
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/tailwind.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <script>window.CONTENT_SRC = "/content/customer-home.json";</script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script>
+      window.CONTENT_SRC = "/content/customer-home.json";
+    </script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
   </head>
-  <body style="background:var(--color-maroon);color:var(--color-cream);">
-
+  <body style="background: var(--color-maroon); color: var(--color-cream)">
     <!-- Navbar -->
     <div data-include="/partials/navbar-customer.html"></div>
 
     <!-- ═══════════════════════════════════════════
          HERO — "Stop Chasing Caterers"
     ═══════════════════════════════════════════ -->
-    <section class="section-maroon" style="text-align:center;padding-top:64px;padding-bottom:0;">
-      <div class="container-site">
-        <span class="tag-pill tag-lime" data-bind="hero.tag" style="margin-bottom:24px;display:inline-block;">FREE DOWNLOAD</span>
+    <section
+      style="
+        background: var(--color-maroon);
+        text-align: center;
+        padding: 64px 24px 0;
+        overflow: hidden;
+      ">
+      <div style="max-width: 1044px; margin: 0 auto">
+        <!-- Pill -->
+        <span
+          class="hero-heading"
+          style="
+            display: inline-block;
+            margin-bottom: 24px;
+            padding: 7px 12px;
+            background: #3f1b2c;
+            color: #c5e866;
+            border: 1px solid #c5e866;
+            border-radius: 20px;
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            line-height: 1;
+          "
+          >FOR EVENT PLANNERS</span
+        >
 
-        <h1 style="font-family:var(--font-display);font-size:clamp(2.4rem,5vw,3.8rem);font-weight:800;line-height:1.1;margin-bottom:20px;">
-          <span data-bind="hero.title_1">Stop Chasing </span>
-          <span data-bind="hero.title_highlight" style="color:var(--color-lime);">Caterers.</span>
+        <!-- H1 -->
+        <h1
+          class="hero-heading"
+          style="
+            font-family: var(--font-brand);
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 1;
+            color: #fefefe;
+            margin: 0 0 24px;
+          ">
+          Stop Chasing <span style="color: var(--color-lime)">Caterers.</span>
         </h1>
 
-        <p data-bind="hero.subtitle" style="max-width:520px;margin:0 auto 32px;font-size:1rem;line-height:1.6;opacity:0.8;">
-          Find, compare, and book catering services for any event. The simplest way to plan.
+        <!-- Subtitle -->
+        <p
+          class="hero-heading"
+          style="
+            font-family: var(--font-body);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #fefefe;
+            max-width: 520px;
+            margin: 0 auto 48px;
+          ">
+          Find, compare, and book catering services — all in one place. No
+          endless messages. No waiting for quotes. No confusion.
         </p>
 
-        <!-- App badges -->
-        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:16px;">
-          <a href="#" class="app-badge">
-            <i class="fa-brands fa-apple" style="font-size:1.3rem;"></i>
-            <span><span style="font-size:0.65rem;display:block;opacity:0.7;">Download on the</span>App Store</span>
-          </a>
-          <a href="#" class="app-badge">
-            <i class="fa-brands fa-google-play" style="font-size:1.1rem;color:#34a853;"></i>
-            <span><span style="font-size:0.65rem;display:block;opacity:0.7;">GET IT ON</span>Google Play</span>
-          </a>
-        </div>
-
-        <p style="font-size:0.78rem;opacity:0.45;margin-bottom:48px;">Free · iOS & Android</p>
-
-        <!-- Phone mockups -->
-        <div style="display:flex;justify-content:center;gap:16px;align-items:flex-end;padding-bottom:0;overflow:hidden;">
-          <div style="width:200px;height:380px;background:var(--color-maroon-dark);border-radius:28px;border:2px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;transform:rotate(-6deg) translateY(20px);opacity:0.85;flex-shrink:0;">
-            <span style="font-size:0.7rem;opacity:0.4;text-align:center;padding:12px;">App Screenshot</span>
-          </div>
-          <div style="width:220px;height:420px;background:var(--color-maroon-dark);border-radius:30px;border:2px solid rgba(255,255,255,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;z-index:1;">
-            <span style="font-size:0.7rem;opacity:0.4;text-align:center;padding:12px;">App Screenshot</span>
-          </div>
-          <div style="width:200px;height:380px;background:var(--color-maroon-dark);border-radius:28px;border:2px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;transform:rotate(6deg) translateY(20px);opacity:0.85;flex-shrink:0;">
-            <span style="font-size:0.7rem;opacity:0.4;text-align:center;padding:12px;">App Screenshot</span>
+        <!-- Phone mockup -->
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 40px">
+          <div style="position: relative; display: inline-block">
+            <div class="hero-circle"></div>
+            <!-- Left icon -->
+            <img
+              src="/assets/images/home-customer/shopping-cart-antimation-left.svg"
+              alt=""
+              class="hero-icon-left" />
+            <!-- Right icon -->
+            <img
+              src="/assets/images/home-customer/cup-with-letter-c-animation-right.svg"
+              alt=""
+              class="hero-icon-right" />
+            <!-- Phone (on top) -->
+            <img
+              src="/assets/images/home-customer/mobile-mockup.svg"
+              alt="Catery app mockup"
+              class="hero-phone-img"
+              style="width: auto; max-width: 100%; display: block" />
           </div>
         </div>
+
+        <!-- Download the App -->
+        <p
+          style="
+            font-family: var(--font-body);
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--color-lime);
+            margin: 0 0 20px;
+          ">
+          Download the App
+        </p>
+
+        <!-- App Store badges -->
+        <div
+          style="
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+          ">
+          <div data-include="/partials/app-badges.html"></div>
+        </div>
+
+        <!-- Vendor link -->
+        <p
+          style="
+            font-family: var(--font-body);
+            font-size: 14px;
+            font-weight: 400;
+            color: #fefefe;
+            opacity: 0.7;
+            margin: 0 0 64px;
+          ">
+          Are you a catering business?
+          <a
+            href="/vendors/index.html"
+            style="color: #fefefe; text-decoration: underline"
+            >Join as a vendor →</a
+          >
+        </p>
       </div>
     </section>
 
     <!-- ═══════════════════════════════════════════
          3-STEP — "From Search to Booking"
     ═══════════════════════════════════════════ -->
-    <section class="section-cream">
-      <div class="container-site">
-        <span class="tag-pill tag-maroon" style="margin-bottom:20px;display:inline-block;" data-bind="steps.tag">HOW IT WORKS</span>
-        <h2 data-bind="steps.title" style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:var(--color-ink);margin-bottom:64px;">From Search to Booking in 3 Steps</h2>
+    <style>
+      @keyframes phone-rise {
+        from {
+          opacity: 0;
+          transform: translateY(200px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes circle-pop {
+        from {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0.4);
+        }
+        to {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
 
-        <!-- Step 1 — left phone -->
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:80px;">
-          <div style="display:flex;justify-content:center;">
-            <div style="width:220px;height:420px;background:var(--color-maroon-dark);border-radius:30px;border:2px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;">
-              <span style="font-size:0.7rem;opacity:0.4;">App Screenshot</span>
+      .hero-phone-img {
+        animation: phone-rise 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        position: relative;
+        z-index: 2;
+      }
+      .hero-circle {
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        background: var(--color-lime);
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.4);
+        pointer-events: none;
+        z-index: 0;
+        animation: circle-pop 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+      }
+
+      /* H1 + subtitle fade-rise */
+      .hero-heading {
+        animation: phone-rise 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+
+      /* Floating icons */
+      @keyframes icon-from-left {
+        from {
+          opacity: 0;
+          transform: translateX(-80px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes icon-from-right {
+        from {
+          opacity: 0;
+          transform: translateX(80px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      .hero-icon-left {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        transform: translateX(-60%);
+        z-index: 3;
+        opacity: 0;
+        animation: icon-from-left-edge 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+          1.9s both;
+      }
+      @keyframes icon-from-left-edge {
+        from {
+          opacity: 0;
+          transform: translateX(calc(-10% - 80px));
+        }
+        to {
+          opacity: 1;
+          transform: translateX(-10%);
+        }
+      }
+      .hero-icon-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translateX(10%);
+        z-index: 1;
+        opacity: 0;
+        animation: icon-from-right-edge 0.9s
+          cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.9s both;
+      }
+      @keyframes icon-from-right-edge {
+        from {
+          opacity: 0;
+          transform: translateX(calc(10% + 80px));
+        }
+        to {
+          opacity: 1;
+          transform: translateX(10%);
+        }
+      }
+    </style>
+
+    <style>
+      /* Base hidden states */
+      .step-phone {
+        opacity: 0;
+        transition:
+          opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+          transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        will-change: transform, opacity;
+      }
+      .step-phone.from-left {
+        transform: translateX(-50px);
+      }
+      .step-phone.from-right {
+        transform: translateX(50px);
+      }
+
+      .step-text {
+        opacity: 0;
+        transition:
+          opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s,
+          transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s;
+        will-change: transform, opacity;
+      }
+      .step-text.from-left {
+        transform: translateX(-50px);
+      }
+      .step-text.from-right {
+        transform: translateX(50px);
+      }
+
+      /* Circle behind phone */
+      .step-circle {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.4);
+        transition:
+          opacity 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.75s,
+          transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.75s;
+        pointer-events: none;
+        z-index: 0;
+        top: 50%;
+        left: 50%;
+      }
+
+      /* Animated-in state */
+      .step-row.in .step-phone,
+      .step-row.in .step-text {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .step-row.in .step-circle {
+        opacity: 1;
+        transform: translate(-60%, -50%) scale(1);
+      }
+      .step-row.in .step-circle-right {
+        opacity: 1;
+        transform: translate(-40%, -50%) scale(1);
+      }
+    </style>
+
+    <section style="background: #efece4; padding: 64px 24px; overflow: hidden">
+      <div style="max-width: 1044px; margin: 0 auto">
+        <!-- Pill + heading -->
+        <span
+          style="
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: fit-content;
+            margin-bottom: 16px;
+            padding: 7px 12px;
+            background: #c5e866;
+            color: #1a1a1a;
+            border: 1px solid #a84065;
+            border-radius: 20px;
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            line-height: 1;
+          "
+          >HOW IT WORKS</span
+        >
+
+        <h2
+          style="
+            font-family: var(--font-body);
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 1;
+            color: #1a1a1a;
+            margin: 0 0 64px;
+          ">
+          From Search to Booking in 3 Steps
+        </h2>
+
+        <!-- Step 1 — phone left -->
+        <div
+          class="step-row"
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            margin-bottom: 80px;
+          ">
+          <!-- phone -->
+          <div
+            class="step-phone from-left"
+            style="display: flex; justify-content: flex-end">
+            <div style="position: relative; display: inline-block">
+              <div class="step-circle" style="background: #c4b5f8"></div>
+              <img
+                src="/assets/images/home-customer/top-left-mobile-mockup.svg"
+                alt="Browse catering services"
+                style="
+                  width: 100%;
+                  max-width: 320px;
+                  display: block;
+                  position: relative;
+                  z-index: 1;
+                " />
             </div>
           </div>
-          <div>
-            <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
-              <div class="step-badge-lime">1</div>
-              <h3 style="font-size:1.3rem;font-weight:700;color:var(--color-ink);">Search for the Date</h3>
+          <!-- text -->
+          <div class="step-text from-right">
+            <div
+              style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background: var(--color-lime);
+                border-radius: 25%;
+                margin-bottom: 16px;
+              ">
+              <iconify-icon
+                icon="uiw:filter"
+                width="18"
+                height="18"
+                style="color: #1a1a1a"></iconify-icon>
             </div>
-            <p style="color:var(--color-muted);line-height:1.6;">Browse verified caterers available on your event date.</p>
+            <h3
+              style="
+                font-family: var(--font-body);
+                font-size: 25px;
+                font-weight: 800;
+                color: #1a1a1a;
+                margin: 0 0 12px;
+              ">
+              Browse &amp; Filter
+            </h3>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: #6b6b6b;
+                line-height: 1.6;
+                margin: 0;
+              ">
+              Explore catering companies and menus for every occasion.
+            </p>
           </div>
         </div>
 
-        <!-- Step 2 — right phone -->
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:80px;">
-          <div>
-            <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
-              <div class="step-badge-lime">2</div>
-              <h3 style="font-size:1.3rem;font-weight:700;color:var(--color-ink);">Compare Packages</h3>
+        <!-- Step 2 — phone right -->
+        <div
+          class="step-row step-row-mid"
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            margin-bottom: 80px;
+          ">
+          <!-- text -->
+          <div class="step-text from-left" style="text-align: right">
+            <div
+              style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background: var(--color-lime);
+                border-radius: 25%;
+                margin-bottom: 16px;
+              ">
+              <iconify-icon
+                icon="material-symbols:compare"
+                width="20"
+                height="20"
+                style="color: #1a1a1a"></iconify-icon>
             </div>
-            <p style="color:var(--color-muted);line-height:1.6;">View menus, photos and prices side by side.</p>
+            <h3
+              style="
+                font-family: var(--font-body);
+                font-size: 25px;
+                font-weight: 800;
+                color: #1a1a1a;
+                margin: 0 0 12px;
+              ">
+              Compare &amp; Choose
+            </h3>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: #6b6b6b;
+                line-height: 1.6;
+                margin: 0;
+              ">
+              Check packages, pricing, and options side by side.
+            </p>
           </div>
-          <div style="display:flex;justify-content:center;">
-            <div style="width:220px;height:420px;background:var(--color-maroon-dark);border-radius:30px;border:2px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;">
-              <span style="font-size:0.7rem;opacity:0.4;">App Screenshot</span>
+          <!-- phone -->
+          <div
+            class="step-phone from-right"
+            style="display: flex; justify-content: flex-start">
+            <div style="position: relative; display: inline-block">
+              <div
+                class="step-circle step-circle-right"
+                style="background: rgb(168, 65, 100)"></div>
+              <img
+                src="/assets/images/home-customer/right-mobile-mockup.svg"
+                alt="Compare catering packages"
+                style="
+                  width: 100%;
+                  max-width: 440px;
+                  display: block;
+                  position: relative;
+                  z-index: 1;
+                " />
             </div>
           </div>
         </div>
 
-        <!-- Step 3 — left phone -->
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
-          <div style="display:flex;justify-content:center;">
-            <div style="width:220px;height:420px;background:var(--color-maroon-dark);border-radius:30px;border:2px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;">
-              <span style="font-size:0.7rem;opacity:0.4;">App Screenshot</span>
+        <!-- Step 3 — phone left -->
+        <div
+          class="step-row"
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+          ">
+          <!-- phone -->
+          <div
+            class="step-phone from-left"
+            style="display: flex; justify-content: flex-end">
+            <div style="position: relative; display: inline-block">
+              <div
+                class="step-circle"
+                style="background: var(--color-lime)"></div>
+              <img
+                src="/assets/images/home-customer/bottom-left-mobile-mockup.svg"
+                alt="Order confirmed"
+                style="
+                  width: 100%;
+                  max-width: 320px;
+                  display: block;
+                  position: relative;
+                  z-index: 1;
+                " />
             </div>
           </div>
-          <div>
-            <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
-              <div class="step-badge-lime">3</div>
-              <h3 style="font-size:1.3rem;font-weight:700;color:var(--color-ink);">Order Confirmed!</h3>
+          <!-- text -->
+          <div class="step-text from-right">
+            <div
+              style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background: var(--color-lime);
+                border-radius: 25%;
+                margin-bottom: 16px;
+              ">
+              <iconify-icon
+                icon="material-symbols:bookmark-check-outline"
+                width="20"
+                height="20"
+                style="color: #1a1a1a"></iconify-icon>
             </div>
-            <p style="color:var(--color-muted);line-height:1.6;">Book directly through the app — simple and fast.</p>
+            <h3
+              style="
+                font-family: var(--font-body);
+                font-size: 25px;
+                font-weight: 800;
+                color: #1a1a1a;
+                margin: 0 0 12px;
+              ">
+              Book &amp; Relax
+            </h3>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: #6b6b6b;
+                line-height: 1.6;
+                margin: 0;
+              ">
+              Choose what fits your event and confirm your booking.
+            </p>
           </div>
         </div>
       </div>
+
+      <!-- CTA button — tablet & mobile only -->
+      <div
+        class="steps-cta"
+        style="text-align: center; margin-top: 48px; display: none">
+        <a
+          href="/customer/why-catery.html"
+          style="
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            background: var(--color-maroon);
+            color: var(--color-cream);
+            font-family: var(--font-body);
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 100px;
+            text-decoration: none;
+          "
+          >See How it Works →</a
+        >
+      </div>
     </section>
+
+    <script>
+      (function () {
+        var rows = document.querySelectorAll(".step-row");
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("in");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.25 },
+        );
+        rows.forEach(function (row) {
+          observer.observe(row);
+        });
+      })();
+    </script>
 
     <!-- ═══════════════════════════════════════════
          FEATURES — "Everything You Need"
     ═══════════════════════════════════════════ -->
-    <section class="section-maroon">
-      <div class="container-site">
-        <span class="tag-pill tag-lime" style="margin-bottom:20px;display:inline-block;" data-bind="features.tag">JUST BETTER</span>
-        <h2 data-bind="features.title" style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;margin-bottom:48px;">Everything You Need, All in One Place</h2>
+    <section
+      class="features-section"
+      style="background: #efece4; padding: 64px 24px">
+      <div style="max-width: 1044px; margin: 0 auto">
+        <!-- Pill -->
+        <span
+          style="
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: fit-content;
+            margin-bottom: 16px;
+            padding: 7px 12px;
+            background: #c5e866;
+            color: #1a1a1a;
+            border: 1px solid #a84065;
+            border-radius: 20px;
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            line-height: 1;
+          "
+          >WHAT YOU GET</span
+        >
 
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
-          <!-- Feature cards — static for pixel fidelity, content.js fills text -->
-          <div class="card-dark" style="border:1px solid rgba(255,255,255,0.08);">
-            <div style="font-size:1.5rem;margin-bottom:12px;">🔍</div>
-            <h4 style="font-weight:700;margin-bottom:8px;font-size:0.95rem;">Discover Caterers</h4>
-            <p style="font-size:0.85rem;opacity:0.6;line-height:1.5;">Browse local catering businesses with photos and menus.</p>
+        <h2
+          class="features-h2"
+          style="
+            font-family: var(--font-body);
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 1;
+            color: #1a1a1a;
+            margin: 0 0 48px;
+          ">
+          Everything You Need, All in One Place
+        </h2>
+
+        <div
+          class="features-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+          ">
+          <!-- Card 1 -->
+          <div
+            style="
+              background: #fefefe;
+              border: 1px solid var(--color-lime);
+              border-radius: 14px;
+              padding: 24px;
+              display: flex;
+              flex-direction: column;
+              gap: 13px;
+            ">
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                background: var(--color-lime);
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              ">
+              <img
+                src="/assets/images/home-customer/scan-search--icon.svg"
+                alt=""
+                width="20"
+                height="20" />
+            </div>
+            <h4
+              style="
+                font-family: var(--font-body);
+                font-size: 17px;
+                font-weight: 700;
+                color: #1a1a1a;
+                margin: 0;
+              ">
+              Discover Caterers
+            </h4>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: #6b6b6b;
+                line-height: 1.5;
+                margin: 0;
+              ">
+              Browse a growing network of catering companies.
+            </p>
           </div>
-          <div class="card-dark" style="border:1px solid rgba(255,255,255,0.08);">
-            <div style="font-size:1.5rem;margin-bottom:12px;">📋</div>
-            <h4 style="font-weight:700;margin-bottom:8px;font-size:0.95rem;">Compare Options</h4>
-            <p style="font-size:0.85rem;opacity:0.6;line-height:1.5;">Compare packages, pricing, and services easily.</p>
+          <!-- Card 2 -->
+          <div
+            style="
+              background: #fefefe;
+              border: 1px solid var(--color-lime);
+              border-radius: 14px;
+              padding: 24px;
+              display: flex;
+              flex-direction: column;
+              gap: 13px;
+            ">
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                background: var(--color-lime);
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              ">
+              <img
+                src="/assets/images/home-customer/compare-icon.svg"
+                alt=""
+                width="20"
+                height="20" />
+            </div>
+            <h4
+              style="
+                font-family: var(--font-body);
+                font-size: 17px;
+                font-weight: 700;
+                color: #1a1a1a;
+                margin: 0;
+              ">
+              Compare Options
+            </h4>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: #6b6b6b;
+                line-height: 1.5;
+                margin: 0;
+              ">
+              See menus, packages, and pricing upfront.
+            </p>
           </div>
-          <div class="card-dark" style="border:1px solid rgba(255,255,255,0.08);">
-            <div style="font-size:1.5rem;margin-bottom:12px;">⏱</div>
-            <h4 style="font-weight:700;margin-bottom:8px;font-size:0.95rem;">Save Time</h4>
-            <p style="font-size:0.85rem;opacity:0.6;line-height:1.5;">Stop chasing vendors — everything in one place.</p>
+          <!-- Card 3 -->
+          <div
+            style="
+              background: #fefefe;
+              border: 1px solid var(--color-lime);
+              border-radius: 14px;
+              padding: 24px;
+              display: flex;
+              flex-direction: column;
+              gap: 13px;
+            ">
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                background: var(--color-lime);
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              ">
+              <img
+                src="/assets/images/home-customer/time-icon.svg"
+                alt=""
+                width="20"
+                height="20" />
+            </div>
+            <h4
+              style="
+                font-family: var(--font-body);
+                font-size: 17px;
+                font-weight: 700;
+                color: #1a1a1a;
+                margin: 0;
+              ">
+              Save Time
+            </h4>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: #6b6b6b;
+                line-height: 1.5;
+                margin: 0;
+              ">
+              Everything you need in one simple platform.
+            </p>
           </div>
-          <div class="card-dark" style="border:1px solid rgba(255,255,255,0.08);">
-            <div style="font-size:1.5rem;margin-bottom:12px;">💬</div>
-            <h4 style="font-weight:700;margin-bottom:8px;font-size:0.95rem;">Easy Communication</h4>
-            <p style="font-size:0.85rem;opacity:0.6;line-height:1.5;">Message caterers directly through the app.</p>
+          <!-- Card 4 -->
+          <div
+            style="
+              background: #fefefe;
+              border: 1px solid var(--color-lime);
+              border-radius: 14px;
+              padding: 24px;
+              display: flex;
+              flex-direction: column;
+              gap: 13px;
+            ">
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                background: var(--color-lime);
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              ">
+              <img
+                src="/assets/images/home-customer/comment-icon.svg"
+                alt=""
+                width="20"
+                height="20" />
+            </div>
+            <h4
+              style="
+                font-family: var(--font-body);
+                font-size: 17px;
+                font-weight: 700;
+                color: #1a1a1a;
+                margin: 0;
+              ">
+              Easy Communication
+            </h4>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: #6b6b6b;
+                line-height: 1.5;
+                margin: 0;
+              ">
+              Connect with vendors without jumping between apps.
+            </p>
           </div>
-          <div class="card-dark" style="border:1px solid rgba(255,255,255,0.08);">
-            <div style="font-size:1.5rem;margin-bottom:12px;">✅</div>
-            <h4 style="font-weight:700;margin-bottom:8px;font-size:0.95rem;">Fast Booking</h4>
-            <p style="font-size:0.85rem;opacity:0.6;line-height:1.5;">Confirm your catering in minutes, not days.</p>
+          <!-- Card 5 -->
+          <div
+            style="
+              background: #fefefe;
+              border: 1px solid var(--color-lime);
+              border-radius: 14px;
+              padding: 24px;
+              display: flex;
+              flex-direction: column;
+              gap: 13px;
+            ">
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                background: var(--color-lime);
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              ">
+              <img
+                src="/assets/images/home-customer/booking-icon.svg"
+                alt=""
+                width="20"
+                height="20" />
+            </div>
+            <h4
+              style="
+                font-family: var(--font-body);
+                font-size: 17px;
+                font-weight: 700;
+                color: #1a1a1a;
+                margin: 0;
+              ">
+              Fast Booking
+            </h4>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: #6b6b6b;
+                line-height: 1.5;
+                margin: 0;
+              ">
+              Submit your request in minutes.
+            </p>
           </div>
-          <div class="card-dark" style="border:1px solid rgba(255,255,255,0.08);">
-            <div style="font-size:1.5rem;margin-bottom:12px;">🗺</div>
-            <h4 style="font-weight:700;margin-bottom:8px;font-size:0.95rem;">Explore Menus</h4>
-            <p style="font-size:0.85rem;opacity:0.6;line-height:1.5;">Full menu details before you ever make a call.</p>
+          <!-- Card 6 -->
+          <div
+            style="
+              background: #fefefe;
+              border: 1px solid var(--color-lime);
+              border-radius: 14px;
+              padding: 24px;
+              display: flex;
+              flex-direction: column;
+              gap: 13px;
+            ">
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                background: var(--color-lime);
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              ">
+              <img
+                src="/assets/images/home-customer/sxplore-icon.svg"
+                alt=""
+                width="20"
+                height="20" />
+            </div>
+            <h4
+              style="
+                font-family: var(--font-body);
+                font-size: 17px;
+                font-weight: 700;
+                color: #1a1a1a;
+                margin: 0;
+              ">
+              Explore Menus
+            </h4>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: #6b6b6b;
+                line-height: 1.5;
+                margin: 0;
+              ">
+              Find food options that match your event and budget.
+            </p>
           </div>
         </div>
       </div>
@@ -164,101 +974,631 @@
     <!-- ═══════════════════════════════════════════
          FAQ
     ═══════════════════════════════════════════ -->
-    <section class="section-maroon" style="padding-top:0;">
+    <section class="section-maroon faq-section">
+      <style>
+        .faq-card {
+          cursor: pointer;
+        }
+        .faq-body {
+          max-height: 0;
+          margin-top: 0;
+          opacity: 0;
+          overflow: hidden;
+          transition:
+            max-height 0.4s ease,
+            opacity 0.4s ease,
+            margin-top 0.4s ease;
+        }
+        .faq-card.open .faq-body {
+          max-height: 240px;
+          margin-top: 16px;
+          opacity: 1;
+        }
+        .faq-arrow {
+          transition: transform 0.4s ease;
+        }
+        .faq-card.open .faq-arrow {
+          transform: rotate(180deg);
+        }
+      </style>
       <div class="container-site">
-        <span class="tag-pill tag-lime" style="margin-bottom:20px;display:inline-block;" data-bind="faq.tag">FAQ</span>
-        <h2 data-bind="faq.title" style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;margin-bottom:12px;">Questions? We've got answers.</h2>
-        <p data-bind="faq.subtitle" style="opacity:0.65;font-size:0.9rem;line-height:1.6;max-width:500px;margin-bottom:40px;">Booking catering shouldn't take three days, five WhatsApps, and ten Instagram DMs.</p>
+        <!-- Pill -->
+        <span
+          style="
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 16px;
+            padding: 7px 12px;
+            background: #3f1b2c;
+            color: #c5e866;
+            border: 1px solid #c5e866;
+            border-radius: 20px;
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+          "
+          data-bind="faq.tag"
+          >FAQ</span
+        >
 
-        <!-- FAQ grid — 2 columns -->
-        <div class="faq-group" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-          <div class="faq-item" style="background:var(--color-maroon-dark);border-radius:var(--radius-xl);">
-            <div class="faq-question" style="color:var(--color-cream);">
-              <span>Is it free to join Catery?</span>
-              <div class="faq-icon"><i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></div>
+        <!-- H2 -->
+        <h2
+          class="faq-h2"
+          data-bind="faq.title"
+          style="
+            font-family: var(--font-body);
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 1;
+            color: #efece4;
+            margin-bottom: 16px;
+          ">
+          Questions? We've Got Answers.
+        </h2>
+
+        <!-- Subtitle -->
+        <p
+          class="faq-subtitle"
+          data-bind="faq.subtitle"
+          style="
+            font-family: var(--font-body);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1;
+            color: #efece4;
+            margin-bottom: 48px;
+            max-width: 560px;
+          ">
+          Booking catering shouldn't take three days, five WhatsApps, and ten
+          Instagram DMs. We built Catery to give event planners the clarity they
+          need — and caterers the visibility they deserve.
+        </p>
+
+        <div
+          class="faq-group"
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            align-items: start;
+          ">
+          <!-- 1 -->
+          <div
+            class="faq-card open"
+            style="
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              box-sizing: border-box;
+            ">
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                Is it free to join Catery?
+              </h3>
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
+                <i
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
+              </div>
             </div>
-            <div class="faq-answer" style="color:var(--color-cream);opacity:0.7;">Yes, downloading and using the Catery app is completely free for customers.</div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              Yes, downloading and using the Catery app is completely free for
+              customers.
+            </p>
           </div>
-          <div class="faq-item" style="background:var(--color-maroon-dark);border-radius:var(--radius-xl);">
-            <div class="faq-question" style="color:var(--color-cream);">
-              <span>How long does setup take?</span>
-              <div class="faq-icon"><i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></div>
+
+          <!-- 2 -->
+          <div
+            class="faq-card"
+            style="
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              box-sizing: border-box;
+            ">
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                How long does setup take?
+              </h3>
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
+                <i
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
+              </div>
             </div>
-            <div class="faq-answer" style="color:var(--color-cream);opacity:0.7;">You can set up your event search and start browsing in under 2 minutes.</div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              You can set up your event search and start browsing in under 2
+              minutes.
+            </p>
           </div>
-          <div class="faq-item" style="background:var(--color-maroon-dark);border-radius:var(--radius-xl);">
-            <div class="faq-question" style="color:var(--color-cream);">
-              <span>What types of businesses can join?</span>
-              <div class="faq-icon"><i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></div>
+
+          <!-- 3 -->
+          <div
+            class="faq-card"
+            style="
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              box-sizing: border-box;
+            ">
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                What types of catering can I find?
+              </h3>
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
+                <i
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
+              </div>
             </div>
-            <div class="faq-answer" style="color:var(--color-cream);opacity:0.7;">All types of catering businesses — from small home kitchens to large catering companies.</div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              All types of catering businesses — from small home kitchens to
+              large catering companies.
+            </p>
           </div>
-          <div class="faq-item" style="background:var(--color-maroon-dark);border-radius:var(--radius-xl);">
-            <div class="faq-question" style="color:var(--color-cream);">
-              <span>Which cities do you serve?</span>
-              <div class="faq-icon"><i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></div>
+
+          <!-- 4 -->
+          <div
+            class="faq-card"
+            style="
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              box-sizing: border-box;
+            ">
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                Which cities do you serve?
+              </h3>
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
+                <i
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
+              </div>
             </div>
-            <div class="faq-answer" style="color:var(--color-cream);opacity:0.7;">We currently operate across major Egyptian cities and are expanding rapidly.</div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              We currently operate across major Egyptian cities and are
+              expanding rapidly.
+            </p>
           </div>
-          <div class="faq-item" style="background:var(--color-maroon-dark);border-radius:var(--radius-xl);">
-            <div class="faq-question" style="color:var(--color-cream);">
-              <span>How do customers find me?</span>
-              <div class="faq-icon"><i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></div>
+
+          <!-- 5 -->
+          <div
+            class="faq-card"
+            style="
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              box-sizing: border-box;
+            ">
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                Can I see prices before contacting a vendor?
+              </h3>
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
+                <i
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
+              </div>
             </div>
-            <div class="faq-answer" style="color:var(--color-cream);opacity:0.7;">Customers search by date, location, and cuisine type. Your profile appears in results.</div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              Yes, packages, pricing, and menus are visible directly on each
+              vendor's profile.
+            </p>
           </div>
-          <div class="faq-item" style="background:var(--color-maroon-dark);border-radius:var(--radius-xl);">
-            <div class="faq-question" style="color:var(--color-cream);">
-              <span>How do I get started?</span>
-              <div class="faq-icon"><i class="fa-solid fa-chevron-down" style="font-size:0.7rem;"></i></div>
+
+          <!-- 6 -->
+          <div
+            class="faq-card"
+            style="
+              background: #efece4;
+              border: 1px solid #1a1a1a;
+              border-radius: 12px;
+              padding: 24px;
+              box-sizing: border-box;
+            ">
+            <div
+              class="faq-head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+              ">
+              <h3
+                style="
+                  font-family: var(--font-body);
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #1a1a1a;
+                  line-height: 1;
+                ">
+                How do I get started?
+              </h3>
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #5c2839;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                ">
+                <i
+                  class="fa-solid fa-arrow-down faq-arrow"
+                  style="color: #5c2839; font-size: 1rem"></i>
+              </div>
             </div>
-            <div class="faq-answer" style="color:var(--color-cream);opacity:0.7;">Download the app from the App Store or Google Play and create your free account.</div>
+            <p
+              class="faq-body"
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                color: #1a1a1a;
+                line-height: 1;
+              ">
+              Download the app from the App Store or Google Play and create your
+              free account.
+            </p>
           </div>
         </div>
 
-        <!-- Can't find your answer -->
-        <div style="margin-top:16px;background:var(--color-lime);border-radius:var(--radius-xl);padding:32px 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;">
+        <div
+          style="
+            margin-top: 48px;
+            background: #c5e866;
+            border-radius: 24px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+          ">
           <div>
-            <span class="tag-pill tag-maroon" style="margin-bottom:12px;display:inline-block;font-size:0.65rem;">STILL CURIOUS?</span>
-            <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:800;color:var(--color-maroon);margin-bottom:4px;">Can't find your answer?</h3>
-            <p style="color:var(--color-maroon);opacity:0.7;font-size:0.85rem;">Our team is happy to help.</p>
+            <span
+              style="
+                display: inline-flex;
+                align-items: center;
+                padding: 7px 12px;
+                background: #c5e866;
+                color: var(--color-text);
+                border: 1px solid #a84065;
+                border-radius: 20px;
+                font-family: var(--font-body);
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+                margin-bottom: 32px;
+              "
+              >STILL CURIOUS?</span
+            >
+            <h3
+              style="
+                font-family: var(--font-body);
+                font-size: 28px;
+                font-weight: 800;
+                line-height: 1;
+                color: #1a1a1a;
+                margin-bottom: 10px;
+              ">
+              Can't find your answer?
+            </h3>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1;
+                color: #1a1a1a;
+              ">
+              Our team is happy to help.
+            </p>
           </div>
-          <a href="/customer/contact.html" class="btn btn-dark">Contact us →</a>
+          <a
+            href="/customer/contact.html"
+            style="
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+              width: 327px;
+              height: 48px;
+              padding: 0 24px;
+              background: #5c2839;
+              color: var(--color-cream);
+              font-family: var(--font-body);
+              font-size: 16px;
+              font-weight: 700;
+              border: 2px solid transparent;
+              border-radius: 24px;
+              text-decoration: none;
+              align-self: flex-start;
+            "
+            onmouseover="
+              this.style.background = '#A84065';
+              this.style.borderColor = '#C5E866';
+            "
+            onmouseout="
+              this.style.background = '#5c2839';
+              this.style.borderColor = 'transparent';
+            "
+            onmousedown="
+              this.style.background = '#3F1B2C';
+              this.style.borderColor = 'transparent';
+            "
+            onmouseup="
+              this.style.background = '#A84065';
+              this.style.borderColor = '#C5E866';
+            ">
+            Contact us <span style="color: var(--color-lime)">→</span>
+          </a>
         </div>
       </div>
     </section>
 
+    <script>
+      document.querySelectorAll(".faq-card .faq-head").forEach(function (head) {
+        head.addEventListener("click", function () {
+          head.parentElement.classList.toggle("open");
+        });
+      });
+    </script>
+
     <!-- ═══════════════════════════════════════════
-         CTA — "Ready to Find Your Perfect Caterer?"
+         MISSION — "Find Catering Without the Chase"
     ═══════════════════════════════════════════ -->
-    <section class="section-maroon" style="padding-top:0;">
-      <div class="container-site" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
-        <div>
-          <span class="tag-pill tag-lime" style="margin-bottom:20px;display:inline-block;" data-bind="cta.tag">GET STARTED</span>
-          <h2 data-bind="cta.title" style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:800;margin-bottom:12px;">Ready to Find Your Perfect Caterer?</h2>
-          <p data-bind="cta.subtitle" style="opacity:0.7;font-size:0.95rem;line-height:1.6;margin-bottom:28px;">Browse, compare, and book — all from one free app.</p>
-          <div style="display:flex;gap:12px;flex-wrap:wrap;">
-            <a href="#" class="app-badge">
-              <i class="fa-brands fa-apple" style="font-size:1.3rem;"></i>
-              <span><span style="font-size:0.65rem;display:block;opacity:0.7;">Download on the</span>App Store</span>
-            </a>
-            <a href="#" class="app-badge">
-              <i class="fa-brands fa-google-play" style="font-size:1.1rem;color:#34a853;"></i>
-              <span><span style="font-size:0.65rem;display:block;opacity:0.7;">GET IT ON</span>Google Play</span>
-            </a>
-          </div>
-        </div>
-        <!-- Decorative blob -->
-        <div style="display:flex;justify-content:flex-end;position:relative;">
-          <div style="width:200px;height:200px;background:var(--color-cream);border-radius:50%;opacity:0.06;position:absolute;right:-40px;bottom:-40px;"></div>
-          <div style="width:80px;height:80px;background:var(--color-cream);border-radius:50%;opacity:0.08;position:absolute;right:100px;top:0;"></div>
-          <div style="width:40px;height:40px;background:var(--color-cream);border-radius:50%;opacity:0.06;position:absolute;right:60px;top:20px;"></div>
+    <section
+      class="mission-section"
+      style="
+        background: #e5f3b8;
+        padding: 144px 120px;
+        position: relative;
+        overflow: hidden;
+      ">
+      <div class="container-site">
+        <!-- Pill -->
+        <span
+          style="
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 24px;
+            padding: 7px 12px;
+            background: #3f1b2c;
+            color: #c5e866;
+            border: 1px solid #c5e866;
+            border-radius: 20px;
+            box-shadow: 0 0 6.5px 3px rgba(255, 81, 143, 0.45);
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+          "
+          data-bind="cta.tag"
+          >DOWNLOAD</span
+        >
+
+        <!-- H2 -->
+        <h2
+          class="mission-h2"
+          data-bind="cta.title"
+          style="
+            font-family: var(--font-brand);
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 1;
+            color: #1a1a1a;
+            margin-bottom: 24px;
+            max-width: 700px;
+          ">
+          Ready to Find Your Perfect Caterer?
+        </h2>
+
+        <!-- Body -->
+        <p
+          class="mission-subtitle"
+          data-bind="cta.subtitle"
+          style="
+            font-family: var(--font-body);
+            font-size: 16px;
+            font-weight: 400;
+            color: #1a1a1a;
+            line-height: 1;
+            margin-bottom: 48px;
+            max-width: 700px;
+          ">
+          Browse, compare, and book — all in one free app.
+        </p>
+
+        <!-- Download the App -->
+        <p
+          style="
+            font-family: var(--font-body);
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--color-maroon);
+            margin-bottom: 16px;
+          ">
+          Download the App
+        </p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap">
+          <div data-include="/partials/app-badges.html"></div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <div data-include="/partials/footer.html"></div>
+    <div data-include="/partials/footer-customer.html"></div>
 
     <!-- Scripts -->
     <script src="/js/includes.js"></script>
@@ -267,12 +1607,115 @@
 
     <!-- Responsive overrides -->
     <style>
+      /* Tablet */
+      @media (max-width: 1024px) {
+        .steps-cta {
+          display: block !important;
+        }
+        .features-section {
+          background: #efece4 !important;
+          padding: 64px 32px !important;
+        }
+        .features-h2 {
+          font-size: 36px !important;
+          margin-bottom: 40px !important;
+        }
+        .features-grid {
+          grid-template-columns: repeat(2, 1fr) !important;
+          gap: 16px !important;
+        }
+        .faq-group {
+          grid-template-columns: 1fr 1fr !important;
+        }
+        .faq-h2 {
+          font-size: 36px !important;
+          line-height: 1.1 !important;
+          margin-bottom: 16px !important;
+        }
+        .faq-subtitle {
+          line-height: 1.6 !important;
+          max-width: 100% !important;
+          margin-bottom: 40px !important;
+        }
+        .faq-section {
+          padding-left: 32px !important;
+        }
+        .mission-section {
+          padding: 80px 32px !important;
+        }
+        .mission-h2 {
+          font-size: 64px !important;
+          line-height: 1 !important;
+          max-width: 100% !important;
+        }
+        .mission-subtitle {
+          line-height: 1.5 !important;
+          max-width: 100% !important;
+          margin-bottom: 40px !important;
+        }
+        .mission-section .container-site {
+          padding: 0 !important;
+          padding-right: 32px !important;
+        }
+      }
+
+      /* Mobile */
+      @media (max-width: 640px) {
+        .features-grid {
+          grid-template-columns: 1fr !important;
+        }
+      }
+
       @media (max-width: 768px) {
-        .steps-grid { grid-template-columns: 1fr !important; }
-        .features-grid { grid-template-columns: repeat(2,1fr) !important; }
-        .faq-group { grid-template-columns: 1fr !important; }
-        .cta-grid { grid-template-columns: 1fr !important; }
-        .hero-phones { display: none !important; }
+        .hero-circle {
+          width: 400px !important;
+          height: 400px !important;
+        }
+        .step-circle {
+          width: 160px !important;
+          height: 160px !important;
+        }
+        .step-row-mid {
+          grid-template-columns: 1fr 2fr !important;
+        }
+        .faq-section {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+        }
+        .faq-group {
+          grid-template-columns: 1fr !important;
+          gap: 16px !important;
+        }
+        .faq-h2 {
+          font-size: 32px !important;
+          line-height: 1.1 !important;
+        }
+        .faq-subtitle {
+          font-size: 14px !important;
+        }
+        /* Mission / CTA section */
+        .mission-section {
+          padding: 56px 24px !important;
+        }
+        .mission-section .container-site {
+          padding: 0 !important;
+        }
+        .mission-section > .container-site > span {
+          align-self: flex-start;
+        }
+        .mission-h2 {
+          font-family: var(--font-brand) !important;
+          font-size: 46px !important;
+          font-weight: 700 !important;
+          line-height: 1.0 !important;
+          max-width: 100% !important;
+        }
+        .mission-subtitle {
+          font-size: 16px !important;
+          max-width: 100% !important;
+          line-height: 1.0 !important;
+          margin-bottom: 32px !important;
+        }
       }
     </style>
   </body>

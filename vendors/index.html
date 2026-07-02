@@ -16,19 +16,22 @@
     <div data-include="/partials/navbar-vendor.html"></div>
 
     <!-- HERO -->
-    <section style="background: var(--color-maroon); padding: 72px 24px 64px">
+    <section class="vd-hero-section" style="background: var(--color-maroon); padding: 72px 24px 64px">
       <div
+        class="vd-hero-grid"
         style="
           max-width: var(--width-site);
           margin: 0 auto;
           display: grid;
           grid-template-columns: 55% 45%;
+          grid-template-rows: auto auto;
           gap: 48px;
           align-items: center;
           padding-bottom: 100px;
         ">
-        <!-- Left: copy -->
-        <div>
+
+        <!-- Top-left: copy (pill + heading + subtitles) -->
+        <div class="vd-hero-copy-top" style="grid-column:1; grid-row:1 / span 2; align-self:center;">
           <!-- Tag pill -->
           <span
             style="
@@ -50,28 +53,27 @@
 
           <!-- Heading -->
           <h1
+            class="vd-hero-h1"
             style="
               font-family: var(--font-brand);
-              font-size: clamp(2.4rem, 4vw, 3.6rem);
-              font-weight: 800;
-              line-height: 1.1;
+              font-size: 46px;
+              font-weight: 700;
+              line-height: 1.0;
               color: var(--color-cream);
               margin-bottom: 24px;
             ">
             Grow your catering<br />business with
-            <span style="color: var(--color-lime)">Catery</span>
-            .
+            <span style="color: var(--color-lime)">Catery</span>.
           </h1>
 
-          <!-- Subtitle -->
+          <!-- Subtitles -->
           <p
             style="
               font-family: var(--font-body);
-              font-size: 1rem;
+              font-size: 16px;
               font-weight: 400;
-              line-height: 1.6;
-              color: var(--color-cream);
-              opacity: 0.75;
+              line-height: 1.0;
+              color: #EFECE4;
               max-width: 520px;
               margin-top: 0;
               margin-bottom: 20px;
@@ -81,264 +83,216 @@
           <p
             style="
               font-family: var(--font-body);
-              font-size: 1rem;
+              font-size: 16px;
               font-weight: 400;
-              line-height: 1.6;
-              color: var(--color-cream);
-              opacity: 0.75;
+              line-height: 1.0;
+              color: #EFECE4;
               max-width: 480px;
               margin-top: 0;
-              margin-bottom: 40px;
+              margin-bottom: 0;
             ">
             Join Egypt's catering marketplace and make it easier for customers
             to discover your business.
           </p>
 
-          <!-- CTA buttons + OR divider grouped to share width -->
-          <div
-            style="
-              display: inline-flex;
-              flex-direction: column;
-              gap: 0;
-              margin-bottom: 24px;
-            ">
+          <!-- CTA buttons + OR + Download — hidden on mobile (moved to vd-hero-cta-block) -->
+          <div class="vd-hero-cta-desktop">
+            <!-- CTA buttons + OR divider -->
             <div
               style="
-                display: flex;
-                gap: 24px;
-                flex-wrap: wrap;
-                align-items: center;
-                margin-bottom: 20px;
-              ">
-              <a
-                href="/vendors/contact.html"
-                style="
-                  display: inline-flex;
-                  align-items: center;
-                  justify-content: center;
-                  gap: 8px;
-                  width: 180px;
-                  height: 56px;
-                  background: var(--color-lime);
-                  color: var(--color-maroon);
-                  font-family: var(--font-body);
-                  font-size: 14px;
-                  font-weight: 700;
-                  border-radius: 24px;
-                  text-decoration: none;
-                  transition: opacity 0.15s;
-                "
-                onmouseover="this.style.opacity = '0.88'"
-                onmouseout="this.style.opacity = '1'">
-                Join Catery →
-              </a>
-              <a
-                href="/vendors/how-it-works.html"
-                style="
-                  display: inline-flex;
-                  align-items: center;
-                  justify-content: center;
-                  gap: 8px;
-                  width: 180px;
-                  height: 56px;
-                  background: transparent;
-                  border: 2px solid var(--color-lime);
-                  color: var(--color-lime);
-                  font-family: var(--font-body);
-                  font-size: 14px;
-                  font-weight: 700;
-                  border-radius: 24px;
-                  text-decoration: none;
-                  transition: opacity 0.15s;
-                "
-                onmouseover="this.style.opacity = '0.8'"
-                onmouseout="this.style.opacity = '1'">
-                How It Works ?
-              </a>
-            </div>
-
-            <!-- OR divider — same width as buttons row above -->
-            <div style="display: flex; align-items: center; gap: 12px">
-              <div
-                style="
-                  height: 1px;
-                  flex: 1;
-                  background: rgba(255, 255, 255, 0.15);
-                "></div>
-              <span
-                style="
-                  font-family: var(--font-body);
-                  font-size: 0.75rem;
-                  font-weight: 500;
-                  color: rgba(255, 255, 255, 0.35);
-                  letter-spacing: 0.08em;
-                "
-                >OR</span
-              >
-              <div
-                style="
-                  height: 1px;
-                  flex: 1;
-                  background: rgba(255, 255, 255, 0.15);
-                "></div>
-            </div>
-          </div>
-          <!-- end buttons+OR wrapper -->
-
-          <!-- Download the App heading -->
-          <p
-            style="
-              font-family: var(--font-brand);
-              font-size: 1.4rem;
-              font-weight: 700;
-              color: var(--color-lime);
-              margin: 20px 0 14px;
-            ">
-            Download the App
-          </p>
-
-          <!-- Official app badges -->
-          <div style="display: flex; gap: 12px; flex-wrap: wrap">
-            <!-- App Store -->
-            <a
-              href="#"
-              style="
                 display: inline-flex;
-                align-items: center;
-                gap: 10px;
-                padding: 11px 20px;
-                background: #fff;
-                border: 1.5px solid #d1d1d1;
-                border-radius: 10px;
-                text-decoration: none;
-                min-width: 180px;
+                flex-direction: column;
+                gap: 0;
+                margin-top: 40px;
+                margin-bottom: 24px;
               ">
-              <i
-                class="fa-brands fa-apple"
-                style="font-size: 1.9rem; color: #000"></i>
-              <span style="display: flex; flex-direction: column">
-                <span
+              <div class="vd-hero-btns"
+                style="
+                  display: flex;
+                  gap: 24px;
+                  flex-wrap: wrap;
+                  align-items: center;
+                  margin-bottom: 20px;
+                ">
+                <a
+                  href="/vendors/contact.html"
+                  class="vd-hero-btn-primary"
                   style="
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    width: 180px;
+                    height: 56px;
+                    background: var(--color-lime);
+                    color: var(--color-maroon);
                     font-family: var(--font-body);
-                    font-size: 0.6rem;
-                    font-weight: 400;
-                    color: #555;
-                    line-height: 1.3;
-                    letter-spacing: 0.02em;
-                  "
-                  >Download on the</span
-                >
-                <span
-                  style="
-                    font-family: var(--font-body);
-                    font-size: 0.95rem;
+                    font-size: 14px;
                     font-weight: 700;
-                    color: #000;
-                    line-height: 1.3;
+                    border-radius: 24px;
+                    text-decoration: none;
+                    transition: opacity 0.15s;
                   "
-                  >App Store</span
-                >
-              </span>
-            </a>
-            <!-- Google Play -->
-            <a
-              href="#"
+                  onmouseover="this.style.opacity = '0.88'"
+                  onmouseout="this.style.opacity = '1'">
+                  Join Catery →
+                </a>
+                <a
+                  href="/vendors/how-it-works.html"
+                  class="vd-hero-btn-outline"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    width: 180px;
+                    height: 56px;
+                    background: transparent;
+                    border: 2px solid var(--color-lime);
+                    color: var(--color-lime);
+                    font-family: var(--font-body);
+                    font-size: 14px;
+                    font-weight: 700;
+                    border-radius: 24px;
+                    text-decoration: none;
+                    transition: opacity 0.15s;
+                  "
+                  onmouseover="this.style.opacity = '0.8'"
+                  onmouseout="this.style.opacity = '1'">
+                  How It Works ?
+                </a>
+              </div>
+              <!-- OR divider -->
+              <div style="display: flex; align-items: center; gap: 12px">
+                <div style="height: 1px; flex: 1; background: rgba(255,255,255,0.15);"></div>
+                <span style="font-family:var(--font-body);font-size:0.75rem;font-weight:500;color:rgba(255,255,255,0.35);letter-spacing:0.08em;">OR</span>
+                <div style="height: 1px; flex: 1; background: rgba(255,255,255,0.15);"></div>
+              </div>
+            </div>
+            <!-- Download the App heading -->
+            <p
               style="
-                display: inline-flex;
-                align-items: center;
-                gap: 10px;
-                padding: 11px 20px;
-                background: #fff;
-                border: 1.5px solid #d1d1d1;
-                border-radius: 10px;
-                text-decoration: none;
-                min-width: 180px;
+                font-family: var(--font-brand);
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: var(--color-lime);
+                margin: 20px 0 14px;
               ">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M1.22 0a1 1 0 0 0-.55.93v22.14a1 1 0 0 0 .55.93L13.06 12z"
-                  fill="#4285F4" />
-                <path d="M17.28 7.72 1.22 0 13.06 12z" fill="#EA4335" />
-                <path
-                  d="M17.28 16.28 13.06 12 1.22 24c.47.26 1.06.2 1.52-.08z"
-                  fill="#34A853" />
-                <path
-                  d="M22.78 10.18 17.28 7.72 13.06 12l4.22 4.28 5.5-2.46a1 1 0 0 0 0-1.64z"
-                  fill="#FBBC04" />
-              </svg>
-              <span style="display: flex; flex-direction: column">
-                <span
-                  style="
-                    font-family: var(--font-body);
-                    font-size: 0.6rem;
-                    font-weight: 400;
-                    color: #555;
-                    line-height: 1.3;
-                    letter-spacing: 0.02em;
-                  "
-                  >GET IT ON</span
-                >
-                <span
-                  style="
-                    font-family: var(--font-body);
-                    font-size: 0.95rem;
-                    font-weight: 700;
-                    color: #000;
-                    line-height: 1.3;
-                  "
-                  >Google Play</span
-                >
-              </span>
-            </a>
+              Download the App
+            </p>
+            <!-- App badges -->
+            <div style="display: flex; gap: 12px; flex-wrap: wrap">
+              <div data-include="/partials/app-badges.html"></div>
+            </div>
           </div>
         </div>
 
-        <!-- Right: phone mockup — centered in column -->
-        <div
-          style="display: flex; justify-content: center; align-items: center">
+        <!-- Right: phone mockup -->
+        <div class="vd-hero-phone"
+          style="display:flex; justify-content:center; align-items:center; grid-column:2; grid-row:1 / span 2;">
           <img
             src="/assets/images/home-vendor/Hero Section UI Desktop.svg"
             alt="Catery app interface"
             style="width: 100%; max-width: 440px; display: block" />
         </div>
+
+        <!-- Mobile-only CTA block (hidden on desktop) -->
+        <div class="vd-hero-cta-mobile" style="display:none;">
+          <div class="vd-hero-btns"
+            style="display:flex; gap:12px; margin-bottom:20px;">
+            <a
+              href="/vendors/contact.html"
+              class="vd-hero-btn-primary"
+              style="
+                display:inline-flex; align-items:center; justify-content:center;
+                flex:1; height:52px;
+                background:var(--color-lime); color:var(--color-maroon);
+                font-family:var(--font-body); font-size:14px; font-weight:700;
+                border-radius:24px; text-decoration:none;
+              ">
+              Join Catery →
+            </a>
+            <a
+              href="/vendors/how-it-works.html"
+              class="vd-hero-btn-outline"
+              style="
+                display:inline-flex; align-items:center; justify-content:center;
+                flex:1; height:52px;
+                background:transparent; border:2px solid var(--color-lime);
+                color:var(--color-lime);
+                font-family:var(--font-body); font-size:14px; font-weight:700;
+                border-radius:24px; text-decoration:none;
+              ">
+              How It Works ?
+            </a>
+          </div>
+          <!-- OR divider -->
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:0;">
+            <div style="height:1px; flex:1; background:rgba(255,255,255,0.15);"></div>
+            <span style="font-family:var(--font-body);font-size:0.75rem;font-weight:500;color:rgba(255,255,255,0.35);letter-spacing:0.08em;">OR</span>
+            <div style="height:1px; flex:1; background:rgba(255,255,255,0.15);"></div>
+          </div>
+          <!-- Download the App heading -->
+          <p style="font-family:var(--font-brand);font-size:1.4rem;font-weight:700;color:var(--color-lime);margin:20px 0 14px;">
+            Download the App
+          </p>
+          <!-- App badges -->
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <div data-include="/partials/app-badges.html"></div>
+          </div>
+        </div>
+
       </div>
     </section>
-
     <!-- FEATURES GRID -->
-    <section class="section-cream">
+    <section class="section-cream vd-features-section">
       <div class="container-site">
         <span
-          class="tag-pill tag-maroon"
-          style="margin-bottom: 20px; display: inline-block"
+          style="
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 7px 16px;
+            background: var(--color-lime);
+            color: var(--color-ink);
+            border: 2px solid #a84065;
+            border-radius: var(--radius-pill);
+            font-size: var(--text-caption);
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+          "
           >WHAT YOU GET</span
         >
         <h2
           style="
-            font-family: var(--font-display);
-            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            font-family: var(--font-body);
+            font-size: 28px;
             font-weight: 800;
             color: var(--color-ink);
             margin-bottom: 40px;
+            max-width: 380px;
           ">
           Everything you need to run your catering business
         </h2>
         <div
+          class="vd-features-grid"
           style="
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             margin-bottom: 32px;
           ">
-          <div class="card-white">
+          <div
+            class="card-white vd-feature-card"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 width: 40px;
                 height: 40px;
-                background: var(--color-lime);
+                background: var(--color-lime-soft);
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
@@ -346,7 +300,11 @@
                 margin-bottom: 14px;
                 font-size: 1rem;
               ">
-              👤
+              <img
+                src="/assets/images/home-vendor/person-icon.svg"
+                width="22"
+                height="22"
+                alt="" />
             </div>
             <h4
               style="
@@ -360,19 +318,24 @@
             <p
               style="
                 font-size: 0.83rem;
-                color: var(--color-muted);
+                color: var(--color-grey);
                 line-height: 1.5;
               ">
               Create your catering profile with your logo, photos, services, and
               more information.
             </p>
           </div>
-          <div class="card-white">
+          <div
+            class="card-white vd-feature-card"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 width: 40px;
                 height: 40px;
-                background: var(--color-lime);
+                background: var(--color-lime-soft);
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
@@ -380,7 +343,11 @@
                 margin-bottom: 14px;
                 font-size: 1rem;
               ">
-              📦
+              <img
+                src="/assets/images/home-vendor/box-icon.svg"
+                width="22"
+                height="22"
+                alt="" />
             </div>
             <h4
               style="
@@ -394,18 +361,23 @@
             <p
               style="
                 font-size: 0.83rem;
-                color: var(--color-muted);
+                color: var(--color-grey);
                 line-height: 1.5;
               ">
               Create catering packages with pricing and details.
             </p>
           </div>
-          <div class="card-white">
+          <div
+            class="card-white vd-feature-card"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 width: 40px;
                 height: 40px;
-                background: var(--color-lime);
+                background: var(--color-lime-soft);
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
@@ -413,7 +385,11 @@
                 margin-bottom: 14px;
                 font-size: 1rem;
               ">
-              📅
+              <img
+                src="/assets/images/home-vendor/calender-icon.svg"
+                width="22"
+                height="22"
+                alt="" />
             </div>
             <h4
               style="
@@ -427,18 +403,23 @@
             <p
               style="
                 font-size: 0.83rem;
-                color: var(--color-muted);
+                color: var(--color-grey);
                 line-height: 1.5;
               ">
               Set your availability dates and manage booking requests.
             </p>
           </div>
-          <div class="card-white">
+          <div
+            class="card-white vd-feature-card"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 width: 40px;
                 height: 40px;
-                background: var(--color-lime);
+                background: var(--color-lime-soft);
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
@@ -446,7 +427,11 @@
                 margin-bottom: 14px;
                 font-size: 1rem;
               ">
-              📬
+              <img
+                src="/assets/images/home-vendor/booking-icon.svg"
+                width="22"
+                height="22"
+                alt="" />
             </div>
             <h4
               style="
@@ -460,18 +445,23 @@
             <p
               style="
                 font-size: 0.83rem;
-                color: var(--color-muted);
+                color: var(--color-grey);
                 line-height: 1.5;
               ">
               Receive and manage customer requests in real time.
             </p>
           </div>
-          <div class="card-white">
+          <div
+            class="card-white vd-feature-card"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 width: 40px;
                 height: 40px;
-                background: var(--color-lime);
+                background: var(--color-lime-soft);
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
@@ -479,7 +469,11 @@
                 margin-bottom: 14px;
                 font-size: 1rem;
               ">
-              🌐
+              <img
+                src="/assets/images/home-vendor/eye-icon.svg"
+                width="22"
+                height="22"
+                alt="" />
             </div>
             <h4
               style="
@@ -493,18 +487,23 @@
             <p
               style="
                 font-size: 0.83rem;
-                color: var(--color-muted);
+                color: var(--color-grey);
                 line-height: 1.5;
               ">
               Help customers discover your business more easily.
             </p>
           </div>
-          <div class="card-white">
+          <div
+            class="card-white vd-feature-card"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 10px 2px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 width: 40px;
                 height: 40px;
-                background: var(--color-lime);
+                background: var(--color-lime-soft);
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
@@ -512,7 +511,11 @@
                 margin-bottom: 14px;
                 font-size: 1rem;
               ">
-              ⚡
+              <img
+                src="/assets/images/home-vendor/setup-icon.svg"
+                width="22"
+                height="22"
+                alt="" />
             </div>
             <h4
               style="
@@ -526,7 +529,7 @@
             <p
               style="
                 font-size: 0.83rem;
-                color: var(--color-muted);
+                color: var(--color-grey);
                 line-height: 1.5;
               ">
               Create your profile and get started in minutes.
@@ -542,90 +545,327 @@
               color: var(--color-cream);
               border: none;
             "
-            >See How It Works →</a
+            >See How It Works
+            <span style="color: var(--color-lime-soft)">→</span></a
           >
         </div>
       </div>
     </section>
 
     <!-- 3 STEPS -->
-    <section class="section-maroon">
+    <section class="section-maroon vd-steps-section">
       <div class="container-site">
+        <!-- Label -->
         <span
-          class="tag-pill tag-lime"
-          style="margin-bottom: 20px; display: inline-block"
+          style="
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 7px 16px;
+            background: #3f1b2c;
+            color: #c5e866;
+            border: 1.5px solid #c5e866;
+            border-radius: var(--radius-pill);
+            font-size: var(--text-caption);
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+          "
           >SIMPLE ONBOARDING</span
         >
+
+        <!-- Heading -->
         <h2
+          class="vd-steps-h2"
           style="
-            font-family: var(--font-display);
-            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            font-family: var(--font-body);
+            font-size: 28px;
             font-weight: 800;
+            color: var(--color-cream);
+            line-height: 1.25;
             margin-bottom: 48px;
+            max-width: 420px;
           ">
           Start receiving bookings<br />in 3 simple steps
         </h2>
+
+        <!-- Steps: single 3-col grid, badges + content in same cell, lines absolutely positioned -->
         <div
+          id="steps-container"
+          class="vd-steps-container"
           style="
+            position: relative;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            margin-bottom: 40px;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 56px;
           ">
-          <div>
-            <div class="step-badge-lime" style="margin-bottom: 16px">1</div>
-            <h4 style="font-weight: 700; margin-bottom: 8px">
+          <!-- Line 1: right edge of badge-1 → left edge of badge-2 (8px gap each side) -->
+          <div
+            class="vd-step-line"
+            style="
+              position: absolute;
+              top: 24px;
+              left: 60px;
+              right: calc(66.666% + 12px);
+              height: 2px;
+              background: #3f1b2c;
+              overflow: hidden;
+              z-index: 0;
+            ">
+            <div
+              id="step-line-1"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 0;
+                background: var(--color-lime);
+                transition: width 0.7s ease;
+              "></div>
+          </div>
+          <!-- Line 2: right edge of badge-2 → left edge of badge-3 (8px gap each side) -->
+          <div
+            class="vd-step-line"
+            style="
+              position: absolute;
+              top: 24px;
+              left: calc(33.333% + 60px);
+              right: calc(33.333% + 12px);
+              height: 2px;
+              background: #3f1b2c;
+              overflow: hidden;
+              z-index: 0;
+            ">
+            <div
+              id="step-line-2"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 0;
+                background: var(--color-lime);
+                transition: width 0.7s ease;
+              "></div>
+          </div>
+
+          <!-- Step 1: circle starts lime (no animation) -->
+          <div style="position: relative; z-index: 1; padding-right: 32px">
+            <div
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: var(--color-lime);
+                color: var(--color-ink);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: var(--font-body);
+                font-weight: 800;
+                font-size: 1.1rem;
+                margin-bottom: 20px;
+                flex-shrink: 0;
+              ">
+              1
+            </div>
+            <h4
+              style="
+                font-family: var(--font-body);
+                font-size: 16px;
+                font-weight: 700;
+                color: var(--color-cream);
+                margin-bottom: 8px;
+                line-height: 1.3;
+                max-width: 130px;
+              ">
               Create your profile
             </h4>
-            <p style="font-size: 0.85rem; opacity: 0.65; line-height: 1.6">
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 13px;
+                color: var(--color-cream);
+                opacity: 0.6;
+                line-height: 1.6;
+                max-width: 175px;
+              ">
               Add your business information, photos, and services.
             </p>
           </div>
-          <div>
-            <div class="step-badge-lime" style="margin-bottom: 16px">2</div>
-            <h4 style="font-weight: 700; margin-bottom: 8px">
+
+          <!-- Step 2: circle starts dark, turns lime when line 1 finishes -->
+          <div style="position: relative; z-index: 1; padding-right: 32px">
+            <div
+              id="step-circle-2"
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: #3f1b2c;
+                color: rgba(255, 255, 255, 0.5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: var(--font-body);
+                font-weight: 800;
+                font-size: 1.1rem;
+                margin-bottom: 20px;
+                flex-shrink: 0;
+                transition:
+                  background-color 0.35s ease,
+                  color 0.35s ease;
+              ">
+              2
+            </div>
+            <h4
+              style="
+                font-family: var(--font-body);
+                font-size: 16px;
+                font-weight: 700;
+                color: var(--color-cream);
+                margin-bottom: 8px;
+                line-height: 1.3;
+              ">
               Add Your Packages
             </h4>
-            <p style="font-size: 0.85rem; opacity: 0.65; line-height: 1.6">
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 13px;
+                color: var(--color-cream);
+                opacity: 0.6;
+                line-height: 1.6;
+                max-width: 175px;
+              ">
               Show customers what you offer and how you price your services.
             </p>
           </div>
-          <div>
-            <div class="step-badge-lime" style="margin-bottom: 16px">3</div>
-            <h4 style="font-weight: 700; margin-bottom: 8px">
+
+          <!-- Step 3: circle starts dark, turns lime when line 2 finishes -->
+          <div style="position: relative; z-index: 1">
+            <div
+              id="step-circle-3"
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: #3f1b2c;
+                color: rgba(255, 255, 255, 0.5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: var(--font-body);
+                font-weight: 800;
+                font-size: 1.1rem;
+                margin-bottom: 20px;
+                flex-shrink: 0;
+                transition:
+                  background-color 0.35s ease,
+                  color 0.35s ease;
+              ">
+              3
+            </div>
+            <h4
+              style="
+                font-family: var(--font-body);
+                font-size: 16px;
+                font-weight: 700;
+                color: var(--color-cream);
+                margin-bottom: 8px;
+                line-height: 1.3;
+              ">
               Receive Requests
             </h4>
-            <p style="font-size: 0.85rem; opacity: 0.65; line-height: 1.6">
+            <p
+              style="
+                font-family: var(--font-body);
+                font-size: 13px;
+                color: var(--color-cream);
+                opacity: 0.6;
+                line-height: 1.6;
+                max-width: 175px;
+              ">
               Start connecting with customers looking for catering services.
             </p>
           </div>
         </div>
+
+        <script>
+          (function () {
+            var LINE_MS = 700; // matches transition:width 0.7s
+            var CIRCLE_MS = 350; // matches transition:background-color 0.35s
+            var container = document.getElementById("steps-container");
+            var line1 = document.getElementById("step-line-1");
+            var line2 = document.getElementById("step-line-2");
+            var circle2 = document.getElementById("step-circle-2");
+            var circle3 = document.getElementById("step-circle-3");
+
+            var observer = new IntersectionObserver(
+              function (entries) {
+                entries.forEach(function (entry) {
+                  if (entry.isIntersecting) {
+                    // circle 1 already lime — no change needed
+
+                    // 1. fill line 1
+                    setTimeout(function () {
+                      line1.style.width = "100%";
+                    }, 100);
+
+                    // 2. after line 1 finishes → light up circle 2
+                    setTimeout(function () {
+                      circle2.style.background = "#C5E866";
+                      circle2.style.color = "#1F1F1F";
+                    }, 100 + LINE_MS);
+
+                    // 3. after circle 2 transition finishes → fill line 2
+                    setTimeout(
+                      function () {
+                        line2.style.width = "100%";
+                      },
+                      100 + LINE_MS + CIRCLE_MS,
+                    );
+
+                    // 4. after line 2 finishes → light up circle 3
+                    setTimeout(
+                      function () {
+                        circle3.style.background = "#C5E866";
+                        circle3.style.color = "#1F1F1F";
+                      },
+                      100 + LINE_MS + CIRCLE_MS + LINE_MS,
+                    );
+
+                    observer.unobserve(entry.target);
+                  }
+                });
+              },
+              { threshold: 0.4 },
+            );
+
+            observer.observe(container);
+          })();
+        </script>
+
+        <!-- Download the App -->
         <p
+          class="vd-steps-download-heading"
           style="
+            font-family: var(--font-body);
+            font-size: 22px;
+            font-weight: 800;
             color: var(--color-lime);
-            font-weight: 700;
-            font-size: 0.9rem;
-            margin-bottom: 10px;
+            margin-bottom: 16px;
           ">
           Download the App
         </p>
-        <div style="display: flex; gap: 10px; flex-wrap: wrap">
-          <a href="#" class="app-badge" style="padding: 8px 14px"
-            ><i class="fa-brands fa-apple" style="font-size: 1.1rem"></i
-            ><span>App Store</span></a
-          >
-          <a href="#" class="app-badge" style="padding: 8px 14px"
-            ><i
-              class="fa-brands fa-google-play"
-              style="font-size: 0.9rem; color: #34a853"></i
-            ><span>Google Play</span></a
-          >
+        <div class="vd-steps-badges" style="display: flex; gap: 12px; flex-wrap: wrap">
+          <div data-include="/partials/app-badges.html"></div>
         </div>
       </div>
     </section>
 
     <!-- TESTIMONIALS -->
-    <section style="background: #d9f07d; padding: 64px 24px">
+    <!-- <section style="background: #d9f07d; padding: 64px 24px">
       <div class="container-site">
         <span
           class="tag-pill tag-maroon"
@@ -649,7 +889,12 @@
             gap: 20px;
             margin-bottom: 40px;
           ">
-          <div class="card-white">
+          <div
+            class="card-white"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 0 4px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 display: flex;
@@ -711,7 +956,12 @@
               >
             </div>
           </div>
-          <div class="card-white">
+          <div
+            class="card-white"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 0 4px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 display: flex;
@@ -773,7 +1023,12 @@
               >
             </div>
           </div>
-          <div class="card-white">
+          <div
+            class="card-white"
+            style="
+              border: 1.5px solid var(--color-lime);
+              box-shadow: 0 0 0 4px rgba(197, 232, 102, 0.2);
+            ">
             <div
               style="
                 display: flex;
@@ -917,144 +1172,265 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- APPLY FORM CTA -->
-    <section class="section-maroon">
+    <section
+      style="
+        position: relative;
+        background: var(--color-maroon);
+        padding: 120px 0 100px;
+        overflow: hidden;
+      ">
+
+      <!-- Content — centered column -->
       <div
-        class="container-site"
         style="
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 64px;
-          align-items: start;
+          position: relative;
+          z-index: 1;
+          max-width: 420px;
+          margin: 0 auto;
+          padding: 0 24px;
         ">
-        <div>
-          <p
+        <!-- Label -->
+        <p
+          style="
+            font-family: var(--font-body);
+            font-size: var(--text-caption);
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            color: var(--color-lime);
+            margin-bottom: 12px;
+          ">
+          READY TO START?
+        </p>
+
+        <!-- Heading -->
+        <h2
+          style="
+            font-family: var(--font-body);
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--color-cream);
+            line-height: 1.15;
+            margin-bottom: 10px;
+          ">
+          Apply in 2 minutes.
+        </h2>
+
+        <!-- Subtitle -->
+        <p
+          style="
+            font-family: var(--font-body);
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--color-cream);
+            opacity: 0.6;
+            margin-bottom: 28px;
+            line-height: 1.5;
+          ">
+          Drop your details — we'll call you back within 48 hours.
+        </p>
+
+        <!-- Form card -->
+        <form
+          onsubmit="return false;"
+          style="
+            background: #3f1b2c;
+            border-radius: 20px;
+            padding: 28px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+          ">
+          <!-- YOUR NAME -->
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <label
+              style="
+                font-family: var(--font-body);
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 1.1px;
+                text-transform: uppercase;
+                color: var(--color-lime);
+              "
+              >YOUR NAME</label
+            >
+            <input
+              type="text"
+              placeholder="Khaled Ahmed"
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--color-cream);
+                background: rgba(255, 255, 255, 0.08);
+                border: none;
+                border-radius: 16px;
+                padding: 13px 18px;
+                outline: none;
+                width: 100%;
+                box-sizing: border-box;
+              " />
+          </div>
+
+          <!-- WHATSAPP NUMBER -->
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <label
+              style="
+                font-family: var(--font-body);
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 1.1px;
+                text-transform: uppercase;
+                color: var(--color-lime);
+              "
+              >WHATSAPP NUMBER</label
+            >
+            <input
+              type="tel"
+              placeholder="+20 100 000 0000"
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--color-cream);
+                background: rgba(255, 255, 255, 0.08);
+                border: none;
+                border-radius: 16px;
+                padding: 13px 18px;
+                outline: none;
+                width: 100%;
+                box-sizing: border-box;
+              " />
+          </div>
+
+          <!-- CITY -->
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <label
+              style="
+                font-family: var(--font-body);
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 1.1px;
+                text-transform: uppercase;
+                color: var(--color-lime);
+              "
+              >CITY</label
+            >
+            <input
+              type="text"
+              placeholder="Alexandria"
+              style="
+                font-family: var(--font-body);
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--color-cream);
+                background: rgba(255, 255, 255, 0.08);
+                border: none;
+                border-radius: 16px;
+                padding: 13px 18px;
+                outline: none;
+                width: 100%;
+                box-sizing: border-box;
+              " />
+          </div>
+
+          <!-- Submit button -->
+          <button
+            type="submit"
             style="
-              color: var(--color-lime);
-              font-size: 0.7rem;
+              font-family: var(--font-body);
+              font-size: 15px;
               font-weight: 700;
-              letter-spacing: 0.1em;
-              text-transform: uppercase;
-              margin-bottom: 8px;
-            ">
-            READY TO START?
-          </p>
-          <h2
-            style="
-              font-family: var(--font-display);
-              font-size: clamp(1.6rem, 3vw, 2.2rem);
-              font-weight: 800;
-              margin-bottom: 8px;
-            ">
-            Apply in 2 minutes.
-          </h2>
-          <p style="opacity: 0.6; font-size: 0.88rem; margin-bottom: 28px">
-            Drop your details — we'll call you back within 48 hours.
-          </p>
-          <form
-            style="
-              background: var(--color-maroon-dark);
-              border-radius: var(--radius-xl);
-              padding: 24px;
-              display: flex;
-              flex-direction: column;
-              gap: 16px;
+              color: var(--color-maroon);
+              background: var(--color-lime);
+              border: none;
+              border-radius: 24px;
+              padding: 15px;
+              width: 100%;
+              cursor: pointer;
+              transition: opacity 0.15s;
             "
-            onsubmit="return false;">
-            <div class="form-field">
-              <label class="form-label">YOUR NAME</label
-              ><input
-                type="text"
-                class="form-input"
-                placeholder="Khaled Ahmed" />
-            </div>
-            <div class="form-field">
-              <label class="form-label">WHATSAPP NUMBER</label
-              ><input
-                type="tel"
-                class="form-input"
-                placeholder="+20 100 000 0000" />
-            </div>
-            <div class="form-field">
-              <label class="form-label">CITY</label
-              ><input type="text" class="form-input" placeholder="Alexandria" />
-            </div>
-            <button type="submit" class="btn btn-lime" style="width: 100%">
-              Contact me →
-            </button>
-          </form>
+            onmouseover="this.style.opacity = '0.88'"
+            onmouseout="this.style.opacity = '1'">
+            Contact me →
+          </button>
+        </form>
+
+        <!-- OR divider -->
+        <div
+          style="display: flex; align-items: center; gap: 12px; margin: 20px 0">
           <div
             style="
-              display: flex;
-              align-items: center;
-              gap: 12px;
-              margin: 20px 0;
-            ">
-            <div
-              style="
-                height: 1px;
-                flex: 1;
-                background: rgba(255, 255, 255, 0.15);
-              "></div>
-            <span style="opacity: 0.4; font-size: 0.8rem">OR</span>
-            <div
-              style="
-                height: 1px;
-                flex: 1;
-                background: rgba(255, 255, 255, 0.15);
-              "></div>
-          </div>
-          <a
-            href="https://wa.me/201500292910"
+              height: 1px;
+              flex: 1;
+              background: rgba(255, 255, 255, 0.15);
+            "></div>
+          <span
             style="
-              color: var(--color-cream);
-              font-weight: 600;
-              font-size: 0.9rem;
-              text-decoration: none;
-              display: inline-flex;
-              align-items: center;
-              gap: 8px;
-              margin-bottom: 12px;
+              font-family: var(--font-body);
+              font-size: 12px;
+              font-weight: 500;
+              color: rgba(255, 255, 255, 0.35);
+              letter-spacing: 0.08em;
             "
-            >Chat with us on WhatsApp →</a
+            >OR</span
           >
-          <br />
-          <p style="font-size: 0.75rem; opacity: 0.4">
-            🔒 We won't share your details. No spam. Just one call.
-          </p>
-        </div>
-        <div>
-          <p
+          <div
             style="
-              color: var(--color-lime);
-              font-weight: 700;
-              font-size: 0.95rem;
-              margin-bottom: 12px;
-            ">
-            Download the App
-          </p>
-          <div style="display: flex; gap: 12px; flex-wrap: wrap">
-            <a href="#" class="app-badge"
-              ><i class="fa-brands fa-apple" style="font-size: 1.3rem"></i
-              ><span
-                ><span style="font-size: 0.65rem; display: block; opacity: 0.7"
-                  >Download on the</span
-                >App Store</span
-              ></a
-            >
-            <a href="#" class="app-badge"
-              ><i
-                class="fa-brands fa-google-play"
-                style="font-size: 1.1rem; color: #34a853"></i
-              ><span
-                ><span style="font-size: 0.65rem; display: block; opacity: 0.7"
-                  >GET IT ON</span
-                >Google Play</span
-              ></a
-            >
-          </div>
+              height: 1px;
+              flex: 1;
+              background: rgba(255, 255, 255, 0.15);
+            "></div>
+        </div>
+
+        <!-- WhatsApp link -->
+        <a
+          href="https://wa.me/201500292910"
+          style="
+            display: flex;
+            justify-content: center;
+            font-family: var(--font-body);
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--color-cream);
+            text-decoration: none;
+            margin-bottom: 14px;
+          "
+          >Chat with us on WhatsApp →</a
+        >
+
+        <!-- Privacy note -->
+        <p
+          style="
+            text-align: center;
+            font-family: var(--font-body);
+            font-size: 12px;
+            color: var(--color-cream);
+            opacity: 0.4;
+            margin-bottom: 32px;
+          ">
+          🔒 We won't share your details. No spam. Just one call.
+        </p>
+
+        <!-- Download the App -->
+        <p
+          style="
+            text-align: center;
+            font-family: var(--font-body);
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--color-lime);
+            margin-bottom: 16px;
+          ">
+          Download the App
+        </p>
+
+        <!-- App badges -->
+        <div style="display: flex; justify-content: center; gap: 12px">
+          <div data-include="/partials/app-badges.html"></div>
         </div>
       </div>
     </section>
@@ -1062,5 +1438,125 @@
     <div data-include="/partials/footer.html"></div>
     <script src="/js/includes.js"></script>
     <script src="/js/content.js"></script>
+
+    <!-- Responsive overrides -->
+    <style>
+      @media (max-width: 1024px) {
+        .vd-hero-section {
+          padding: 115px 70px 64px !important;
+        }
+        .vd-hero-grid {
+          grid-template-columns: 55% 45% !important;
+          gap: 32px !important;
+          padding-bottom: 64px !important;
+        }
+        .vd-hero-h1 {
+          font-size: 46px !important;
+          line-height: 1.1 !important;
+        }
+        .vd-features-section {
+          background: #fefefe !important;
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+        }
+        .vd-features-grid {
+          grid-template-columns: repeat(2, 1fr) !important;
+        }
+        .vd-feature-card {
+          background: #fefefe !important;
+        }
+        .vd-steps-section {
+          padding-left: 70px !important;
+          padding-right: 70px !important;
+          text-align: center !important;
+        }
+        .vd-steps-container {
+          grid-template-columns: 1fr !important;
+          gap: 24px !important;
+          text-align: center !important;
+        }
+        .vd-steps-container > div {
+          padding-right: 0 !important;
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+        }
+        .vd-steps-h2 {
+          text-align: center !important;
+          max-width: 100% !important;
+        }
+        .vd-steps-download-heading {
+          text-align: center !important;
+        }
+        .vd-steps-badges {
+          justify-content: center !important;
+        }
+        /* hide horizontal connecting lines on tablet & mobile */
+        .vd-step-line,
+        .vd-step-line * {
+          display: none !important;
+          visibility: hidden !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        /* ── Hero ── */
+        .vd-hero-section {
+          padding: 40px 24px 56px !important;
+        }
+        .vd-hero-grid {
+          display: flex !important;
+          flex-direction: column !important;
+          gap: 0 !important;
+          padding-bottom: 0 !important;
+        }
+        /* Order: copy-top (1) → phone (2) → mobile-cta (3) */
+        .vd-hero-copy-top { order: 1; }
+        .vd-hero-phone    { order: 2; margin: 32px 0; justify-content: center; }
+        .vd-hero-cta-mobile { order: 3; }
+
+        /* Hide desktop CTA block, show mobile one */
+        .vd-hero-cta-desktop { display: none !important; }
+        .vd-hero-cta-mobile  { display: block !important; }
+
+        .vd-hero-h1 {
+          font-size: 46px !important;
+          line-height: 1.0 !important;
+          margin-bottom: 16px !important;
+        }
+
+        /* Features */
+        .vd-features-section {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+        }
+        .vd-features-grid {
+          grid-template-columns: 1fr !important;
+        }
+        /* Steps */
+        .vd-steps-section {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+          text-align: left !important;
+        }
+        .vd-steps-container > div {
+          align-items: flex-start !important;
+          text-align: left !important;
+        }
+        .vd-steps-container h4,
+        .vd-steps-container p {
+          text-align: left !important;
+        }
+        .vd-steps-h2 {
+          text-align: left !important;
+        }
+        .vd-steps-download-heading {
+          text-align: left !important;
+        }
+        .vd-steps-badges {
+          justify-content: flex-start !important;
+        }
+      }
+    </style>
   </body>
 </html>
